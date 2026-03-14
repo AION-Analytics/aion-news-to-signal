@@ -12,11 +12,37 @@ A comprehensive open-source suite for Indian financial market sentiment analysis
 
 | Package | Description | Status | Docs |
 |---------|-------------|--------|------|
-| **aion-sentiment** | Sentiment and emotion analysis for financial headlines | ✅ Ready | [Docs](aion-sentiment/README.md) |
-| **aion-sentiment-in** | Training pipeline for India-tuned model (98.55% accuracy) | ✅ Ready | [Docs](aion-sentiment-in/README.md) |
-| **aion-sectormap** | NSE ticker to Sector/Industry/Group mapping | ✅ Ready | [Docs](aion-sectormap/README.md) |
-| **aion-volweight** | VIX-based sentiment confidence adjustment | ✅ Ready | [Docs](aion-volweight/README.md) |
-| **aion-newsimpact** | Historical news impact analysis with FAISS | ✅ Ready | [Docs](aion-newsimpact/README.md) |
+| **aion-sentiment** | Sentiment and emotion analysis for financial headlines | Ready | [Docs](aion-sentiment/README.md) |
+| **aion-sentiment-in** | Training pipeline for India-tuned model (98.55% accuracy) | Ready | [Docs](aion-sentiment-in/README.md) |
+| **aion-sectormap** | NSE ticker to Sector/Industry/Group mapping | Ready | [Docs](aion-sectormap/README.md) |
+| **aion-volweight** | VIX-based sentiment confidence adjustment | Ready | [Docs](aion-volweight/README.md) |
+| **aion-newsimpact** | Historical news impact analysis with FAISS | Ready | [Docs](aion-newsimpact/README.md) |
+
+---
+
+## Models
+
+### AION-Sentiment-IN-v1
+
+| Metric | Value |
+|--------|-------|
+| **Accuracy** | 98.55% |
+| **F1 Score** | 98.65% |
+| **Training Data** | 957K Indian financial news headlines |
+| **Labels** | positive, neutral, negative |
+| **Location** | [HuggingFace](https://huggingface.co/aion-analytics/aion-sentiment-in-v1) |
+
+**Note:** The `aion-sentiment` package automatically downloads this model from HuggingFace on first use (~440MB). Subsequent uses load from cache.
+
+```python
+from aion_sentiment import AIONSentimentAnalyzer
+
+# Uses India-tuned model by default (98.55% accuracy)
+analyzer = AIONSentimentAnalyzer()
+
+# Override with custom model if needed
+# analyzer = AIONSentimentAnalyzer(model_name="custom-model")
+```
 
 ---
 
@@ -71,17 +97,11 @@ print(df[['ticker', 'sector', 'sentiment_label', 'sentiment_confidence_adjusted'
 
 ## Data Assets
 
-- **NSE Sector Constituents**: 188 companies across 14 sectors
-- **NSE Group Companies**: 591 companies, 44 sectors, 340 groups (from GIN database)
-- **NRC Emotion Lexicon**: 14,182 words bundled with aion-sentiment
-
-## Models
-
-| Model | Description | Accuracy | Location |
-|-------|-------------|----------|----------|
-| **AION-Sentiment-IN-v1** | Transformer model tuned on Indian financial news | 98.55% | [HuggingFace](https://huggingface.co/aion-analytics/aion-sentiment-in-v1) |
-
-**Note:** The `aion-sentiment` package automatically downloads the India-tuned model from HuggingFace on first use. Users can override with any other model via the `model_name` parameter.
+| Asset | Count | Description |
+|-------|-------|-------------|
+| **NSE Sector Constituents** | 188 companies | 14 sectors |
+| **NSE Group Companies** | 591 companies | 44 sectors, 340 groups |
+| **NRC Emotion Lexicon** | 14,182 words | Bundled with aion-sentiment |
 
 ---
 
