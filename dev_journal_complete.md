@@ -150,7 +150,7 @@ nse, bse, transformer, python, open-source, nrc-lexicon, vix, faiss
 ### HuggingFace Model
 
 **Model:** `aion-analytics/aion-sentiment-in-v1`  
-**URL:** https://huggingface.co/aion-analytics/aion-sentiment-in-v1  
+**URL:** https://huggingface.co/AION-Analytics/aion-sentiment-in-v1  
 **License:** Apache License 2.0
 
 **Model Type:** Sequence Classification (Sentiment Analysis)  
@@ -262,7 +262,7 @@ python upload_to_huggingface.py --repo-id aion-analytics/aion-sentiment-in-v1
 
 **Email:** aionlabs@tutamail.com  
 **GitHub:** https://github.com/AionAnalytics  
-**HuggingFace:** https://huggingface.co/aion-analytics
+**HuggingFace:** https://huggingface.co/AION-Analytics
 
 ---
 

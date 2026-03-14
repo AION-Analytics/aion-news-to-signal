@@ -3,7 +3,7 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/aion-sentiment-in.svg)](https://pypi.org/project/aion-sentiment-in/)
 [![License](https://img.shields.io/pypi/l/aion-sentiment-in.svg)](https://github.com/aion/aion-sentiment-in/blob/main/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/aion-sentiment-in.svg)](https://pypi.org/project/aion-sentiment-in/)
-[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-aion--analytics-yellow)](https://huggingface.co/aion-analytics/aion-sentiment-in-v1)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20HuggingFace-aion--analytics-yellow)](https://huggingface.co/AION-Analytics/aion-sentiment-in-v1)
 [![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 **AION Sentiment Analysis** is an open-source Python package for analyzing sentiment and emotions in financial news text. Part of the [AION open-source ecosystem](https://github.com/aion), it provides pre-trained models and emotion analysis tools for financial NLP applications.
@@ -290,7 +290,7 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 - [GitHub Repository](https://github.com/aion/aion-sentiment-in)
 - [Issue Tracker](https://github.com/aion/aion-sentiment-in/issues)
-- [HuggingFace Model](https://huggingface.co/aion-analytics/aion-sentiment-in-v1)
+- [HuggingFace Model](https://huggingface.co/AION-Analytics/aion-sentiment-in-v1)
 - [AION Organization](https://github.com/aion)
 - [Contributing Guide](CONTRIBUTING.md)
 - [Code of Conduct](CODE_OF_CONDUCT.md)

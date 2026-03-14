@@ -206,7 +206,7 @@ print(result)
   author = {AION Analytics},
   title = {AION-Sentiment-IN: India-Tuned FinBERT for Financial Sentiment Analysis},
   year = {2026},
-  url = {https://huggingface.co/aion-analytics/aion-sentiment-in-v1},
+  url = {https://huggingface.co/AION-Analytics/aion-sentiment-in-v1},
   license = {Apache-2.0}
 }
 ```
