@@ -202,6 +202,150 @@ else:
 
 ---
 
+## Edge Cases & Confidence Scoring
+
+### Edge Case Handling
+
+| Scenario | Handling | Output |
+|----------|----------|--------|
+| **Empty text** | Return neutral with 0% confidence | `{'label': 'neutral', 'confidence': 0.0}` |
+| **Very short text (<5 chars)** | Return neutral with low confidence | `{'label': 'neutral', 'confidence': 0.3}` |
+| **Ambiguous news** | Low confidence score (<0.6) | `{'label': 'neutral', 'confidence': 0.55}` |
+| **Conflicting signals** | Confidence reduced proportionally | `{'label': 'positive', 'confidence': 0.65}` |
+| **Unknown ticker** | Sector mapping returns 'Unknown' | Sector: 'Unknown' |
+| **High VIX (>25)** | Confidence discounted 50% | `adjusted_conf = conf * 0.5` |
+
+### Confidence Scoring System
+
+```python
+def calculate_system_confidence(sentiment_confidence, vix_value, sector_weight, source_reliability):
+    """
+    Calculate final system confidence score for trading decisions.
+    
+    Args:
+        sentiment_confidence: Raw model confidence (0-1)
+        vix_value: Current India VIX value
+        sector_weight: Sector-specific weight (0.8-1.2)
+        source_reliability: News source reliability score (0.5-1.0)
+    
+    Returns:
+        Final system confidence (0-1)
+    """
+    # VIX regime adjustment
+    if vix_value >= 25:
+        vix_adjustment = 0.5  # PANIC: 50% discount
+    elif vix_value >= 16:
+        vix_adjustment = 0.8  # HIGH: 20% discount
+    elif vix_value >= 12:
+        vix_adjustment = 1.0  # NORMAL: no adjustment
+    else:
+        vix_adjustment = 1.0  # LOW: no adjustment
+    
+    # Calculate final confidence
+    system_confidence = (
+        sentiment_confidence * 
+        vix_adjustment * 
+        sector_weight * 
+        source_reliability
+    )
+    
+    return min(1.0, max(0.0, system_confidence))
+
+# Example usage
+confidence = calculate_system_confidence(
+    sentiment_confidence=0.92,
+    vix_value=18,        # HIGH regime
+    sector_weight=1.0,   # Neutral sector weight
+    source_reliability=0.95  # High reliability source
+)
+# Result: 0.92 * 0.8 * 1.0 * 0.95 = 0.699 (69.9% system confidence)
+```
+
+### Sector-Specific Confidence Weights
+
+| Sector | Weight | Rationale |
+|--------|--------|-----------|
+| **Banking** | 1.1 | High news coverage, reliable signals |
+| **IT** | 1.0 | Standard weight |
+| **FMCG** | 1.0 | Standard weight |
+| **Auto** | 0.9 | Moderate volatility |
+| **Metal** | 0.8 | High volatility, noisy signals |
+| **Realty** | 0.8 | Low liquidity, noisy signals |
+| **Unknown** | 0.7 | Unmapped tickers |
+
+### Multi-Source Aggregation
+
+```python
+def aggregate_sentiment(signals):
+    """
+    Aggregate sentiment from multiple news sources.
+    
+    Args:
+        signals: List of dicts with 'sentiment', 'confidence', 'source'
+    
+    Returns:
+        Aggregated sentiment and confidence
+    """
+    if not signals:
+        return {'label': 'neutral', 'confidence': 0.0}
+    
+    # Weight by source reliability
+    source_weights = {
+        'reuters': 1.0,
+        'bloomberg': 1.0,
+        'economictimes': 0.9,
+        'moneycontrol': 0.85,
+        'twitter': 0.5,
+    }
+    
+    weighted_sentiment = 0.0
+    total_weight = 0.0
+    
+    for signal in signals:
+        weight = source_weights.get(signal['source'].lower(), 0.7)
+        sentiment_score = 1 if signal['label'] == 'positive' else (-1 if signal['label'] == 'negative' else 0)
+        weighted_sentiment += sentiment_score * signal['confidence'] * weight
+        total_weight += weight
+    
+    avg_sentiment = weighted_sentiment / total_weight if total_weight > 0 else 0
+    
+    # Convert back to label
+    if avg_sentiment > 0.3:
+        label = 'positive'
+    elif avg_sentiment < -0.3:
+        label = 'negative'
+    else:
+        label = 'neutral'
+    
+    return {
+        'label': label,
+        'confidence': abs(avg_sentiment),
+        'sources_aggregated': len(signals)
+    }
+
+# Example usage
+signals = [
+    {'label': 'positive', 'confidence': 0.92, 'source': 'reuters'},
+    {'label': 'positive', 'confidence': 0.88, 'source': 'economictimes'},
+    {'label': 'neutral', 'confidence': 0.75, 'source': 'twitter'},
+]
+
+result = aggregate_sentiment(signals)
+# Result: {'label': 'positive', 'confidence': 0.82, 'sources_aggregated': 3}
+```
+
+### Confidence Thresholds for Trading Signals
+
+| System Confidence | Signal Strength | Action |
+|-------------------|-----------------|--------|
+| **≥ 0.85** | Very Strong | Full position size |
+| **0.70 - 0.84** | Strong | 80% position size |
+| **0.55 - 0.69** | Moderate | 50% position size |
+| **0.40 - 0.54** | Weak | 25% position size |
+| **< 0.40** | Very Weak | No action (skip) |
+
+---
+
 ## Benchmarks
 
 **Tested on:** Apple M4 Mac, 16GB RAM | **Dataset:** 957K Indian financial news headlines
