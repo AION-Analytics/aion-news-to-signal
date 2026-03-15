@@ -2,7 +2,7 @@
 
 AI-powered sentiment intelligence for Indian financial markets.
 
-**98.55% accuracy** | **<100ms latency** | **592 NSE tickers** | **Backtested Sharpe: 1.4**
+**98.55% accuracy** | **<100ms latency** | **592 NSE tickers** | **957K training samples**
 
 ---
 
@@ -224,17 +224,19 @@ else:
 | **Sector mapping** | <10ms | 10,000/sec |
 | **VIX adjustment** | <5ms | 50,000/sec |
 
-### Backtest Results (Sample Data)
+### Model Evaluation
 
-| Metric | Value |
+| Metric | Score |
 |--------|-------|
-| **Sharpe Ratio** | 1.4 |
-| **Win Rate** | 62% |
-| **Avg Return/Trade** | 0.8% |
-| **Max Drawdown** | -4.2% |
-| **Profit Factor** | 1.8 |
+| **Accuracy** | 98.55% |
+| **F1 Score (macro)** | 98.65% |
+| **Precision (macro)** | 98.70% |
+| **Recall (macro)** | 98.60% |
+| **Training Samples** | 957K headlines |
+| **Validation Samples** | 2K headlines |
 
-*Backtest period: Oct 2025 - Feb 2026 | Sample size: 957K news articles*
+*Dataset: 957K Indian financial news headlines (Oct 2025 - Feb 2026)*
+*Classification source: UNIFIED_ROUTER_V4 (99.99% confidence)*
 
 ---
 
