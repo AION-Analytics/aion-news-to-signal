@@ -34,7 +34,8 @@ env/
 *~
 .DS_Store
 
-# Qwen agents
+# Qwen AI
+.qwen/
 .qwen/agents/
 
 # Testing
