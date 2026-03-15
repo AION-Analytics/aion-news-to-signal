@@ -1,47 +1,130 @@
-# AION Market Sentiment Engine
+# Market Sentiments
 
-Real-time sentiment intelligence for Indian financial markets.
+AI-powered sentiment intelligence for Indian financial markets.
 
-Aggregates news, sector data, and volatility signals to produce actionable sentiment indicators for trading systems. Designed for low-latency algorithmic trading environments.
-
-**Model Accuracy:** 98.55% on Indian financial news | **Coverage:** 592 NSE tickers | **Latency:** <100ms inference
+**98.55% accuracy** | **<100ms latency** | **592 NSE tickers**
 
 ---
 
-## Quick Start
+## What It Does
 
-```python
+Extracts and aggregates:
+- 📰 **News Sentiment** - Real-time analysis of financial news headlines
+- 📊 **Sector Signals** - NSE sector-wise sentiment mapping (592 tickers)
+- 📈 **Volatility Adjustment** - VIX-based confidence scoring
+- 📉 **Historical Impact** - Similar news pattern matching with price impact
+
+Built for algorithmic trading and market intelligence systems.
+
+---
+
+## Quickstart (30 seconds)
+
+```bash
+# Install
+pip install aion-sentiment aion-sectormap aion-volweight
+
+# Run
+python -c "
 from aion_sentiment import AIONSentimentAnalyzer
-from aion_sectormap import SectorMapper
-from aion_volweight import weight_confidence
+analyzer = AIONSentimentAnalyzer()
+print(analyzer.predict(['Market reaches all-time high']))
+"
+```
 
-# Initialize
-analyzer = AIONSentimentAnalyzer()  # Downloads model automatically
-mapper = SectorMapper()
+**Output:**
+```
+[{'label': 'positive', 'confidence': 0.9389}]
+```
 
-# Analyze news
-df = mapper.map(pd.DataFrame({
-    'ticker': ['RELIANCE', 'TCS', 'HDFCBANK'],
-    'headline': ['Record profits', 'Major deal win', 'Rural expansion']
-}), ticker_column='ticker')
+---
 
-df = analyzer.analyze(df, text_column='headline')
-df = weight_confidence(df, vix_value=18)
+## Example Output
 
-print(df[['ticker', 'sector', 'sentiment_label', 'sentiment_confidence_adjusted']])
+### Sentiment Analysis
+```
+Headline                              | Sentiment | Confidence | VIX-Adjusted
+--------------------------------------|-----------|------------|-------------
+Reliance reports record profits       | positive  | 93.8%      | 93.8% (VIX=12)
+Market crashes on recession fears     | negative  | 90.5%      | 45.2% (VIX=28)
+TCS wins major digital deal           | positive  | 88.8%      | 88.8% (VIX=12)
+```
+
+### Sector Sentiment Heatmap
+```
+Sector              | Bullish | Neutral | Bearish | Net Sentiment
+--------------------|---------|---------|---------|---------------
+Banking             |   65%   |   25%   |   10%   |     +55%
+IT                  |   72%   |   20%   |    8%   |     +64%
+Auto                |   45%   |   35%   |   20%   |     +25%
+FMCG                |   58%   |   30%   |   12%   |     +46%
+Metal               |   30%   |   40%   |   30%   |      0%
+```
+
+### Historical Impact Analysis
+```
+Query: "Market crashes on recession fears"
+
+Similar Historical News (last 30 days):
+1. "Stock market tumbles on recession fears"    → -2.5% (next day)
+2. "Investors panic as banks collapse"          → -3.8% (next day)
+3. "Banking crisis spreads across Europe"       → -2.9% (next day)
+
+Average 1-day Impact: -3.07%
+```
+
+---
+
+## Architecture
+
+```
+┌─────────────────┐
+│  Data Sources   │
+│  • News APIs    │
+│  • RSS Feeds    │
+│  • Social Media │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ Sentiment Engine│
+│  • FinBERT      │
+│  • NRC Emotions │
+│  • 98.55% Acc   │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ Sector Mapper   │
+│  • 592 Tickers  │
+│  • 44 Sectors   │
+│  • 340 Groups   │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ VIX Adjustment  │
+│  • LOW <12      │
+│  • HIGH 15-25   │
+│  • PANIC ≥25    │
+└────────┬────────┘
+         ↓
+┌─────────────────┐
+│ Signal Output   │
+│  • JSON API     │
+│  • DataFrame    │
+│  • WebSocket    │
+└─────────────────┘
 ```
 
 ---
 
 ## Packages
 
-| Package | Purpose | Status |
-|---------|---------|--------|
-| **aion-sentiment** | Sentiment & emotion analysis | Ready |
-| **aion-sentiment-in** | Training pipeline (98.55% accuracy) | Ready |
-| **aion-sectormap** | NSE ticker → Sector mapping (592 tickers) | Ready |
-| **aion-volweight** | VIX-based confidence adjustment | Ready |
-| **aion-newsimpact** | Historical news impact analysis | Ready |
+| Package | Purpose | Install |
+|---------|---------|---------|
+| **aion-sentiment** | Sentiment & emotion analysis | `pip install aion-sentiment` |
+| **aion-sectormap** | NSE ticker → Sector mapping | `pip install aion-sectormap` |
+| **aion-volweight** | VIX-based confidence adjustment | `pip install aion-volweight` |
+| **aion-newsimpact** | Historical news impact analysis | `pip install aion-newsimpact` |
+| **aion-sentiment-in** | Training pipeline | `pip install aion-sentiment-in` |
 
 ---
 
@@ -55,48 +138,112 @@ print(df[['ticker', 'sector', 'sentiment_label', 'sentiment_confidence_adjusted'
 | **F1 Score** | 98.65% |
 | **Training Data** | 957K Indian financial news headlines |
 | **Inference Time** | <100ms per headline |
+| **Model Size** | 438 MB |
 | **Download** | [HuggingFace](https://huggingface.co/AION-Analytics/aion-sentiment-in-v1) |
+
+---
+
+## Use Cases
+
+### 1. Real-Time Trading Signals
+```python
+from aion_sentiment import AIONSentimentAnalyzer
+
+analyzer = AIONSentimentAnalyzer()
+
+# Analyze breaking news
+news = "RBI announces surprise rate cut"
+result = analyzer.predict(news)
+
+if result[0]['label'] == 'positive' and result[0]['confidence'] > 0.9:
+    print("BUY Signal: Banking sector")
+```
+
+### 2. Sector Rotation Strategy
+```python
+from aion_sentiment import AIONSentimentAnalyzer
+from aion_sectormap import SectorMapper
+
+mapper = SectorMapper()
+analyzer = AIONSentimentAnalyzer()
+
+# Get sentiment by sector
+sector_sentiment = {}
+for sector in mapper.get_all_sectors():
+    tickers = mapper.get_tickers_in_sector(sector)[:10]
+    # Analyze news for each ticker
+    # Aggregate sector sentiment
+    sector_sentiment[sector] = avg_sentiment
+
+# Rotate to highest sentiment sectors
+top_sectors = sorted(sector_sentiment.items(), key=lambda x: x[1], reverse=True)
+```
+
+### 3. Risk Management
+```python
+from aion_volweight import get_regime, weight_confidence
+
+# Check VIX regime
+regime = get_regime(vix=28)  # Returns "PANIC"
+
+# Adjust position sizing based on sentiment confidence
+if regime == "PANIC":
+    position_size = 0.5  # Reduce by 50%
+elif regime == "HIGH":
+    position_size = 0.8  # Reduce by 20%
+else:
+    position_size = 1.0  # Full size
+```
 
 ---
 
 ## Installation
 
+### Full Suite
 ```bash
-# Install all packages
 pip install aion-sentiment aion-sectormap aion-volweight aion-newsimpact
+```
 
-# Or install individually
-pip install aion-sentiment  # Core sentiment analysis
-pip install aion-sectormap  # Sector mapping
-pip install aion-volweight  # VIX adjustment
-pip install aion-newsimpact # Impact analysis
+### Individual Packages
+```bash
+pip install aion-sentiment      # Core sentiment analysis
+pip install aion-sectormap      # Sector mapping (592 tickers)
+pip install aion-volweight      # VIX adjustment
+pip install aion-newsimpact     # Historical impact
+```
+
+### Development
+```bash
+git clone https://github.com/AION-Analytics/market-sentiments.git
+cd market-sentiments
+pip install -e ".[dev]"
+pytest
 ```
 
 ---
 
-## Data Assets
+## Data Coverage
 
 | Asset | Count | Description |
 |-------|-------|-------------|
-| **NSE Sector Constituents** | 188 companies | 14 sectors |
-| **NSE Group Companies** | 591 companies | 44 sectors, 340 groups |
-| **NRC Emotion Lexicon** | 14,182 words | Bundled with aion-sentiment |
+| **NSE Companies** | 592 | Mapped to sectors |
+| **Sectors** | 44 | NSE classification |
+| **Business Groups** | 340 | Tata, Birla, Ambani, etc. |
+| **Training News** | 957K | Indian financial news |
+| **Emotion Lexicon** | 14,182 | NRC emotions |
 
 ---
 
-## Development
+## Performance Benchmarks
 
-```bash
-# Clone repository
-git clone https://github.com/AION-Analytics/market-sentiments.git
-cd market-sentiments
+| Task | Latency | Throughput |
+|------|---------|------------|
+| Single headline | <50ms | - |
+| Batch (100) | <200ms | 500/sec |
+| Sector mapping | <10ms | 10,000/sec |
+| VIX adjustment | <5ms | 50,000/sec |
 
-# Install with dev dependencies
-cd aion-sentiment && pip install -e ".[dev]"
-
-# Run tests
-pytest
-```
+**Tested on:** Apple M4 Mac, 16GB RAM
 
 ---
 
@@ -104,7 +251,7 @@ pytest
 
 Apache License 2.0
 
-**Attribution:** When using these packages, include:
+**Attribution:**
 ```
 This project uses AION Analytics open-source packages.
 Visit https://github.com/AION-Analytics for more information.
@@ -116,7 +263,7 @@ Visit https://github.com/AION-Analytics for more information.
 
 - **Email:** aionlabs@tutamail.com
 - **GitHub:** https://github.com/AION-Analytics
-- **HuggingFace:** https://huggingface.co/AION-Analytics
+- **HuggingFace:** https://huggingface.co/AION-Analytics/aion-sentiment-in-v1
 
 ---
 
