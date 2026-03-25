@@ -8,6 +8,24 @@ AI-powered sentiment intelligence for Indian financial markets.
 
 ---
 
+## ⚠️ IMPORTANT NOTICE - Model Under Retraining
+
+**Status:** The HuggingFace model is currently **private** and under retraining.
+
+**Issue:** A data labeling inconsistency was discovered in the training dataset. The model is being retrained with corrected labels.
+
+**Expected Resolution:** A corrected model will be released soon.
+
+**What works:**
+- ✅ Sector mapping (aion-sectormap)
+- ✅ VIX adjustment (aion-volweight)
+- ✅ News impact analysis (aion-newsimpact)
+
+**What's temporarily unavailable:**
+- ⏳ Sentiment analysis model (being retrained)
+
+---
+
 ## What This Is
 
 A **developer toolkit** for building financial sentiment models:
