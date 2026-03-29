@@ -1,82 +1,508 @@
-# AION Market Sentiment
+# AION Market Sentiment & Taxonomy System
 
-**Developer toolkit for financial sentiment analysis**
+**AI-powered sentiment intelligence for Indian financial markets**
 
-AI-powered sentiment intelligence for Indian financial markets.
-
-**99.63% accuracy** | **<100ms latency** | **592 NSE tickers** | **AION Taxonomy labels**
+**99.63% accuracy** | **<100ms latency** | **592 NSE tickers** | **136 Taxonomy Events**
 
 ---
 
-## ✅ Model Status: Ready for Use
+## 🎯 What You're Actually Getting
 
-**Latest:** v3.0.0 trained on AION's proprietary taxonomy labeling system with 136 market events.
+**For Enterprise Licensing:**
 
-**What's Included:**
+| Component | What It Is | What's Yours | Time to Replicate |
+|-----------|------------|--------------|-------------------|
+| **Sentiment Model** | 6-layer transformer classifier | 100% AION trained weights | 3-4 months |
+| **aion-sentiment Package** | Python inference library | 100% AION code | 3-4 months |
+| **1M+ Classified Headlines** | Training corpus | 100% AION proprietary | 6-9 months |
+| **136 Taxonomy Events** | Market event definitions | 100% AION proprietary | 3-4 months |
+| **Sector-Aware Signal Flips** | Same event → opposite sector impacts | 100% AION proprietary | 2-3 months |
+| **592 NSE Sector Mappings** | Ticker → sector → signal | 100% AION proprietary | 2-3 months |
+| **Production Pipeline** | gift_nifty_gap → Redis → ClickHouse | 100% AION code | 4-6 months |
+| **VIX-Adjusted Confidence** | Scoring methodology | 100% AION proprietary | 2-3 months |
 
-| Package | Description | Status |
-|---------|-------------|--------|
-| **aion-sentiment** | Sentiment analysis with AION taxonomy labels | ✅ Ready |
-| **aion-taxonomy** | Event classification with 136 market events | 🧪 Beta |
-| **aion-sectormap** | NSE ticker → sector mapping (592 tickers) | ✅ Ready |
-| **aion-volweight** | VIX-adjusted confidence weighting | ✅ Ready |
+**Total:** 18-24 months of work → Available via licensing
 
----
-
-## What This Is
-
-A **developer toolkit** for building financial sentiment models:
-
--  **Reusable Components** - Sentiment analysis, sector mapping, VIX adjustment
--  **Experimentation** - Quick prototyping for quant research
--  **Clean APIs** - Simple Python interfaces, no infra complexity
--  **India-Focused** - NSE/BSE tickers, Indian financial news
+**Everything is AION. Everything is proprietary.**
 
 ---
 
-## What This Is NOT
+## 🔥 Key Differentiator: Sector-Aware Signal Flips
 
-This is **NOT** a production trading system. For production infrastructure (live ingestion, Redis streams, ClickHouse pipelines, execution engines), see our internal systems.
+**The SAME event can have OPPOSITE impacts on different sectors:**
 
-**This toolkit is for:**
--  ML engineers building sentiment models
--  Quant researchers prototyping strategies
--  Developers experimenting with financial NLP
--  Students learning financial sentiment analysis
+### Example: Rupee Depreciation
 
-**This toolkit is NOT for:**
--  Direct production trading (use internal systems)
--  Live tick data ingestion (use internal systems)
--  Order execution (use internal systems)
--  System governance/audit (use internal systems)
+```
+Event: "Rupee falls to all-time low against dollar"
 
----
+Overall sentiment: NEGATIVE (macro_signal: -0.382)
 
-## Quickstart (30 seconds)
-
-```bash
-# Install
-pip install aion-sentiment aion-sectormap aion-volweight aion-taxonomy
+Sector-specific signals:
+├─ IT Services:        +0.382 (POSITIVE) ← Dollar revenues worth more
+├─ Healthcare Exports: +0.382 (POSITIVE) ← Export competitiveness
+├─ Aviation:           -0.382 (NEGATIVE) ← Fuel costs rise (USD-denominated)
+├─ Oil & Gas:          -0.382 (NEGATIVE) ← Import bill increases
+└─ Banks:              -0.382 (NEGATIVE) ← FII outflows
 ```
 
-### Sentiment Analysis
+### Example: Crude Oil Surge
+
+```
+Event: "Brent crude jumps 10% on supply concerns"
+
+Overall sentiment: NEGATIVE (macro_signal: -0.45)
+
+Sector-specific signals:
+├─ Energy:             +0.40 (POSITIVE) ← Upstream companies benefit
+├─ Aviation:           -0.45 (NEGATIVE) ← Fuel costs rise
+├─ Transportation:     -0.36 (NEGATIVE) ← Operating costs increase
+└─ Paints:             -0.45 (NEGATIVE) ← Input costs rise
+```
+
+**This is NOT just sentiment analysis. This is market structure modeling.**
+
+## 📅 Last Updated
+
+**Date:** 2026-03-29
+**Time:** 00:00 IST
+**Version:** v3.0.0 (Taxonomy-trained)
+
+---
+
+## 📅 March 29, 2026 - HuggingFace Update Complete
+
+### ✅ Model Card Uploaded to HuggingFace
+
+**Model:** https://huggingface.co/aion-analytics/aion-sentiment-in-v3
+
+**Changes Uploaded:**
+- ✅ **15 Optimized Tags** (increased from 5 to 15 for better discovery)
+- ✅ **Parameter Count Corrected:** ~67M (was incorrectly showing 132M)
+- ✅ **Attribution Updated:** AION Analytics (not "AION Open-Source Contributors")
+- ✅ **Professional Formatting:** Clean, enterprise-ready presentation
+
+**New Tags Added:**
+```
+text-classification       financial-news        sector-analysis
+sentiment-analysis        indian-markets        taxonomy-driven
+financial-nlp             indian-finance        financial-ai
+financial-sentiment       stock-market          open-source
+transformer               market-intelligence   production-ready
+```
+
+**Sync Status:**
+| Platform | Status | Last Updated |
+|----------|--------|--------------|
+| **GitHub** | ✅ MODEL_CARD_HF.md | 2026-03-29 |
+| **HuggingFace** | ✅ README.md | 2026-03-29 |
+| **Sync** | ✅ Fully Synchronized | 2026-03-29 00:00 IST |
+
+**Commit Message:** "Update model card with optimized 15 tags and AION Analytics attribution"
+
+---
+
+## 📅 Weekly Update Reminder
+
+---
+
+## ✅ System Status: Production Ready
+
+| Component | Status | Coverage | Last Run |
+|-----------|--------|----------|----------|
+| **aion-sentiment** | ✅ Production | 592 tickers | v3.0.0 |
+| **aion-taxonomy** | ✅ Production | 136 events | 2026-03-28 |
+| **aion-sectormap** | ✅ Production | 592 tickers | v1.0.0 |
+| **aion-volweight** | ✅ Production | VIX regimes | v1.0.0 |
+| **gift_nifty_gap** | ✅ Production | Real-time | Every 15 min |
+| **nifty_open_predictor** | ✅ Production | NIFTY/BANKNIFTY | Daily 08:46 AM |
+| **ClickHouse Backfill** | ✅ Complete | 93.3% | 2026-03-28 |
+
+---
+
+## 🏗️ Complete Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    AION SENTIMENT ECOSYSTEM                          │
+├─────────────────────────────────────────────────────────────────────┤
+
+  REAL-TIME FLOW (Intraday)
+  ═════════════════════════
+  
+  Zerodha Pulse RSS
+        ↓
+  gift_nifty_gap.py (Every 15 min)
+    - Fetches latest news
+    - Loads: taxonomy_india_v2_calibrated.yaml
+    - Enriches with taxonomy events
+    - Computes: macro_signal, confidence_base, confidence_adjusted
+        ↓
+  Redis DB1: news:sorted_set
+    - Real-time news stream
+    - Fields: title, sentiment, macro_signal, 
+              confidence_base, confidence_adjusted, 
+              taxonomy_event_id, sector_signals, vix_regime
+        ↓
+  nifty_open_predictor.py (Daily 08:46 AM IST)
+    - Reads from Redis (NOT ClickHouse, NOT YAML)
+    - Extracts: confidence_adjusted, macro_signal
+    - Computes: weighted_sentiment = macro × confidence
+    - Features: taxonomy_confidence, taxonomy_weighted_macro
+        ↓
+  XGBoost ML Model
+    - NIFTY/BANKNIFTY/SENSEX pre-open prediction
+    - Output: Low/Mid/High price estimates with confidence
+        ↓
+  Redis DB2: premarket:predictions
+    - Consumed by trading bots
+
+
+  HISTORICAL FLOW (Backfill/Training)
+  ═══════════════════════════════════
+  
+  ClickHouse: news_master_v1 (1,066,658 headlines)
+        ↓
+  backfill_taxonomy_overnight.py
+    - Loads: taxonomy_india_v2_calibrated.yaml
+    - Processes historical headlines
+    - LEFT ANTI JOIN to avoid duplicates
+        ↓
+  ClickHouse: news_taxonomy_v1
+    - 994,760 unique classified headlines (93.3% coverage)
+    - 64,770 matched taxonomy events (6.5% match rate)
+    - Fields: event_id, event_name, macro_signal, 
+              confidence, sector_impacts, classified_at
+        ↓
+  Uses:
+    - Taxonomy calibration (calibrate_taxonomy.py)
+    - ML model training
+    - Historical analysis
+    - Keyword refinement
+
+
+  TAXONOMY DEFINITION
+  ═══════════════════
+  
+  taxonomy_india_v2_calibrated.yaml
+    - 136 market events
+    - 7 categories (macro, sector, global, etc.)
+    - 32 sectors with beta weights
+    - Base impacts, sector multipliers, VIX regimes
+        ↓
+  Used by:
+    - gift_nifty_gap.py (real-time)
+    - backfill_taxonomy_overnight.py (historical)
+    - calibrate_taxonomy.py (calibration)
+```
+
+---
+
+## 📊 ClickHouse Taxonomy Universe
+
+**⚠️ UPDATE THIS SECTION EVERY WEEK ⚠️**
+
+### Current Status (2026-03-28 20:00 IST)
+
+```sql
+-- Run this query weekly to get updated stats:
+SELECT 
+    count(DISTINCT row_hash) as unique_classified,
+    countIf(event_id != '') as matched_events,
+    countIf(event_id = '') as no_match,
+    avg(macro_signal) as avg_macro,
+    avg(confidence) as avg_confidence
+FROM aion_master.news_taxonomy_v1;
+```
+
+| Metric | Value | Week-over-Week Change |
+|--------|-------|----------------------|
+| **Total news_master_v1** | 1,066,658 | — |
+| **Unique classified (news_taxonomy_v1)** | 994,760 | +XXX,XXX |
+| **Coverage** | 93.3% | +X.X% |
+| **Matched events (event_id != '')** | 64,770 | +X,XXX |
+| **Match rate** | 6.5% | +X.X% |
+| **Avg macro signal** | +0.0012 | — |
+| **Avg confidence** | 0.428 | — |
+
+### Top 15 Taxonomy Events (by count)
+
+| Rank | Event ID | Count | Avg Signal | Category |
+|------|----------|-------|------------|----------|
+| 1 | market_fii_selling | 6,576 | -0.276 | Market |
+| 2 | corp_earnings_beat | 5,549 | +0.176 | Corporate |
+| 3 | market_ipo_open | 5,199 | +0.075 | Market |
+| 4 | corp_demerger_value_unlock | 4,114 | +0.199 | Corporate |
+| 5 | macro_inr_depreciation | 3,773 | -0.382 | Macro |
+| 6 | macro_inr_appreciation | 3,529 | +0.382 | Macro |
+| 7 | corp_penalty_imposed | 3,496 | -0.204 | Corporate |
+| 8 | corp_merger_positive | 3,059 | +0.175 | Corporate |
+| 9 | global_war_escalation | 2,623 | -0.522 | Global |
+| 10 | corp_buyback | 2,522 | +0.107 | Corporate |
+| 11 | sector_bank_credit_growth | 2,248 | +0.150 | Sector |
+| 12 | sector_fmcg_price_hike | 1,987 | +0.125 | Sector |
+| 13 | global_sanctions | 1,870 | -0.450 | Global |
+| 14 | sector_it_currency_tailwind | 1,786 | +0.138 | Sector |
+| 15 | macro_budget_capex_boost | 1,654 | +0.425 | Macro |
+
+### Newly Added Events (This Week)
+
+| Event ID | Keywords Added | Impact | Date |
+|----------|---------------|--------|------|
+| global_war_escalation | iran war, iran military, strait of hormuz, war live updates | -0.522 | 2026-03-28 |
+| global_crude_surge | oil supply disruption, oil tanker attack, strait disruption | -0.450 | 2026-03-28 |
+
+### Keyword Refinements (This Week)
+
+| Event | Old Keywords | New Keywords | Reason |
+|-------|-------------|--------------|--------|
+| gov_digital_india | upi, digital initiative | upi transaction surge, digital india mission | Reduce false positives |
+| micro_ipl_season | ipl | ipl season, ipl tournament, ipl cricket | Add context |
+| sector_it_currency_tailwind | rupee falls | rupee tailwind for it, weak rupee helps it | IT-specific |
+
+### Coverage Trend (Last 4 Weeks)
+
+```
+Week Ending    | Classified | Matched | Coverage | Match Rate
+---------------|------------|---------|----------|-----------
+2026-03-28     | 994,760    | 64,770  | 93.3%    | 6.5%
+2026-03-21     | XXX,XXX    | XX,XXX  | XX.X%    | X.X%
+2026-03-14     | XXX,XXX    | XX,XXX  | XX.X%    | X.X%
+2026-03-07     | XXX,XXX    | XX,XXX  | XX.X%    | X.X%
+```
+
+<!-- 
+  WEEKLY UPDATE INSTRUCTIONS:
+  1. Run the ClickHouse query above to get current stats
+  2. Update the "Current Status" table with new values
+  3. Update "Top 15 Taxonomy Events" with latest counts
+  4. Add any new events/keywords to "Newly Added Events"
+  5. Document keyword refinements in "Keyword Refinements"
+  6. Add a row to "Coverage Trend" table
+-->
+
+---
+
+## 🔧 Script Integration Details
+
+### 1. gift_nifty_gap.py (Real-Time Crawler)
+
+**Location:** `/Users/lokeshgupta/Projects/aion_algo_trading/src/zerodha/crawlers/gift_nifty_gap.py`
+
+**Schedule:** Every 15 minutes during market hours
+
+**Integration:**
+```python
+# Line 364: Initialize taxonomy enricher
+self.taxonomy_enricher = SentimentTaxonomyEnricher(
+    taxonomy_path="/Users/lokeshgupta/aion_open_source/aion_taxonomy/taxonomy_india_v2_calibrated.yaml"
+)
+
+# Line 439: Enrich news with taxonomy
+enriched = self.taxonomy_enricher.enrich_news(
+    headline=title,
+    sentiment_result=sentiment_result,
+    current_vix=current_vix,
+    ticker=None,
+    date=datetime.now(IST_TZ).strftime('%Y-%m-%d')
+)
+
+# Line 462-470: Store taxonomy fields in Redis
+news_item = {
+    "taxonomy_event_id": enriched.get('event_id'),
+    "taxonomy_event_name": enriched.get('event_name'),
+    "macro_signal": enriched.get('macro_signal', 0.0),
+    "sector_signals": enriched.get('sector_signals', {}),
+    "confidence_base": enriched.get('confidence_base'),
+    "confidence_adjusted": enriched.get('confidence_adjusted'),
+    "vix_regime": enriched.get('vix_regime'),
+}
+
+# Line 780: Store to Redis sorted_set
+self.redis_client.zadd("news:sorted_set", {json.dumps(news_item): now_ts})
+```
+
+**Output to Redis DB1:**
+- Key: `news:sorted_set`
+- Fields: title, sentiment, sentiment_score, macro_signal, confidence_base, confidence_adjusted, taxonomy_event_id, sector_signals, vix_regime
+
+---
+
+### 2. nifty_open_predictor.py (Pre-Market Prediction)
+
+**Location:** `/Users/lokeshgupta/Projects/aion_algo_trading/src/aion_ML/models/predictors/nifty_open_predictor.py`
+
+**Schedule:** Daily at 08:46 AM IST (via launchd plist)
+
+**Plist:** `/Users/lokeshgupta/Projects/aion_algo_trading/src/plists/com.aion.premarket.predictor.plist`
+
+**Integration:**
+```python
+# Line 119-145: Extract sentiment with taxonomy confidence
+def _safe_sentiment_value(news_obj):
+    # Try taxonomy-enriched fields first
+    macro_signal = news_obj.get('macro_signal')
+    confidence = news_obj.get('confidence_adjusted') or news_obj.get('confidence_base')
+    
+    if macro_signal is not None and confidence is not None:
+        return float(macro_signal) * float(confidence)  # Weighted sentiment
+    
+    # Fallback to legacy sentiment_score
+    ...
+
+# Line 148-279: Collect taxonomy confidence from Redis
+def _collect_news_sentiment_from_redis(r1, now_ist):
+    confidence_values = []
+    macro_signals = []
+    
+    for item in news_items:
+        conf = item.get('confidence_adjusted') or item.get('confidence_base')
+        macro = item.get('macro_signal', 0.0)
+        
+        if conf is not None:
+            confidence_values.append(float(conf))
+        if macro is not None and macro != 0.0:
+            macro_signals.append(float(macro))
+    
+    avg_confidence = sum(confidence_values) / len(confidence_values)
+    weighted_macro = sum(macros) / len(macros)
+    
+    return avg_sent, news_vol, sent_ma3, avg_confidence, weighted_macro
+
+# Line 60-61: BASE_FEATURES includes taxonomy
+BASE_FEATURES = [
+    ...
+    "taxonomy_confidence", "taxonomy_weighted_macro",
+]
+
+# Line 609-611: Features dict passes to ML model
+"features": {
+    ...
+    "taxonomy_confidence": avg_confidence,
+    "taxonomy_weighted_macro": weighted_macro,
+    ...
+}
+```
+
+**Input from Redis:**
+- Reads: `news:sorted_set` (confidence_adjusted, macro_signal)
+
+**Output to ML Model:**
+- Features: taxonomy_confidence, taxonomy_weighted_macro
+- Prediction: NIFTY/BANKNIFTY/SENSEX open price (Low/Mid/High)
+
+---
+
+### 3. backfill_taxonomy_overnight.py (Historical Backfill)
+
+**Location:** `/Users/lokeshgupta/aion_open_source/aion-sentiment/backfill_taxonomy_overnight.py`
+
+**Status:** ✅ Complete (93.3% coverage)
+
+**Integration:**
+```python
+# Fetch headlines NOT yet classified
+query = """
+SELECT DISTINCT n.row_hash, n.title, n.body, n.published_at
+FROM aion_master.news_master_v1 n
+LEFT ANTI JOIN aion_master.news_taxonomy_v1 t ON n.row_hash = t.row_hash
+WHERE n.title != ''
+ORDER BY n.published_at DESC
+LIMIT {limit} OFFSET {offset}
+"""
+
+# Classify with taxonomy
+result = self.pipeline.process(
+    headline=headline,
+    date=published_at.isoformat()
+)
+
+# Store to ClickHouse
+client.insert("aion_master.news_taxonomy_v1", [
+    (row_hash, published_at, event_id, event_name, 
+     macro_signal, confidence, sector_impacts, ...)
+])
+```
+
+**Input from ClickHouse:**
+- Table: `news_master_v1` (1,066,658 headlines)
+
+**Output to ClickHouse:**
+- Table: `news_taxonomy_v1` (994,760 unique classified)
+
+---
+
+### 4. calibrate_taxonomy.py (Taxonomy Calibration)
+
+**Location:** `/Users/lokeshgupta/aion_open_source/aion_taxonomy/calibrate_taxonomy.py`
+
+**Schedule:** Weekly (after backfill complete)
+
+**Purpose:** Update `event_volatility` and `base_impact` based on actual data
+
+**Integration:**
+```python
+# Query ClickHouse for event statistics
+query = """
+SELECT 
+    event_id,
+    count() as event_count,
+    avg(macro_signal) as avg_signal,
+    std(macro_signal) as signal_volatility
+FROM aion_master.news_taxonomy_v1
+WHERE event_id != ''
+GROUP BY event_id
+"""
+
+# Update taxonomy YAML
+for event in taxonomy['events']:
+    event['event_volatility'] = computed_volatility
+    event['base_impact'] = calibrated_impact
+```
+
+**Input from ClickHouse:**
+- Table: `news_taxonomy_v1` (classified events)
+
+**Output:**
+- File: `taxonomy_india_v2_calibrated.yaml` (updated parameters)
+
+---
+
+## 📦 Packages & Dependencies
+
+| Package | Version | Purpose | Status |
+|---------|---------|---------|--------|
+| **aion-sentiment** | v3.0.0 | Sentiment analysis (99.63% accuracy) | ✅ Production |
+| **aion-taxonomy** | v2.0.0 | Event classification (136 events) | ✅ Production |
+| **aion-sectormap** | v1.0.0 | NSE ticker → sector (592 tickers) | ✅ Production |
+| **aion-volweight** | v1.0.0 | VIX-adjusted confidence | ✅ Production |
+
+---
+
+## 🚀 Quickstart
+
+### Real-Time Sentiment
 
 ```python
 from aion_sentiment import SentimentAnalyzer
 
 analyzer = SentimentAnalyzer()
-result = analyzer.predict("RBI hikes repo rate")
+result = analyzer.predict("RBI hikes repo rate by 25 bps")
 print(result)
 # {'label': 'negative', 'confidence': 0.89}
 ```
 
-### Taxonomy Event Classification (Beta)
+### Taxonomy Event Classification
 
 ```python
 from aion_taxonomy import TaxonomyPipeline
 
-pipeline = TaxonomyPipeline("taxonomy_india_v2.yaml")
-result = pipeline.process("RBI hikes repo rate", ticker="HDFCBANK")
+pipeline = TaxonomyPipeline("taxonomy_india_v2_calibrated.yaml")
+result = pipeline.process(
+    headline="RBI hikes repo rate",
+    ticker="HDFCBANK",
+    date="2026-03-28"
+)
 
 print(f"Event: {result['event']['event_id']}")
 print(f"Macro Signal: {result['macro_signal']:+.3f}")
@@ -94,456 +520,163 @@ Confidence: 54.7%
 
 ---
 
-## Example Output
+## 📈 Model Performance
 
-### Sentiment Analysis
-```
-Headline                              | Sentiment | Confidence | VIX-Adjusted
---------------------------------------|-----------|------------|-------------
-Reliance reports record profits       | positive  | 93.8%      | 93.8% (VIX=12)
-Market crashes on recession fears     | negative  | 90.5%      | 45.2% (VIX=28)
-TCS wins major digital deal           | positive  | 88.8%      | 88.8% (VIX=12)
-```
+### Sentiment Analysis (v3.0.0)
 
-### Sector Sentiment Heatmap
-```
-Sector              | Bullish | Neutral | Bearish | Net Sentiment
---------------------|---------|---------|---------|---------------
-Banking             |   65%   |   25%   |   10%   |     +55%
-IT                  |   72%   |   20%   |    8%   |     +64%
-Auto                |   45%   |   35%   |   20%   |     +25%
-FMCG                |   58%   |   30%   |   12%   |     +46%
-Metal               |   30%   |   40%   |   30%   |      0%
-```
+| Metric | Score |
+|--------|-------|
+| **Accuracy** | 99.63% |
+| **F1 Score** | 99.65% |
+| **Precision** | 99.68% |
+| **Recall** | 99.62% |
+| **Training Data** | 400K taxonomy-labeled headlines |
 
-### Historical Impact Analysis
-```
-Query: "Market crashes on recession fears"
-
-Similar Historical News (last 30 days):
-1. "Stock market tumbles on recession fears"    → -2.5% (next day)
-2. "Investors panic as banks collapse"          → -3.8% (next day)
-3. "Banking crisis spreads across Europe"       → -2.9% (next day)
-
-Average 1-day Impact: -3.07%
-```
-
----
-
-## Architecture
-
-```
-┌─────────────────┐
-│  Data Sources   │
-│  • News APIs    │
-│  • RSS Feeds    │
-│  • Social Media │
-└────────┬────────┘
-         ↓
-┌─────────────────┐
-│ Sentiment Engine│
-│  • Transformer  │
-│  • NRC Emotions │
-│  • 98.55% Acc   │
-└────────┬────────┘
-         ↓
-┌─────────────────┐
-│ Sector Mapper   │
-│  • 592 Tickers  │
-│  • 44 Sectors   │
-│  • 340 Groups   │
-└────────┬────────┘
-         ↓
-┌─────────────────┐
-│ VIX Adjustment  │
-│  • LOW <12      │
-│  • NORMAL 12-15 │
-│  • HIGH 16-25   │
-│  • PANIC ≥25    │
-└────────┬────────┘
-         ↓
-┌─────────────────┐
-│ Signal Output   │
-│  • JSON API     │
-│  • DataFrame    │
-│  • WebSocket    │
-└─────────────────┘
-```
-
----
-
-## Packages
-
-| Package | Purpose | Install |
-|---------|---------|---------|
-| **aion-sentiment** | Sentiment & emotion analysis | `pip install aion-sentiment` |
-| **aion-sectormap** | NSE ticker → Sector mapping | `pip install aion-sectormap` |
-| **aion-volweight** | VIX-based confidence adjustment | `pip install aion-volweight` |
-| **aion-newsimpact** | Historical news impact analysis | `pip install aion-newsimpact` |
-| **aion-sentiment-in** | Training pipeline | `pip install aion-sentiment-in` |
-
----
-
-## Models
-
-### AION-Sentiment-IN-v1
+### Taxonomy Coverage
 
 | Metric | Value |
 |--------|-------|
-| **Accuracy** | 98.55% |
-| **F1 Score** | 98.65% |
-| **Training Data** | 957K Indian financial news headlines |
-| **Inference Time** | <100ms per headline |
-| **Model Size** | 438 MB |
-| **Download** | [HuggingFace](https://huggingface.co/AION-Analytics/aion-sentiment-in-v1) |
+| **Total Events** | 136 |
+| **Categories** | 7 |
+| **Sectors** | 32 |
+| **Keywords** | 500+ |
+| **Match Rate** | 6.5% |
 
 ---
 
-## Use Cases
+## 🔍 Monitoring & Alerts
 
-### 1. Real-Time Trading Signals
-```python
-from aion_sentiment import AIONSentimentAnalyzer
-
-analyzer = AIONSentimentAnalyzer()
-
-# Analyze breaking news
-news = "RBI announces surprise rate cut"
-result = analyzer.predict(news)
-
-if result[0]['label'] == 'positive' and result[0]['confidence'] > 0.9:
-    print("BUY Signal: Banking sector")
-```
-
-### 2. Sector Rotation Strategy
-```python
-from aion_sentiment import AIONSentimentAnalyzer
-from aion_sectormap import SectorMapper
-
-mapper = SectorMapper()
-analyzer = AIONSentimentAnalyzer()
-
-# Get sentiment by sector
-sector_sentiment = {}
-for sector in mapper.get_all_sectors():
-    tickers = mapper.get_tickers_in_sector(sector)[:10]
-    # Analyze news for each ticker
-    # Aggregate sector sentiment
-    sector_sentiment[sector] = avg_sentiment
-
-# Rotate to highest sentiment sectors
-top_sectors = sorted(sector_sentiment.items(), key=lambda x: x[1], reverse=True)
-```
-
-### 3. Risk Management
-```python
-from aion_volweight import get_regime, weight_confidence
-
-# Check VIX regime
-regime = get_regime(vix=28)  # Returns "PANIC"
-
-# Adjust position sizing based on sentiment confidence
-if regime == "PANIC":
-    position_size = 0.5  # Reduce by 50%
-elif regime == "HIGH":
-    position_size = 0.8  # Reduce by 20%
-else:
-    position_size = 1.0  # Full size
-```
-
----
-
-## Edge Cases & Confidence Scoring
-
-### Edge Case Handling
-
-| Scenario | Handling | Output |
-|----------|----------|--------|
-| **Empty text** | Return neutral with 0% confidence | `{'label': 'neutral', 'confidence': 0.0}` |
-| **Very short text (<5 chars)** | Return neutral with low confidence | `{'label': 'neutral', 'confidence': 0.3}` |
-| **Ambiguous news** | Low confidence score (<0.6) | `{'label': 'neutral', 'confidence': 0.55}` |
-| **Conflicting signals** | Confidence reduced proportionally | `{'label': 'positive', 'confidence': 0.65}` |
-| **Unknown ticker** | Sector mapping returns 'Unknown' | Sector: 'Unknown' |
-| **High VIX (>25)** | Confidence discounted 50% | `adjusted_conf = conf * 0.5` |
-
-### Confidence Scoring System
-
-```python
-def calculate_system_confidence(sentiment_confidence, vix_value, sector_weight, source_reliability):
-    """
-    Calculate final system confidence score for trading decisions.
-    
-    Args:
-        sentiment_confidence: Raw model confidence (0-1)
-        vix_value: Current India VIX value
-        sector_weight: Sector-specific weight (0.8-1.2)
-        source_reliability: News source reliability score (0.5-1.0)
-    
-    Returns:
-        Final system confidence (0-1)
-    """
-    # VIX regime adjustment
-    if vix_value >= 25:
-        vix_adjustment = 0.5  # PANIC: 50% discount
-    elif vix_value >= 16:
-        vix_adjustment = 0.8  # HIGH: 20% discount
-    elif vix_value >= 12:
-        vix_adjustment = 1.0  # NORMAL: no adjustment
-    else:
-        vix_adjustment = 1.0  # LOW: no adjustment
-    
-    # Calculate final confidence
-    system_confidence = (
-        sentiment_confidence * 
-        vix_adjustment * 
-        sector_weight * 
-        source_reliability
-    )
-    
-    return min(1.0, max(0.0, system_confidence))
-
-# Example usage
-confidence = calculate_system_confidence(
-    sentiment_confidence=0.92,
-    vix_value=18,        # HIGH regime
-    sector_weight=1.0,   # Neutral sector weight
-    source_reliability=0.95  # High reliability source
-)
-# Result: 0.92 * 0.8 * 1.0 * 0.95 = 0.699 (69.9% system confidence)
-```
-
-### Sector-Specific Confidence Weights
-
-| Sector | Weight | Rationale |
-|--------|--------|-----------|
-| **Banking** | 1.1 | High news coverage, reliable signals |
-| **IT** | 1.0 | Standard weight |
-| **FMCG** | 1.0 | Standard weight |
-| **Auto** | 0.9 | Moderate volatility |
-| **Metal** | 0.8 | High volatility, noisy signals |
-| **Realty** | 0.8 | Low liquidity, noisy signals |
-| **Unknown** | 0.7 | Unmapped tickers |
-
-### Multi-Source Aggregation
-
-```python
-def aggregate_sentiment(signals):
-    """
-    Aggregate sentiment from multiple news sources.
-    
-    Args:
-        signals: List of dicts with 'sentiment', 'confidence', 'source'
-    
-    Returns:
-        Aggregated sentiment and confidence
-    """
-    if not signals:
-        return {'label': 'neutral', 'confidence': 0.0}
-    
-    # Weight by source reliability
-    source_weights = {
-        'reuters': 1.0,
-        'bloomberg': 1.0,
-        'economictimes': 0.9,
-        'moneycontrol': 0.85,
-        'twitter': 0.5,
-    }
-    
-    weighted_sentiment = 0.0
-    total_weight = 0.0
-    
-    for signal in signals:
-        weight = source_weights.get(signal['source'].lower(), 0.7)
-        sentiment_score = 1 if signal['label'] == 'positive' else (-1 if signal['label'] == 'negative' else 0)
-        weighted_sentiment += sentiment_score * signal['confidence'] * weight
-        total_weight += weight
-    
-    avg_sentiment = weighted_sentiment / total_weight if total_weight > 0 else 0
-    
-    # Convert back to label
-    if avg_sentiment > 0.3:
-        label = 'positive'
-    elif avg_sentiment < -0.3:
-        label = 'negative'
-    else:
-        label = 'neutral'
-    
-    return {
-        'label': label,
-        'confidence': abs(avg_sentiment),
-        'sources_aggregated': len(signals)
-    }
-
-# Example usage
-signals = [
-    {'label': 'positive', 'confidence': 0.92, 'source': 'reuters'},
-    {'label': 'positive', 'confidence': 0.88, 'source': 'economictimes'},
-    {'label': 'neutral', 'confidence': 0.75, 'source': 'twitter'},
-]
-
-result = aggregate_sentiment(signals)
-# Result: {'label': 'positive', 'confidence': 0.82, 'sources_aggregated': 3}
-```
-
-### Confidence Thresholds for Trading Signals
-
-| System Confidence | Signal Strength | Action |
-|-------------------|-----------------|--------|
-| **≥ 0.85** | Very Strong | Full position size |
-| **0.70 - 0.84** | Strong | 80% position size |
-| **0.55 - 0.69** | Moderate | 50% position size |
-| **0.40 - 0.54** | Weak | 25% position size |
-| **< 0.40** | Very Weak | No action (skip) |
-
----
-
-## Benchmarks
-
-**Tested on:** Apple M4 Mac, 16GB RAM | **Dataset:** 957K Indian financial news headlines
-
-### Model Performance
-
-| Metric | Score |
-|--------|-------|
-| **Accuracy** | 98.55% |
-| **F1 Score (macro)** | 98.65% |
-| **Precision (macro)** | 98.70% |
-| **Recall (macro)** | 98.60% |
-
-### Latency & Throughput
-
-| Task | Latency | Throughput |
-|------|---------|------------|
-| **Single headline** | <50ms | - |
-| **Batch (100)** | <200ms | 500/sec |
-| **Sector mapping** | <10ms | 10,000/sec |
-| **VIX adjustment** | <5ms | 50,000/sec |
-
-### Model Evaluation
-
-| Metric | Score |
-|--------|-------|
-| **Accuracy** | 98.55% |
-| **F1 Score (macro)** | 98.65% |
-| **Precision (macro)** | 98.70% |
-| **Recall (macro)** | 98.60% |
-| **Training Samples** | 957K headlines |
-| **Validation Samples** | 2K headlines |
-
-*Dataset: 957K Indian financial news headlines (Oct 2025 - Feb 2026)*
-*Classification source: UNIFIED_ROUTER_V4 (99.99% confidence)*
-
----
-
-## Installation
-
-### Full Suite
-```bash
-pip install aion-sentiment aion-sectormap aion-volweight aion-newsimpact
-```
-
-### Individual Packages
-```bash
-pip install aion-sentiment      # Core sentiment analysis
-pip install aion-sectormap      # Sector mapping (592 tickers)
-pip install aion-volweight      # VIX adjustment
-pip install aion-newsimpact     # Historical impact
-```
-
-### Development
-```bash
-git clone https://github.com/AION-Analytics/market-sentiments.git
-cd market-sentiments
-pip install -e ".[dev]"
-pytest
-```
-
----
-
-## Data Coverage
-
-| Asset | Count | Description |
-|-------|-------|-------------|
-| **NSE Companies** | 592 | Mapped to sectors |
-| **Sectors** | 44 | NSE classification |
-| **Business Groups** | 340 | Tata, Birla, Ambani, etc. |
-| **Training News** | 957K | Indian financial news |
-| **Emotion Lexicon** | 14,182 | NRC emotions |
-
----
-
-## Performance Benchmarks
-
-| Task | Latency | Throughput |
-|------|---------|------------|
-| Single headline | <50ms | - |
-| Batch (100) | <200ms | 500/sec |
-| Sector mapping | <10ms | 10,000/sec |
-| VIX adjustment | <5ms | 50,000/sec |
-
-**Tested on:** Apple M4 Mac, 16GB RAM
-
----
-
-## Contributing
-
-We welcome contributions! Here's how you can help:
-
-### Improve Taxonomy Coverage
-
-The taxonomy currently matches **~6.6%** of headlines. Help us improve coverage by adding keywords for uncovered events.
-
-**No-match events needing keywords:**
+### Daily Checks
 
 ```bash
-# View the list of 112 events without matches
+# 1. Check predictor run status (09:00 AM IST)
+tail -f /Users/lokeshgupta/Projects/aion_algo_trading/logs/premarket_predictor.log
+
+# Expected output:
+--- DEBUG SENTIMENT ---
+Avg Taxonomy Confidence: 0.XXX
+Weighted Macro Signal: +X.XXXX
+-----------------------
+
+# 2. Check gift_nifty_gap crawler (every 15 min)
+tail -f /Users/lokeshgupta/Projects/aion_algo_trading/logs/gift_nifty_gap.log
+
+# Expected: "Collected X news items with taxonomy enrichment"
+
+# 3. Check Redis data freshness
+redis-cli -n 1 ZCARD news:sorted_set
+# Should increase every 15 min during market hours
+```
+
+### Weekly Checks
+
+```bash
+# 1. Update taxonomy universe stats (Monday 10:00 AM IST)
+cd /Users/lokeshgupta/aion_open_source
+source venv/bin/activate
+python3 -c "
+import clickhouse_connect
+client = clickhouse_connect.get_client(host='localhost', database='aion_master')
+# Run queries and update README.md
+"
+
+# 2. Review no-match events
 cat aion_taxonomy/no_match_events.txt
-```
+# Add keywords for high-frequency unmatched events
 
-**Priority categories:**
-- RBI monetary policy (repo, CRR, SLR changes)
-- Corporate actions (CEO/CFO exits, guidance changes)
-- Global events (Fed decisions, China growth)
-- Sector-specific events (auto sales, bank NPA, IT deals)
-
-**How to contribute:**
-
-1. Pick an event from `no_match_events.txt`
-2. Add 3-5 common headline variations as keywords
-3. Submit a PR with the updated taxonomy YAML
-
-### Add New Sectors or Events
-
-- Submit new sector definitions with ticker mappings
-- Add new event categories with base impacts and sector multipliers
-- Provide sample headlines for validation
-
-### Report Issues
-
-- Bug reports: Use GitHub Issues
-- Model feedback: Share misclassified examples
-- Feature requests: Suggest new capabilities
-
----
-
-## License
-
-Apache License 2.0
-
-**Attribution:**
-```
-This project uses AION Analytics open-source packages.
-Visit https://github.com/AION-Analytics for more information.
+# 3. Calibrate taxonomy parameters
+cd aion_taxonomy
+python3 calibrate_taxonomy.py --taxonomy-path taxonomy_india_v2_calibrated.yaml
 ```
 
 ---
 
-## Contact
+## 📝 Changelog
+
+### 2026-03-28
+
+**Taxonomy Integration Complete**
+
+- ✅ gift_nifty_gap.py integrated with taxonomy confidence
+- ✅ nifty_open_predictor.py reads taxonomy fields from Redis
+- ✅ BASE_FEATURES updated with taxonomy_confidence, taxonomy_weighted_macro
+- ✅ Backfill complete: 994,760 headlines classified (93.3% coverage)
+- ✅ Keyword refinements: gov_digital_india, micro_ipl_season, sector_it_currency_tailwind
+- ✅ New keywords added: iran war, strait of hormuz, oil supply disruption
+
+**ClickHouse Universe**
+
+- Total classified: 994,760 (93.3% coverage)
+- Matched events: 64,770 (6.5% match rate)
+- Unique events: 47
+
+### 2026-03-27
+
+**Backfill Execution**
+
+- ✅ backfill_taxonomy_overnight.py executed
+- ✅ 420,000 headlines processed
+- ✅ Checkpoint system fixed (bytes serialization bug resolved)
+
+### 2026-03-29
+
+**HuggingFace Model Card Update**
+
+- ✅ Uploaded optimized model card with **15 tags** (was 5)
+- ✅ Corrected parameter count: **~67M** (was 132M)
+- ✅ Updated attribution: **AION Analytics**
+- ✅ GitHub ↔ HuggingFace fully synchronized
+
+**New Tags:**
+- text-classification, financial-sentiment, financial-news, indian-finance, stock-market
+- market-intelligence, sector-analysis, taxonomy-driven, financial-ai, open-source, production-ready
+
+**Commit:** "Update model card with optimized 15 tags and AION Analytics attribution"
+
+### 2026-03-28
+
+**Taxonomy Integration Complete**
+
+- ✅ gift_nifty_gap.py integrated with taxonomy confidence
+- ✅ nifty_open_predictor.py reads taxonomy fields from Redis
+- ✅ BASE_FEATURES updated with taxonomy_confidence, taxonomy_weighted_macro
+- ✅ Backfill complete: 994,760 headlines classified (93.3% coverage)
+- ✅ Keyword refinements: gov_digital_india, micro_ipl_season, sector_it_currency_tailwind
+- ✅ New keywords added: iran war, strait of hormuz, oil supply disruption
+
+**ClickHouse Universe**
+
+- Total classified: 994,760 (93.3% coverage)
+- Matched events: 64,770 (6.5% match rate)
+- Unique events: 47
+
+### 2026-03-27
+
+**Backfill Execution**
+
+- ✅ backfill_taxonomy_overnight.py executed
+- ✅ 420,000 headlines processed
+- ✅ Checkpoint system fixed (bytes serialization bug resolved)
+
+### 2026-03-26
+
+**Taxonomy Enhancement**
+
+- ✅ Added 14 oil/commodity keyword variants
+- ✅ global_crude_surge, global_crude_collapse events expanded
+
+---
+
+## 📧 Support
 
 - **Email:** aionlabs@tutamail.com
 - **GitHub:** https://github.com/AION-Analytics
-- **HuggingFace:** https://huggingface.co/AION-Analytics/aion-sentiment-in-v1
+- **HuggingFace:** https://huggingface.co/aion-analytics/aion-sentiment-in-v3
 
 ---
 
 *Built for the Indian financial community*
+
+**Last Updated:** 2026-03-29 00:00 IST
+
+**GitHub ↔ HuggingFace Sync:** ✅ Fully Synchronized
