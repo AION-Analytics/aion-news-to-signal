@@ -96,3 +96,101 @@ docs/.doctrees/
 *.zip
 *.jsonl
 *.csv
+
+# =============================================================================
+# INTERNAL FILES - DO NOT COMMIT TO PUBLIC REPOSITORY
+# =============================================================================
+
+# Development journals and internal notes
+dev_journal*.md
+DEV_JOURNAL*.md
+*_journal*.md
+
+# Internal documentation
+MODEL_ATTRIBUTION*.md
+PACKAGE_SUMMARY.md
+RELEASE_*.md
+UPLOAD_*.md
+VERIFICATION_*.md
+AION_MODEL_*.md
+ENV_SETUP.md
+STRUCTURE.md
+BACKFILL_*.md
+END_TO_END_*.md
+ENTERPRISE_*.md
+GITHUB_*.md
+PREDICTOR_*.md
+TAXONOMY_*.md
+SAAS_*.md
+README_*.md
+README_GITHUB.md
+README_CLEAN.md
+
+# Internal scripts and automation
+push_to_github.sh
+release.sh
+scrape_*.py
+sector_mapper.py
+test_redis_*.py
+test_v*_model.py
+
+# Training scripts (internal pipeline)
+train_sentiment*.py
+train_mlx.py
+convert_to_mlx*.py
+prepare_data*.py
+extract_data.sql
+upload_to_huggingface.py
+create_*.py
+
+# Backfill scripts and data
+backfill_*.py
+backfill_*.json
+BACKFILL_*.md
+
+# Calibration reports and summaries
+calibration_*.txt
+calibration_*.log
+calibrate_*.log
+keyword_enhancement_*.txt
+no_match_events.txt
+backfill_summary_*.txt
+
+# Training logs and flags
+training_log*.txt
+training_complete.flag
+nohup.out
+
+# Checkpoint files
+backfill_checkpoint.json
+backfill_stats.json
+*_checkpoint.json
+*_stats.json
+
+# Taxonomy internals
+taxonomy_india_v*.yaml.backup
+*.yaml.backup
+
+# Internal YAML configs
+sentiment_labelling_*.yaml
+taxonomy_india_v*.yaml
+
+# Example files with internal paths
+examples/generate_output.py
+examples/*.ipynb
+!examples/.gitkeep
+
+# Plist files (launchd configs)
+plists/
+*.plist
+
+# Reddit posts and drafts
+reddit_post_*.md
+REDDIT_*.md
+
+# Business and licensing docs
+SAAS_*.md
+ENTERPRISE_*.md
+
+# Qwen internal files
+.qwen/
