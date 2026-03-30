@@ -1,33 +1,31 @@
-# AION Market Sentiment & Taxonomy System
+AION Market Sentiment & Taxonomy System
 
-**AI-powered sentiment intelligence for Indian financial markets**
+AI-powered sentiment intelligence for Indian financial markets**
 
-**99.63% accuracy** | **<100ms latency** | **592 NSE tickers** | **136 Taxonomy Events**
+-99.63% accuracy** | <100ms latency | 592 NSE tickers | 136 Taxonomy Events
 
 ---
 
-## 🎯 What You're Actually Getting
+What You're Actually Getting
 
-**For Enterprise Licensing:**
+For Enterprise Licensing:
 
 | Component | What It Is | What's Yours | Time to Replicate |
 |-----------|------------|--------------|-------------------|
-| **Sentiment Model** | 6-layer transformer classifier | 100% AION trained weights | 3-4 months |
-| **aion-sentiment Package** | Python inference library | 100% AION code | 3-4 months |
-| **1M+ Classified Headlines** | Training corpus | 100% AION proprietary | 6-9 months |
-| **136 Taxonomy Events** | Market event definitions | 100% AION proprietary | 3-4 months |
-| **Sector-Aware Signal Flips** | Same event → opposite sector impacts | 100% AION proprietary | 2-3 months |
-| **592 NSE Sector Mappings** | Ticker → sector → signal | 100% AION proprietary | 2-3 months |
-| **Production Pipeline** | gift_nifty_gap → Redis → ClickHouse | 100% AION code | 4-6 months |
-| **VIX-Adjusted Confidence** | Scoring methodology | 100% AION proprietary | 2-3 months |
+| Sentiment Model | 6-layer transformer classifier | 100% AION trained weights | 3-4 months |
+| aion-sentiment Package | Python inference library | 100% AION code | 3-4 months |
+| 1M+ Classified Headlines | Training corpus | 100% AION proprietary | 6-9 months |
+| 136 Taxonomy Events | Market event definitions | 100% AION proprietary | 3-4 months |
+| Sector-Aware Signal Flips | Same event → opposite sector impacts | 100% AION proprietary | 2-3 months |
+| 592 NSE Sector Mappings | Ticker → sector → signal | 100% AION proprietary | 2-3 months |
+| Production Pipeline | gift_nifty_gap → Redis → ClickHouse | 100% AION code | 4-6 months |
+| VIX-Adjusted Confidence | Scoring methodology | 100% AION proprietary | 2-3 months |
 
-**Total:** 18-24 months of work → Available via licensing
+Total:** 18-24 months of work → Available via licensing
 
-**Everything is AION. Everything is proprietary.**
+Everything is AION. Everything is proprietary.
 
----
-
-## 🔥 Key Differentiator: Sector-Aware Signal Flips
+Key Differentiator: Sector-Aware Signal Flips
 
 **The SAME event can have OPPOSITE impacts on different sectors:**
 
@@ -46,7 +44,7 @@ Sector-specific signals:
 └─ Banks:              -0.382 (NEGATIVE) ← FII outflows
 ```
 
-### Example: Crude Oil Surge
+Example: Crude Oil Surge
 
 ```
 Event: "Brent crude jumps 10% on supply concerns"
@@ -60,29 +58,29 @@ Sector-specific signals:
 └─ Paints:             -0.45 (NEGATIVE) ← Input costs rise
 ```
 
-**This is NOT just sentiment analysis. This is market structure modeling.**
+This is NOT just sentiment analysis. This is market structure modeling.
 
-## 📅 Last Updated
+-Last Updated
 
-**Date:** 2026-03-29
-**Time:** 00:00 IST
-**Version:** v3.0.0 (Taxonomy-trained)
+Date: 2026-03-29
+Time: 23:30 IST
+Version: v3.0.0 (Taxonomy-trained)
 
 ---
 
-## 📅 March 29, 2026 - HuggingFace Update Complete
+-March 29, 2026 - HuggingFace Update Complete
 
-### ✅ Model Card Uploaded to HuggingFace
+Model Card Uploaded to HuggingFace
 
-**Model:** https://huggingface.co/aion-analytics/aion-sentiment-in-v3
+Model: https://huggingface.co/aion-analytics/aion-sentiment-in-v3
 
-**Changes Uploaded:**
-- ✅ **15 Optimized Tags** (increased from 5 to 15 for better discovery)
-- ✅ **Parameter Count Corrected:** ~67M (was incorrectly showing 132M)
-- ✅ **Attribution Updated:** AION Analytics (not "AION Open-Source Contributors")
-- ✅ **Professional Formatting:** Clean, enterprise-ready presentation
+Changes Uploaded:
+- ✅ 15 Optimized Tags** (increased from 5 to 15 for better discovery)
+- ✅ Parameter Count Corrected:** ~67M (was incorrectly showing 132M)
+- ✅ Attribution Updated:** AION Analytics (not "AION Open-Source Contributors")
+- ✅ Professional Formatting:** Clean, enterprise-ready presentation
 
-**New Tags Added:**
+New Tags Added:
 ```
 text-classification       financial-news        sector-analysis
 sentiment-analysis        indian-markets        taxonomy-driven
@@ -91,36 +89,34 @@ financial-sentiment       stock-market          open-source
 transformer               market-intelligence   production-ready
 ```
 
-**Sync Status:**
+Sync Status:
 | Platform | Status | Last Updated |
 |----------|--------|--------------|
-| **GitHub** | ✅ MODEL_CARD_HF.md | 2026-03-29 |
-| **HuggingFace** | ✅ README.md | 2026-03-29 |
-| **Sync** | ✅ Fully Synchronized | 2026-03-29 00:00 IST |
+| GitHub | ✅ MODEL_CARD_HF.md | 2026-03-29 |
+| HuggingFace | ✅ README.md | 2026-03-29 |
+| Sync | ✅ Fully Synchronized | 2026-03-29 00:00 IST |
 
-**Commit Message:** "Update model card with optimized 15 tags and AION Analytics attribution"
-
----
-
-## 📅 Weekly Update Reminder
+Commit Message: "Update model card with optimized 15 tags and AION Analytics attribution"
 
 ---
 
-## ✅ System Status: Production Ready
+Weekly Update Reminder
+
+---
+
+System Status: Production Ready
 
 | Component | Status | Coverage | Last Run |
 |-----------|--------|----------|----------|
-| **aion-sentiment** | ✅ Production | 592 tickers | v3.0.0 |
-| **aion-taxonomy** | ✅ Production | 136 events | 2026-03-28 |
-| **aion-sectormap** | ✅ Production | 592 tickers | v1.0.0 |
-| **aion-volweight** | ✅ Production | VIX regimes | v1.0.0 |
-| **gift_nifty_gap** | ✅ Production | Real-time | Every 15 min |
-| **nifty_open_predictor** | ✅ Production | NIFTY/BANKNIFTY | Daily 08:46 AM |
-| **ClickHouse Backfill** | ✅ Complete | 93.3% | 2026-03-28 |
+| aion-sentiment | ✅ Production | 592 tickers | v3.0.0 |
+| aion-taxonomy | ✅ Production | 136 events | 2026-03-28 |
+| aion-sectormap | ✅ Production | 592 tickers | v1.0.0 |
+| aion-volweight | ✅ Production | VIX regimes | v1.0.0 |
+| gift_nifty_gap | ✅ Production | Real-time | Every 15 min |
+| nifty_open_predictor | ✅ Production | NIFTY/BANKNIFTY | Daily 08:46 AM |
+| ClickHouse Backfill | ✅ Complete | 93.3% | 2026-03-28 |
 
----
-
-## 🏗️ Complete Architecture
+Complete Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -196,34 +192,15 @@ transformer               market-intelligence   production-ready
     - calibrate_taxonomy.py (calibration)
 ```
 
----
-
-## 📊 ClickHouse Taxonomy Universe
-
-**⚠️ UPDATE THIS SECTION EVERY WEEK ⚠️**
-
-### Current Status (2026-03-28 20:00 IST)
-
-```sql
--- Run this query weekly to get updated stats:
-SELECT 
-    count(DISTINCT row_hash) as unique_classified,
-    countIf(event_id != '') as matched_events,
-    countIf(event_id = '') as no_match,
-    avg(macro_signal) as avg_macro,
-    avg(confidence) as avg_confidence
-FROM aion_master.news_taxonomy_v1;
-```
-
 | Metric | Value | Week-over-Week Change |
 |--------|-------|----------------------|
-| **Total news_master_v1** | 1,066,658 | — |
-| **Unique classified (news_taxonomy_v1)** | 994,760 | +XXX,XXX |
-| **Coverage** | 93.3% | +X.X% |
-| **Matched events (event_id != '')** | 64,770 | +X,XXX |
-| **Match rate** | 6.5% | +X.X% |
-| **Avg macro signal** | +0.0012 | — |
-| **Avg confidence** | 0.428 | — |
+| Total news_master_v1 | 1,066,658 | — |
+| Unique classified (news_taxonomy_v1) | 994,760 | +XXX,XXX |
+| Coverage | 93.3% | +X.X% |
+| Matched events (event_id != '') | 64,770 | +X,XXX |
+| Match rate | 6.5% | +X.X% |
+| Avg macro signal | +0.0012 | — |
+| Avg confidence | 0.428 | — |
 
 ### Top 15 Taxonomy Events (by count)
 
@@ -245,14 +222,14 @@ FROM aion_master.news_taxonomy_v1;
 | 14 | sector_it_currency_tailwind | 1,786 | +0.138 | Sector |
 | 15 | macro_budget_capex_boost | 1,654 | +0.425 | Macro |
 
-### Newly Added Events (This Week)
+Newly Added Events (This Week)
 
 | Event ID | Keywords Added | Impact | Date |
 |----------|---------------|--------|------|
 | global_war_escalation | iran war, iran military, strait of hormuz, war live updates | -0.522 | 2026-03-28 |
 | global_crude_surge | oil supply disruption, oil tanker attack, strait disruption | -0.450 | 2026-03-28 |
 
-### Keyword Refinements (This Week)
+Keyword Refinements (This Week)
 
 | Event | Old Keywords | New Keywords | Reason |
 |-------|-------------|--------------|--------|
@@ -260,7 +237,7 @@ FROM aion_master.news_taxonomy_v1;
 | micro_ipl_season | ipl | ipl season, ipl tournament, ipl cricket | Add context |
 | sector_it_currency_tailwind | rupee falls | rupee tailwind for it, weak rupee helps it | IT-specific |
 
-### Coverage Trend (Last 4 Weeks)
+Coverage Trend (Last 4 Weeks)
 
 ```
 Week Ending    | Classified | Matched | Coverage | Match Rate
@@ -283,9 +260,9 @@ Week Ending    | Classified | Matched | Coverage | Match Rate
 
 ---
 
-## 🔧 Script Integration Details
+Script Integration Details
 
-### 1. gift_nifty_gap.py (Real-Time Crawler)
+1. gift_nifty_gap.py (Real-Time Crawler)
 
 **Location:** `/Users/lokeshgupta/Projects/aion_algo_trading/src/zerodha/crawlers/gift_nifty_gap.py`
 
