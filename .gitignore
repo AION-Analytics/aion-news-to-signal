@@ -34,10 +34,6 @@ env/
 *~
 .DS_Store
 
-# Qwen AI
-.qwen/
-.qwen/agents/
-
 # Testing
 .pytest_cache/
 .coverage
