@@ -45,6 +45,7 @@ Example:
 """
 
 from .sentiment import SentimentAnalyzer
+from .unified_model import AIONUnifiedModel
 from .emotions import EmotionAnalyzer
 from .utils import get_device, download_nrc_lexicon
 
@@ -172,6 +173,7 @@ class AIONSentimentAnalyzer:
 
 __all__ = [
     'AIONSentimentAnalyzer',
+    'AIONUnifiedModel',
     'SentimentAnalyzer',
     'EmotionAnalyzer',
     'get_device',
