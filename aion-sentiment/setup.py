@@ -55,7 +55,7 @@ def get_version() -> str:
 # Package metadata
 NAME = "aion-sentiment"
 VERSION = get_version()
-DESCRIPTION = "AION Financial News Sentiment Analysis with Transformer and NRC Emotion Lexicon"
+DESCRIPTION = "AION Unified Sentiment Model for Indian Financial News - Multi-task transformer (95 events, 32 sectors, macro signal)"
 AUTHOR = "AION Open Source Contributors"
 AUTHOR_EMAIL = "contributors@aion.opensource"
 URL = "https://github.com/aion-open-source/aion-sentiment"

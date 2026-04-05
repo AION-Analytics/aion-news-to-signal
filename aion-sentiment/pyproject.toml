@@ -25,7 +25,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "aion-sentiment"
 dynamic = ["version"]
-description = "AION Financial News Sentiment Analysis with NRC Emotion Lexicon"
+description = "AION Unified Sentiment Model for Indian Financial News - Multi-task transformer (95 events, 32 sectors, macro signal)"
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [
