@@ -178,6 +178,6 @@ __all__ = [
     'download_nrc_lexicon'
 ]
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 __author__ = 'AION Open Source Contributors'
 __license__ = 'Apache-2.0'

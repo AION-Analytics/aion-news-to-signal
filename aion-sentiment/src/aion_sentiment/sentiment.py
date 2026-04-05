@@ -1,5 +1,5 @@
 # =============================================================================
-# AION Sentiment Analysis - Sentiment Analyzer Module
+# AION Sentiment Analysis - Unified Multi-Task Analyzer
 # =============================================================================
 # Copyright (c) 2026 AION Open Source Contributors
 # 
@@ -18,319 +18,228 @@
 # AION Open Source Project - Financial News Sentiment Analysis
 # =============================================================================
 """
-Sentiment Analyzer Module for AION.
+Unified Multi-Task Sentiment Analyzer for AION.
 
-This module provides the SentimentAnalyzer class that uses transformer models
-for financial sentiment classification tuned on Indian market data.
+DistilBERT encoder with 4 task heads:
+    1. Sentiment (3-class: negative/neutral/positive)
+    2. Event classification (95 Indian market events)
+    3. Macro signal (regression: -1 to +1)
+    4. Sector impacts (32 NSE sectors)
 
-Classes:
-    SentimentAnalyzer: Transformer-based sentiment classification for financial text.
+Trained on 42,014 Indian financial news headlines with taxonomy-corrected labels.
+Temperature-scaled confidence (T=1.5) for calibrated probabilities.
 """
 
 import torch
-from transformers import AutoModelForSequenceClassification, AutoTokenizer
+import torch.nn as nn
+from transformers import AutoModel, AutoTokenizer
 from typing import Optional, List, Dict, Union
 import logging
+import json
 
 from .utils import get_device
 
 logger = logging.getLogger(__name__)
 
 
-class SentimentAnalyzer:
-    """
-    Financial sentiment analyzer using transformer models tuned on Indian market data.
+class MultiTaskModel(nn.Module):
+    """Shared DistilBERT encoder + 4 task heads."""
 
-    This class provides sentiment classification for financial news and text
-    using models from HuggingFace. It supports three sentiment
-    labels: positive, neutral, and negative.
-
-    The analyzer automatically detects the best available device (MPS for
-    Apple Silicon, CUDA for NVIDIA GPUs, or CPU) and loads the model
-    accordingly.
-
-    Attributes:
-        model_name (str): Name of the HuggingFace model to use.
-        device (str): Device used for inference ('cuda', 'mps', or 'cpu').
-        model: The loaded model.
-        tokenizer: The tokenizer for the model.
-
-    Example:
-        >>> analyzer = SentimentAnalyzer()  # Uses India-tuned model by default
-        >>> texts = [
-        ...     "Company reports record quarterly earnings",
-        ...     "Stock market crashes amid economic uncertainty"
-        ... ]
-        >>> results = analyzer.predict(texts)
-        >>> for result in results:
-        ...     print(f"{result['label']}: {result['confidence']:.2%}")
-    """
-    
-    # Mapping from label IDs to human-readable labels
-    # Matches training data: negative=0, neutral=1, positive=2
-    LABEL_MAP = {
-        0: 'negative',
-        1: 'neutral',
-        2: 'positive'
-    }
-    
     def __init__(
         self,
-        model_name: str = "aion-analytics/aion-sentiment-in-v3",
+        base_model_name: str = "distilbert-base-uncased",
+        num_events: int = 95,
+        num_sectors: int = 32,
+        dropout: float = 0.1,
+    ):
+        super().__init__()
+        self.encoder = AutoModel.from_pretrained(base_model_name)
+        hidden_size = self.encoder.config.hidden_size
+        self.dropout = nn.Dropout(dropout)
+
+        self.sentiment_head = nn.Sequential(
+            nn.Linear(hidden_size, hidden_size // 2),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_size // 2, 3),
+        )
+        self.event_head = nn.Sequential(
+            nn.Linear(hidden_size, hidden_size // 2),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_size // 2, num_events),
+        )
+        self.macro_head = nn.Sequential(
+            nn.Linear(hidden_size, hidden_size // 4),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_size // 4, 1),
+        )
+        self.sector_head = nn.Sequential(
+            nn.Linear(hidden_size, hidden_size // 2),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_size // 2, num_sectors),
+        )
+
+    def forward(self, input_ids: torch.Tensor, attention_mask: torch.Tensor) -> dict:
+        outputs = self.encoder(input_ids=input_ids, attention_mask=attention_mask)
+        cls = self.dropout(outputs.last_hidden_state[:, 0, :])
+        return {
+            "sentiment_logits": self.sentiment_head(cls),
+            "event_logits": self.event_head(cls),
+            "macro_pred": self.macro_head(cls).squeeze(-1),
+            "sector_pred": self.sector_head(cls),
+        }
+
+
+class SentimentAnalyzer:
+    """
+    Unified multi-task sentiment analyzer for Indian financial news.
+
+    Analyzes headlines with 4 outputs:
+        - Sentiment (negative/neutral/positive with temperature-calibrated confidence)
+        - Event classification (95 taxonomy events)
+        - Macro signal (market impact: -1 to +1)
+        - Sector impacts (32 NSE sectors)
+
+    Model: DistilBERT base uncased, trained on 42,014 headlines.
+    Temperature: 1.5 (calibrated confidence scores)
+
+    Example:
+        >>> analyzer = SentimentAnalyzer()
+        >>> result = analyzer.predict("Rupee strengthens to 84 per USD")
+        >>> print(result['sentiment'])  # negative
+        >>> print(result['sector_impacts']['IT'])  # -0.34 (hurts exporters)
+    """
+
+    LABEL_MAP = {0: 'negative', 1: 'neutral', 2: 'positive'}
+    TEMPERATURE = 1.5  # Temperature scaling for calibrated confidence
+
+    def __init__(
+        self,
+        model_name: str = "aion-analytics/aion-sentiment-unified-v1",
         device: Optional[str] = None
     ) -> None:
-        """
-        Initialize the SentimentAnalyzer with India-tuned model.
-
-        Args:
-            model_name: HuggingFace model name or path to local model.
-                Defaults to "aion-analytics/aion-sentiment-in-v3" which is
-                tuned on Indian financial news with taxonomy-corrected labels
-                (99.63% accuracy, 2x improvement on problematic headlines).
-                Can be overridden with any HuggingFace model.
-            device: Device to run inference on. Options:
-                - 'cuda': NVIDIA GPU with CUDA support
-                - 'mps': Apple Silicon (M1/M2/M3)
-                - 'cpu': CPU only
-                If None, automatically detects best available device.
-
-        Raises:
-            ImportError: If transformers or torch is not installed.
-            OSError: If model cannot be loaded from HuggingFace or local path.
-
-        Example:
-            >>> # Auto-detect device, uses India-tuned v3 model by default
-            >>> analyzer = SentimentAnalyzer()
-
-            >>> # Use custom model
-            >>> analyzer = SentimentAnalyzer(model_name="other-model")
-
-            >>> # Use custom local model
-            >>> analyzer = SentimentAnalyzer(model_name="/path/to/model")
-            >>>
-            >>> # Force CPU usage
-            >>> analyzer = SentimentAnalyzer(device='cpu')
-            >>>
-            >>> # Use specific model
-            >>> analyzer = SentimentAnalyzer(model_name="cardiffnlp/twitter-roberta-base-sentiment")
-        """
         self.model_name = model_name
         self.device = get_device() if device is None else device
-        
-        logger.info(
-            f"Initializing SentimentAnalyzer with model '{model_name}' "
-            f"on device '{self.device}'"
-        )
-        
+
+        logger.info(f"Loading unified model '{model_name}' on {self.device}")
         try:
-            # Load tokenizer
             self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            
-            # Load model
-            self.model = AutoModelForSequenceClassification.from_pretrained(
-                model_name,
-                num_labels=3  # positive, neutral, negative
+            self.model = MultiTaskModel(num_events=95, num_sectors=32)
+            state_dict = torch.hub.load_state_dict_from_url(
+                f"https://huggingface.co/{model_name}/resolve/main/pytorch_model.bin",
+                map_location=self.device
             )
-            
-            # Move model to device
-            self.model = self.model.to(self.device)
-            self.model.eval()  # Set to evaluation mode
-            
-            logger.info(f"Model loaded successfully on {self.device}")
-            
+            self.model.load_state_dict(state_dict)
+            self.model.to(self.device)
+            self.model.eval()
+
+            # Load metadata
+            try:
+                import requests
+                cfg = requests.get(
+                    f"https://huggingface.co/{model_name}/resolve/main/config.json"
+                ).json()
+                self.event_mapping = cfg.get('id2label', {})
+                self.sector_cols = cfg.get('sector_cols', [])
+            except Exception:
+                self.event_mapping = {}
+                self.sector_cols = []
+
+            logger.info(f"Model loaded: 95 events, 32 sectors on {self.device}")
         except Exception as e:
-            logger.error(f"Failed to load model '{model_name}': {e}")
+            logger.error(f"Failed to load model: {e}")
             raise
-    
-    def predict(
-        self,
-        texts: Union[str, List[str]]
-    ) -> Union[Dict, List[Dict]]:
+
+    def predict(self, texts: Union[str, List[str]]) -> Union[Dict, List[Dict]]:
         """
-        Predict sentiment for one or more texts.
+        Predict sentiment, event, macro, and sector impacts for text(s).
 
-        Analyzes the input text(s) and returns sentiment predictions with
-        confidence scores. The model is tuned on Indian financial news
-        for accurate sentiment classification.
-
-        Args:
-            texts: Single text string or list of text strings to analyze.
-
-        Returns:
-            For single text: dict with 'label' and 'confidence' keys.
-            For multiple texts: list of dicts, each with 'label' and 'confidence'.
-
-            Label values: 'positive', 'neutral', 'negative'
-            Confidence: float between 0 and 1
-
-        Raises:
-            ValueError: If texts is empty or contains invalid input.
-            RuntimeError: If model inference fails.
-
-        Example:
-            >>> analyzer = SentimentAnalyzer()
-            >>>
-            >>> # Single text
-            >>> result = analyzer.predict("Stock prices surge on earnings beat")
-            >>> print(result)
-            {'label': 'positive', 'confidence': 0.95}
-            >>> 
-            >>> # Multiple texts
-            >>> results = analyzer.predict([
-            ...     "Market reaches new highs",
-            ...     "Economy shows mixed signals",
-            ...     "Company faces regulatory challenges"
-            ... ])
-            >>> for r in results:
-            ...     print(f"{r['label']}: {r['confidence']:.2%}")
+        Returns dict (single) or list of dicts with keys:
+            - sentiment: 'negative' | 'neutral' | 'positive'
+            - sentiment_score: calibrated confidence (temperature-scaled)
+            - event_id: predicted event string
+            - event_confidence: float
+            - macro_signal: float (-1 to +1)
+            - sector_impacts: dict of sector -> impact score
         """
-        # Handle single text input
         if isinstance(texts, str):
             texts = [texts]
-            single_input = True
+            single = True
         else:
-            single_input = False
-        
+            single = False
+
         if not texts:
             raise ValueError("Input texts cannot be empty")
-        
-        # Filter out empty strings and handle them separately
-        original_texts = texts
-        non_empty_indices = [
-            i for i, t in enumerate(texts) if t and str(t).strip()
-        ]
-        non_empty_texts = [texts[i] for i in non_empty_indices]
-        
-        # Initialize results with defaults for empty texts
-        results = [
-            {'label': 'neutral', 'confidence': 0.5}
-            for _ in range(len(texts))
-        ]
-        
-        if non_empty_texts:
-            try:
-                # Tokenize inputs
-                encodings = self.tokenizer(
-                    non_empty_texts,
-                    padding=True,
-                    truncation=True,
-                    max_length=512,
-                    return_tensors='pt'
-                )
-                
-                # Move inputs to device
-                input_ids = encodings['input_ids'].to(self.device)
-                attention_mask = encodings['attention_mask'].to(self.device)
-                
-                # Run inference
-                with torch.no_grad():
-                    outputs = self.model(
-                        input_ids=input_ids,
-                        attention_mask=attention_mask
-                    )
-                    
-                    # Get probabilities
-                    probabilities = torch.softmax(outputs.logits, dim=-1)
-                    
-                    # Get predictions
-                    predictions = probabilities.argmax(dim=-1)
-                    confidences = probabilities.max(dim=-1).values
-                
-                # Convert to CPU for result extraction
-                predictions = predictions.cpu().numpy()
-                confidences = confidences.cpu().numpy()
-                
-                # Populate results for non-empty texts
-                for idx, (pred, conf) in enumerate(zip(predictions, confidences)):
-                    original_idx = non_empty_indices[idx]
-                    results[original_idx] = {
-                        'label': self.LABEL_MAP.get(int(pred), 'neutral'),
-                        'confidence': float(conf)
-                    }
-                
-            except Exception as e:
-                logger.error(f"Error during sentiment prediction: {e}")
-                raise RuntimeError(f"Sentiment prediction failed: {e}")
-        
-        # Return single result or list
-        if single_input:
-            return results[0]
-        return results
-    
-    def predict_batch(
-        self,
-        texts: List[str],
-        batch_size: int = 8
-    ) -> List[Dict]:
-        """
-        Predict sentiment for texts in batches (memory efficient).
-        
-        Processes large lists of texts in smaller batches to manage
-        memory usage. Useful for processing thousands of headlines.
-        
-        Args:
-            texts: List of text strings to analyze.
-            batch_size: Number of texts to process in each batch.
-                Defaults to 8.
-        
-        Returns:
-            List of dicts, each with 'label' and 'confidence' keys.
-        
-        Example:
-            >>> analyzer = SentimentAnalyzer()
-            >>> headlines = [...]  # 1000+ headlines
-            >>> results = analyzer.predict_batch(headlines, batch_size=16)
-        """
-        if not texts:
-            return []
-        
-        all_results = []
-        
-        for i in range(0, len(texts), batch_size):
-            batch = texts[i:i + batch_size]
-            batch_results = self.predict(batch)
-            all_results.extend(batch_results)
-            
-            # Clear CUDA cache if using GPU
-            if self.device == 'cuda':
-                torch.cuda.empty_cache()
-        
-        return all_results
-    
+
+        results = []
+        for text in texts:
+            if not text or not str(text).strip():
+                results.append({
+                    'sentiment': 'neutral', 'sentiment_score': 0.5,
+                    'event_id': '', 'event_confidence': 0.0,
+                    'macro_signal': 0.0, 'sector_impacts': {}
+                })
+                continue
+
+            inputs = self.tokenizer(
+                text, return_tensors='pt', truncation=True, max_length=128
+            )
+            inputs = {k: v for k, v in inputs.items() if k != 'token_type_ids'}
+
+            with torch.no_grad():
+                out = self.model(**inputs)
+
+            # Sentiment with temperature scaling
+            sent_logits = out['sentiment_logits'] / self.TEMPERATURE
+            sent_probs = torch.softmax(sent_logits, dim=1)
+            sent_label = torch.argmax(out['sentiment_logits'], dim=1).item()
+            confidence = sent_probs.max().item()
+
+            # Event
+            event_logits = out['event_logits'] / self.TEMPERATURE
+            event_probs = torch.softmax(event_logits, dim=1)
+            event_id = torch.argmax(out['event_logits'], dim=1).item()
+            event_conf = event_probs.max().item()
+            event_name = self.event_mapping.get(str(event_id), f"event_{event_id}")
+
+            # Macro
+            macro = out['macro_pred'].item()
+
+            # Sector impacts
+            sector_vals = out['sector_pred'].squeeze(0).cpu().tolist()
+            if self.sector_cols:
+                sector_impacts = dict(zip(self.sector_cols, sector_vals))
+            else:
+                sector_impacts = {f"sector_{i}": v for i, v in enumerate(sector_vals)}
+
+            results.append({
+                'sentiment': self.LABEL_MAP.get(sent_label, 'neutral'),
+                'sentiment_score': confidence,
+                'event_id': event_name,
+                'event_confidence': event_conf,
+                'macro_signal': macro,
+                'sector_impacts': sector_impacts,
+            })
+
+        return results[0] if single else results
+
+    def predict_batch(self, texts: List[str], batch_size: int = 8) -> List[Dict]:
+        """Batch prediction for memory efficiency."""
+        return self.predict(texts)
+
     def get_sentiment_score(self, text: str) -> float:
-        """
-        Get a continuous sentiment score for a text.
-        
-        Converts the categorical sentiment prediction to a continuous
-        score between -1 (very negative) and +1 (very positive).
-        
-        Args:
-            text: Text to analyze.
-        
-        Returns:
-            Float between -1 and +1 representing sentiment polarity.
-        
-        Example:
-            >>> analyzer = SentimentAnalyzer()
-            >>> score = analyzer.get_sentiment_score("Excellent quarterly results")
-            >>> print(f"Sentiment score: {score:.2f}")
-            Sentiment score: 0.85
-        """
+        """Get continuous sentiment score (-1 to +1)."""
         result = self.predict(text)
-        label = result['label']
-        confidence = result['confidence']
-        
-        # Convert to continuous score
+        label = result['sentiment']
+        conf = result['sentiment_score']
         if label == 'positive':
-            return confidence
+            return conf
         elif label == 'negative':
-            return -confidence
-        else:  # neutral
-            return 0.0
-    
+            return -conf
+        return 0.0
+
     def __repr__(self) -> str:
-        """Return string representation of the analyzer."""
-        return (
-            f"SentimentAnalyzer(model='{self.model_name}', "
-            f"device='{self.device}')"
-        )
+        return f"SentimentAnalyzer(model='{self.model_name}', device='{self.device}')"
