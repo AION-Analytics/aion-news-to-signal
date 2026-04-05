@@ -29,10 +29,10 @@ description = "AION Unified Sentiment Model for Indian Financial News - Multi-ta
 readme = "README.md"
 license = {text = "Apache-2.0"}
 authors = [
-    {name = "AION Open Source Contributors", email = "contributors@aion.opensource"}
+    {name = "AION Open Source Contributors", email = "aionlabs@tutamail.com"}
 ]
 maintainers = [
-    {name = "AION Open Source Contributors", email = "contributors@aion.opensource"}
+    {name = "AION Open Source Contributors", email = "aionlabs@tutamail.com"}
 ]
 keywords = [
     "sentiment-analysis",
