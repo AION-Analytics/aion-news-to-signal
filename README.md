@@ -10,6 +10,40 @@ AION-Sentiment-IN-v3 is an open-source Indian financial news sentiment model wit
 
 --------------------------------------------------------------------
 
+NEW IN VERSION 3.0: MARKET INTELLIGENCE LAYER
+
+A complete 4-factor market intelligence engine has been added to AION-Sentiment.
+This system provides real-time event impact analysis by modeling sector sensitivities to:
+
+- Interest Rates (10-year G-Sec yield)
+- Crude Oil (WTI futures)
+- Rupee/USD (exchange rate)
+- Risk Sentiment (India VIX)
+
+WHAT YOU CAN NOW BUILD:
+
+- Event Impact Engine: Calculate how any event affects any instrument
+- Instrument Classifier: Classify equity, derivatives, commodities, bonds into sectors
+- Sector Sensitivity Dashboard: 90-day rolling correlations for 14 NIFTY sectors
+- Portfolio Risk Analysis: Rank instruments by sensitivity to macro factors
+- Automated Data Pipeline: Weekly refresh of sector sensitivities from live markets
+
+from aion_taxonomy.event_impact_engine import rank_instruments_by_impact
+
+# Define your portfolio
+instruments = [
+    {"tradingsymbol": "RELIANCE", "segment": "EQ", "exchange": "NSE"},
+    {"tradingsymbol": "HDFCBANK", "segment": "EQ", "exchange": "NSE"},
+]
+
+# Get ranked impact for an event
+ranked = rank_instruments_by_impact("RBI_RATE_HIKE", instruments)
+print(ranked)
+
+See aion_taxonomy/README.md for full documentation.
+
+--------------------------------------------------------------------
+
 WHAT YOU CAN BUILD WITH IT
 
 - Financial news sentiment dashboards
@@ -172,6 +206,9 @@ Sentiment Model        Headline sentiment classification (this model)
 Taxonomy Engine        Event detection (136 India-specific events)
 Sector Map             NSE ticker to sector mapping
 VIX Weighting          Confidence adjustment based on India VIX
+Event Impact Engine    Event impact calculation for any instrument (NEW)
+Instrument Classifier  Classify instruments into asset class and sector (NEW)
+Meta-Factor Analysis   90-day rolling sector-factor correlations (NEW)
 
 Use each component independently or combine them for a complete solution.
 
@@ -214,6 +251,23 @@ taxonomy_result = taxonomy.process(headline)
 
 print(sentiment_result)
 print(taxonomy_result)
+
+For event impact analysis:
+
+from aion_taxonomy.event_impact_engine import rank_instruments_by_impact, classify_instrument, get_meta_factors
+
+# Classify an instrument and get its meta-factor sensitivities
+info = classify_instrument("RELIANCE", "EQ", "NSE")
+factors = get_meta_factors(info)
+# {'interest_rate': -0.0571, 'crude_oil': 0.0308, 'rupee': -0.2281, 'risk_sentiment': -0.4107}
+
+# Rank multiple instruments by event impact
+instruments = [
+    {"tradingsymbol": "RELIANCE", "segment": "EQ", "exchange": "NSE"},
+    {"tradingsymbol": "HDFCBANK", "segment": "EQ", "exchange": "NSE"},
+    {"tradingsymbol": "TCS", "segment": "EQ", "exchange": "NSE"},
+]
+ranked = rank_instruments_by_impact("RBI_RATE_HIKE", instruments)
 
 --------------------------------------------------------------------
 
@@ -284,6 +338,11 @@ Version   Date        Changes
 3.0.0     Mar 2026    PRODUCTION READY - retrained with taxonomy-corrected labels;
                       fixed sector biases; added new sectors and keywords;
                       benchmarked against FinBERT; use case examples added
+4.0.0     Apr 2026    MARKET INTELLIGENCE LAYER - Event Impact Engine with 4-factor model;
+                      Instrument Classifier (equity, derivatives, commodities, bonds);
+                      90-day rolling sector-factor correlations (14 NIFTY sectors);
+                      Automated data pipeline (Yahoo Finance, Investing.com, ClickHouse);
+                      538 days of FPI net flow data; 504 days of G-Sec yield
 
 --------------------------------------------------------------------
 
@@ -292,7 +351,7 @@ CITATION
 @software{aion_sentiment_2026,
   author = {AION Analytics},
   title = {AION-Sentiment-IN: Indian Financial News Sentiment Analysis},
-  version = {3.0.0},
+  version = {4.0.0},
   year = {2026},
   url = {https://github.com/AION-Analytics/market-sentiments}
 }
@@ -323,6 +382,6 @@ PyPI: https://pypi.org/project/aion-sentiment/
 
 --------------------------------------------------------------------
 
-Last Updated: March 29, 2026
+Last Updated: April 12, 2026
 Copyright: 2026 AION Analytics
 Built for the Indian developer community

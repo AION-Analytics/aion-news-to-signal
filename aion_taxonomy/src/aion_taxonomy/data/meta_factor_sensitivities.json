@@ -1,0 +1,65 @@
+{
+  "equity_spot_default": {
+    "interest_rate": -0.2,
+    "crude_oil": -0.1,
+    "rupee": 0.1,
+    "risk_sentiment": -0.3,
+    "liquidity": 0.2
+  },
+  "equity_sector_Oil, Gas & Consumable Fuels": {
+    "interest_rate": -0.1,
+    "crude_oil": 0.6,
+    "rupee": -0.4,
+    "risk_sentiment": -0.2,
+    "liquidity": 0.1
+  },
+  "equity_sector_Financial Services": {
+    "interest_rate": 0.5,
+    "crude_oil": -0.1,
+    "rupee": 0.3,
+    "risk_sentiment": -0.5,
+    "liquidity": 0.6
+  },
+  "commodity_precious_metal": {
+    "interest_rate": -0.2,
+    "crude_oil": 0.1,
+    "rupee": 0.8,
+    "risk_sentiment": 0.7,
+    "liquidity": 0.1
+  },
+  "commodity_energy": {
+    "interest_rate": -0.3,
+    "crude_oil": 1.0,
+    "rupee": -0.6,
+    "risk_sentiment": -0.5,
+    "liquidity": 0.0
+  },
+  "commodity_base_metal": {
+    "interest_rate": -0.4,
+    "crude_oil": 0.3,
+    "rupee": -0.2,
+    "risk_sentiment": -0.4,
+    "liquidity": 0.2
+  },
+  "derivative_index_option": {
+    "interest_rate": 0.0,
+    "crude_oil": 0.0,
+    "rupee": 0.0,
+    "risk_sentiment": 0.9,
+    "liquidity": 0.5
+  },
+  "currency_derivative": {
+    "interest_rate": 0.4,
+    "crude_oil": -0.3,
+    "rupee": -0.9,
+    "risk_sentiment": -0.4,
+    "liquidity": 0.2
+  },
+  "fixed_income_government_security": {
+    "interest_rate": -0.9,
+    "crude_oil": -0.2,
+    "rupee": -0.3,
+    "risk_sentiment": -0.5,
+    "liquidity": 0.5
+  }
+}

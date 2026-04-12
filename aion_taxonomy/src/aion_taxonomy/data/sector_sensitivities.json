@@ -1,0 +1,99 @@
+{
+  "NIFTYAUTO": {
+    "interest_rate": 0.0014,
+    "crude_oil": 0.0658,
+    "rupee": -0.1858,
+    "risk_sentiment": -0.3128
+  },
+  "NIFTYBANK": {
+    "interest_rate": -0.2655,
+    "crude_oil": -0.488,
+    "rupee": -0.1892,
+    "risk_sentiment": -0.6589
+  },
+  "NIFTYFIN": {
+    "interest_rate": 0.0,
+    "crude_oil": 0.0,
+    "rupee": 0.0,
+    "risk_sentiment": 0.0
+  },
+  "NIFTYFMCG": {
+    "interest_rate": 0.1222,
+    "crude_oil": 0.1056,
+    "rupee": -0.1249,
+    "risk_sentiment": -0.0998
+  },
+  "NIFTYIT": {
+    "interest_rate": 0.1504,
+    "crude_oil": 0.0282,
+    "rupee": -0.1814,
+    "risk_sentiment": -0.1167
+  },
+  "NIFTYMEDIA": {
+    "interest_rate": -0.0725,
+    "crude_oil": -0.2898,
+    "rupee": -0.1075,
+    "risk_sentiment": -0.1849
+  },
+  "NIFTYMETAL": {
+    "interest_rate": -0.1449,
+    "crude_oil": 0.0211,
+    "rupee": -0.1768,
+    "risk_sentiment": -0.4003
+  },
+  "NIFTYPHARMA": {
+    "interest_rate": -0.0278,
+    "crude_oil": 0.1316,
+    "rupee": -0.1274,
+    "risk_sentiment": -0.204
+  },
+  "NIFTYPSUBANK": {
+    "interest_rate": -0.0749,
+    "crude_oil": 0.0364,
+    "rupee": -0.1997,
+    "risk_sentiment": -0.3605
+  },
+  "NIFTYREALTY": {
+    "interest_rate": -0.1424,
+    "crude_oil": 0.0108,
+    "rupee": -0.1702,
+    "risk_sentiment": -0.4466
+  },
+  "NIFTYENERGY": {
+    "interest_rate": -0.0571,
+    "crude_oil": 0.0308,
+    "rupee": -0.2281,
+    "risk_sentiment": -0.4107
+  },
+  "NIFTYINFRA": {
+    "interest_rate": -0.0437,
+    "crude_oil": 0.1114,
+    "rupee": -0.202,
+    "risk_sentiment": -0.4294
+  },
+  "NIFTYMNC": {
+    "interest_rate": -0.0063,
+    "crude_oil": 0.0731,
+    "rupee": -0.1818,
+    "risk_sentiment": -0.3429
+  },
+  "NIFTY50": {
+    "interest_rate": -0.2326,
+    "crude_oil": -0.3828,
+    "rupee": -0.23,
+    "risk_sentiment": -0.5671
+  },
+  "_metadata": {
+    "rolling_window": 90,
+    "trading_days_used": 415,
+    "date_range_start": "2024-04-16",
+    "date_range_end": "2026-04-10",
+    "factor_definitions": {
+      "interest_rate": "G-Sec 10Y yield daily change",
+      "crude_oil": "Crude oil (WTI) daily change (USD)",
+      "rupee": "USD/INR daily change",
+      "risk_sentiment": "India VIX daily change"
+    },
+    "last_updated": "2026-04-12"
+  }
+}
