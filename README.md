@@ -129,6 +129,7 @@ Draft pricing for a future hosted product. The free tier and measured latency be
 Public Space:
 
 - `https://huggingface.co/spaces/AION-Analytics/aion-news-to-signal`
+- Model Repo: `https://huggingface.co/AION-Analytics/aion-news-to-signal`
 - App host: `https://aion-analytics-aion-news-to-signal.hf.space`
 
 Measured on `2026-04-26` from this machine:
