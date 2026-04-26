@@ -14,7 +14,7 @@ Use it as a stock market news analysis API for India that produces sector-level 
 
 Use AION Analytics News-to-Signal as a stock picker from news India: convert headlines into sector signals, then map to NSE stocks.
 
-Generate news-based stock signals for NSE and convert them into sector rotation, stock picker, and trading bot workflows.
+Generate news based stock signals NSE traders can use, then convert them into sector rotation, stock picker, and trading bot workflows.
 
 AION Analytics is an AI trading signals India API for developers building broker-linked bots, dashboards, and LLM workflows.
 
