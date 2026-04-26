@@ -1,0 +1,2733 @@
+metadata:
+  version: 1.0.0
+  source_taxonomy_version: 2.0.0
+  primitive_schema_version: 1.0.0
+  total_taxonomy_events: 136
+  total_sectors: 32
+  total_primitives: 11
+primitive_definitions:
+  supply_shock:
+    range:
+    - -1
+    - 1
+    description: Change in availability of goods/services
+  demand_shock:
+    range:
+    - -1
+    - 1
+    description: Change in consumption/investment demand
+  cost_push:
+    range:
+    - -1
+    - 1
+    description: Input cost pressure (energy, wages, raw materials)
+  liquidity:
+    range:
+    - -1
+    - 1
+    description: System-wide liquidity availability
+  credit_availability:
+    range:
+    - -1
+    - 1
+    description: Ease of borrowing
+  policy_restriction:
+    range:
+    - -1
+    - 1
+    description: Regulatory constraint (ban, tax, quota)
+  export_competitiveness:
+    range:
+    - -1
+    - 1
+    description: Global competitiveness of Indian exports
+  import_dependency:
+    range:
+    - -1
+    - 1
+    description: Reliance on imports becoming riskier/cheaper
+  logistics_disruption:
+    range:
+    - 0
+    - 1
+    description: Transport/storage breakdown
+  risk_sentiment:
+    range:
+    - -1
+    - 1
+    description: Market risk appetite (feeds VIX layer)
+  inflation_expectation:
+    range:
+    - -1
+    - 1
+    description: Forward inflation expectations
+primitive_event_hits:
+  supply_shock: 20
+  demand_shock: 31
+  cost_push: 15
+  liquidity: 43
+  credit_availability: 33
+  policy_restriction: 33
+  export_competitiveness: 7
+  import_dependency: 10
+  logistics_disruption: 11
+  risk_sentiment: 33
+  inflation_expectation: 13
+sector_matrix:
+  Financial Services:
+    beta_default: 1.1
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 17
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        - macro_liquidity_tightening
+        avg_signed_weight: 0.0555
+        avg_abs_weight: 0.0555
+        avg_multiplier: 0.8647
+      credit_availability:
+        observations: 13
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - gov_mudra_yojana
+        - corp_merger_positive
+        - corp_qip_raise
+        avg_signed_weight: 0.0874
+        avg_abs_weight: 0.0874
+        avg_multiplier: 0.8077
+      policy_restriction:
+        observations: 14
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        - macro_liquidity_tightening
+        avg_signed_weight: 0.1291
+        avg_abs_weight: 0.1291
+        avg_multiplier: 0.9643
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 16
+        sample_events:
+        - corp_debt_default
+        - corp_restructuring_positive
+        - corp_insolvency_proceeding
+        - global_vix_spike
+        - market_fii_buying
+        avg_signed_weight: 0.0318
+        avg_abs_weight: 0.0318
+        avg_multiplier: 0.575
+      inflation_expectation:
+        observations: 6
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        - macro_liquidity_tightening
+        avg_signed_weight: 0.0725
+        avg_abs_weight: 0.0725
+        avg_multiplier: 1.15
+  Banks:
+    beta_default: 1.15
+    primitive_sensitivities:
+      supply_shock:
+        observations: 4
+        sample_events:
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        - macro_gdp_upside
+        - macro_gdp_downside
+        avg_signed_weight: 0.0516
+        avg_abs_weight: 0.0516
+        avg_multiplier: 0.7
+      demand_shock:
+        observations: 1
+        sample_events:
+        - macro_gdp_downside
+        avg_signed_weight: 0.1296
+        avg_abs_weight: 0.1296
+        avg_multiplier: 0.8
+      cost_push:
+        observations: 2
+        sample_events:
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        avg_signed_weight: 0.1026
+        avg_abs_weight: 0.1026
+        avg_multiplier: 0.6
+      liquidity:
+        observations: 9
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        - macro_liquidity_tightening
+        avg_signed_weight: 0.055
+        avg_abs_weight: 0.055
+        avg_multiplier: 1.0333
+      credit_availability:
+        observations: 7
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_cpi_cooling
+        - macro_gdp_upside
+        - gov_mudra_yojana
+        avg_signed_weight: 0.1224
+        avg_abs_weight: 0.1224
+        avg_multiplier: 0.9286
+      policy_restriction:
+        observations: 14
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        - macro_liquidity_tightening
+        avg_signed_weight: 0.1134
+        avg_abs_weight: 0.1134
+        avg_multiplier: 0.9857
+      export_competitiveness:
+        observations: 2
+        sample_events:
+        - macro_fx_reserve_gain
+        - macro_fx_reserve_drop
+        avg_signed_weight: 0.0112
+        avg_abs_weight: 0.0112
+        avg_multiplier: 0.5
+      import_dependency:
+        observations: 1
+        sample_events:
+        - gov_pm_kisan
+        avg_signed_weight: 0.0072
+        avg_abs_weight: 0.0072
+        avg_multiplier: 0.6
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - gov_pm_kisan
+        avg_signed_weight: 0.0168
+        avg_abs_weight: 0.0168
+        avg_multiplier: 0.6
+      risk_sentiment:
+        observations: 2
+        sample_events:
+        - macro_gdp_downside
+        - gov_policy_uncertainty
+        avg_signed_weight: 0.0422
+        avg_abs_weight: 0.0422
+        avg_multiplier: 0.65
+      inflation_expectation:
+        observations: 8
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        - macro_liquidity_tightening
+        avg_signed_weight: 0.0896
+        avg_abs_weight: 0.0896
+        avg_multiplier: 1.0125
+  NBFC:
+    beta_default: 1.2
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 4
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        avg_signed_weight: 0.0615
+        avg_abs_weight: 0.0615
+        avg_multiplier: 1.15
+      credit_availability:
+        observations: 5
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - gov_mudra_yojana
+        - sector_bank_npa_rise
+        - sector_bank_credit_growth
+        avg_signed_weight: 0.1412
+        avg_abs_weight: 0.1412
+        avg_multiplier: 1.0
+      policy_restriction:
+        observations: 9
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        - gov_banking_norms_tighten
+        avg_signed_weight: 0.1338
+        avg_abs_weight: 0.1338
+        avg_multiplier: 1.0111
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 4
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_crr_hike
+        - macro_crr_cut
+        avg_signed_weight: 0.0757
+        avg_abs_weight: 0.0757
+        avg_multiplier: 1.15
+  IT:
+    beta_default: 0.9
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 1
+        sample_events:
+        - global_recession_fear
+        avg_signed_weight: 0.0588
+        avg_abs_weight: 0.0588
+        avg_multiplier: 0.7
+      cost_push:
+        observations: 1
+        sample_events:
+        - global_us_inflation_hot
+        avg_signed_weight: 0.0394
+        avg_abs_weight: 0.0394
+        avg_multiplier: 0.6
+      liquidity:
+        observations: 7
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - gov_digital_india
+        - global_fed_hike
+        - global_fed_cut
+        avg_signed_weight: 0.0154
+        avg_abs_weight: 0.0516
+        avg_multiplier: 0.7286
+      credit_availability:
+        observations: 4
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - global_fed_hike
+        - global_fed_cut
+        avg_signed_weight: -0.1368
+        avg_abs_weight: 0.1368
+        avg_multiplier: 0.725
+      policy_restriction:
+        observations: 3
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - gov_digital_india
+        avg_signed_weight: -0.0968
+        avg_abs_weight: 0.1112
+        avg_multiplier: 0.8667
+      export_competitiveness:
+        observations: 4
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        - macro_trade_deficit_worsens
+        - macro_exports_boost
+        avg_signed_weight: 0.0049
+        avg_abs_weight: 0.04
+        avg_multiplier: 0.8
+      import_dependency:
+        observations: 1
+        sample_events:
+        - macro_exports_boost
+        avg_signed_weight: 0.0354
+        avg_abs_weight: 0.0354
+        avg_multiplier: 0.9
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - macro_exports_boost
+        avg_signed_weight: 0.0827
+        avg_abs_weight: 0.0827
+        avg_multiplier: 0.9
+      risk_sentiment:
+        observations: 7
+        sample_events:
+        - global_vix_spike
+        - global_recession_fear
+        - sector_it_deal_win
+        - sector_it_visa_tightening
+        - sector_it_currency_tailwind
+        avg_signed_weight: 0.0428
+        avg_abs_weight: 0.0428
+        avg_multiplier: 0.7429
+      inflation_expectation:
+        observations: 3
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - global_us_inflation_hot
+        avg_signed_weight: -0.0058
+        avg_abs_weight: 0.0635
+        avg_multiplier: 0.6667
+  Healthcare:
+    beta_default: 0.8
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - gov_ayushman_bharat
+        avg_signed_weight: 0.0273
+        avg_abs_weight: 0.0273
+        avg_multiplier: 1.3
+      export_competitiveness:
+        observations: 3
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        - macro_exports_boost
+        avg_signed_weight: 0.0105
+        avg_abs_weight: 0.0411
+        avg_multiplier: 0.8
+      import_dependency:
+        observations: 1
+        sample_events:
+        - macro_exports_boost
+        avg_signed_weight: 0.0315
+        avg_abs_weight: 0.0315
+        avg_multiplier: 0.8
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - macro_exports_boost
+        avg_signed_weight: 0.0735
+        avg_abs_weight: 0.0735
+        avg_multiplier: 0.8
+      risk_sentiment:
+        observations: 2
+        sample_events:
+        - sector_pharma_approval
+        - sector_pharma_warning
+        avg_signed_weight: 0.0435
+        avg_abs_weight: 0.0435
+        avg_multiplier: 1.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  FMCG:
+    beta_default: 0.6
+    primitive_sensitivities:
+      supply_shock:
+        observations: 6
+        sample_events:
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        - macro_food_inflation_spike
+        - sector_fmcg_price_hike
+        - micro_good_monsoon
+        avg_signed_weight: 0.0564
+        avg_abs_weight: 0.0564
+        avg_multiplier: 1.0417
+      demand_shock:
+        observations: 10
+        sample_events:
+        - sector_fmcg_volume_growth
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_disruption
+        - micro_diwali
+        avg_signed_weight: 0.0421
+        avg_abs_weight: 0.0421
+        avg_multiplier: 1.17
+      cost_push:
+        observations: 4
+        sample_events:
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        - macro_food_inflation_spike
+        - sector_fmcg_input_cost_rise
+        avg_signed_weight: 0.1301
+        avg_abs_weight: 0.1301
+        avg_multiplier: 0.9625
+      liquidity:
+        observations: 8
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_cpi_cooling
+        - macro_tax_increase
+        - macro_tax_cut
+        avg_signed_weight: 0.0385
+        avg_abs_weight: 0.0385
+        avg_multiplier: 0.85
+      credit_availability:
+        observations: 5
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_cpi_cooling
+        - gov_gst_rate_hike
+        - gov_gst_rate_cut
+        avg_signed_weight: 0.1473
+        avg_abs_weight: 0.1473
+        avg_multiplier: 0.9
+      policy_restriction:
+        observations: 8
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_tax_increase
+        - macro_tax_cut
+        - gov_gst_rate_hike
+        avg_signed_weight: 0.118
+        avg_abs_weight: 0.118
+        avg_multiplier: 0.8875
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 6
+        sample_events:
+        - gov_subsidy_withdrawal
+        - gov_pm_kisan
+        - sector_fmcg_input_cost_rise
+        - micro_ipl_season
+        - micro_ipl_final
+        avg_signed_weight: 0.0206
+        avg_abs_weight: 0.0206
+        avg_multiplier: 1.05
+      logistics_disruption:
+        observations: 5
+        sample_events:
+        - gov_subsidy_withdrawal
+        - gov_pm_kisan
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_disruption
+        avg_signed_weight: 0.0419
+        avg_abs_weight: 0.0419
+        avg_multiplier: 1.06
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 6
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        - macro_food_inflation_spike
+        avg_signed_weight: 0.1388
+        avg_abs_weight: 0.1388
+        avg_multiplier: 0.9417
+  Automobile and Auto Components:
+    beta_default: 1.2
+    primitive_sensitivities:
+      supply_shock:
+        observations: 5
+        sample_events:
+        - macro_cpi_spike
+        - macro_fuel_inflation_spike
+        - gov_pli_expansion
+        - micro_good_monsoon
+        - micro_weak_monsoon
+        avg_signed_weight: 0.0447
+        avg_abs_weight: 0.0447
+        avg_multiplier: 0.89
+      demand_shock:
+        observations: 5
+        sample_events:
+        - sector_auto_sales_beat
+        - sector_auto_sales_miss
+        - micro_diwali
+        - micro_good_monsoon
+        - micro_weak_monsoon
+        avg_signed_weight: 0.0427
+        avg_abs_weight: 0.0427
+        avg_multiplier: 1.08
+      cost_push:
+        observations: 2
+        sample_events:
+        - macro_cpi_spike
+        - macro_fuel_inflation_spike
+        avg_signed_weight: 0.1082
+        avg_abs_weight: 0.1082
+        avg_multiplier: 0.725
+      liquidity:
+        observations: 4
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_tax_increase
+        - macro_tax_cut
+        avg_signed_weight: 0.0457
+        avg_abs_weight: 0.0457
+        avg_multiplier: 0.9125
+      credit_availability:
+        observations: 2
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        avg_signed_weight: 0.2784
+        avg_abs_weight: 0.2784
+        avg_multiplier: 1.125
+      policy_restriction:
+        observations: 7
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_tax_increase
+        - macro_tax_cut
+        - gov_pli_expansion
+        avg_signed_weight: 0.1134
+        avg_abs_weight: 0.1134
+        avg_multiplier: 0.9357
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 2
+        sample_events:
+        - gov_pm_kisan
+        - sector_ev_policy_support
+        avg_signed_weight: 0.025
+        avg_abs_weight: 0.025
+        avg_multiplier: 1.05
+      logistics_disruption:
+        observations: 2
+        sample_events:
+        - gov_pm_kisan
+        - sector_ev_policy_support
+        avg_signed_weight: 0.0583
+        avg_abs_weight: 0.0583
+        avg_multiplier: 1.05
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 4
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_cpi_spike
+        - macro_fuel_inflation_spike
+        avg_signed_weight: 0.1079
+        avg_abs_weight: 0.1079
+        avg_multiplier: 0.925
+  Metals & Mining:
+    beta_default: 1.4
+    primitive_sensitivities:
+      supply_shock:
+        observations: 3
+        sample_events:
+        - macro_ip_growth_up
+        - macro_ip_growth_down
+        - global_metal_price_rise
+        avg_signed_weight: 0.0507
+        avg_abs_weight: 0.0507
+        avg_multiplier: 0.8667
+      demand_shock:
+        observations: 3
+        sample_events:
+        - global_china_growth_slowdown
+        - global_recession_fear
+        - sector_metal_demand_rise
+        avg_signed_weight: 0.0443
+        avg_abs_weight: 0.0443
+        avg_multiplier: 0.9333
+      cost_push:
+        observations: 1
+        sample_events:
+        - global_metal_price_rise
+        avg_signed_weight: 0.0262
+        avg_abs_weight: 0.0262
+        avg_multiplier: 1.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 2
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0488
+        avg_multiplier: 0.85
+      import_dependency:
+        observations: 1
+        sample_events:
+        - macro_import_boom
+        avg_signed_weight: 0.0551
+        avg_abs_weight: 0.0551
+        avg_multiplier: 0.7
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - macro_import_boom
+        avg_signed_weight: 0.0643
+        avg_abs_weight: 0.0643
+        avg_multiplier: 0.7
+      risk_sentiment:
+        observations: 3
+        sample_events:
+        - global_china_stimulus
+        - global_war_escalation
+        - global_recession_fear
+        avg_signed_weight: 0.0764
+        avg_abs_weight: 0.0764
+        avg_multiplier: 0.8667
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Energy:
+    beta_default: 1.3
+    primitive_sensitivities:
+      supply_shock:
+        observations: 2
+        sample_events:
+        - global_crude_surge
+        - global_crude_collapse
+        avg_signed_weight: -0.0516
+        avg_abs_weight: 0.0516
+        avg_multiplier: 0.9
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 2
+        sample_events:
+        - global_crude_surge
+        - global_crude_collapse
+        avg_signed_weight: -0.1291
+        avg_abs_weight: 0.1291
+        avg_multiplier: 0.9
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 1
+        sample_events:
+        - global_sanctions
+        avg_signed_weight: 0.0486
+        avg_abs_weight: 0.0486
+        avg_multiplier: 0.8
+      inflation_expectation:
+        observations: 1
+        sample_events:
+        - global_crude_surge
+        avg_signed_weight: -0.0516
+        avg_abs_weight: 0.0516
+        avg_multiplier: 0.9
+  Oil, Gas & Consumable Fuels:
+    beta_default: 1.35
+    primitive_sensitivities:
+      supply_shock:
+        observations: 3
+        sample_events:
+        - global_crude_surge
+        - global_crude_collapse
+        - sector_oil_inventory_build
+        avg_signed_weight: -0.0277
+        avg_abs_weight: 0.0412
+        avg_multiplier: 0.9
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 3
+        sample_events:
+        - global_crude_surge
+        - global_crude_collapse
+        - sector_oil_inventory_build
+        avg_signed_weight: -0.0726
+        avg_abs_weight: 0.0996
+        avg_multiplier: 0.9
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 3
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        - macro_trade_deficit_worsens
+        avg_signed_weight: 0.0118
+        avg_abs_weight: 0.0405
+        avg_multiplier: 0.8
+      import_dependency:
+        observations: 1
+        sample_events:
+        - macro_import_boom
+        avg_signed_weight: 0.0709
+        avg_abs_weight: 0.0709
+        avg_multiplier: 0.9
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - macro_import_boom
+        avg_signed_weight: 0.0827
+        avg_abs_weight: 0.0827
+        avg_multiplier: 0.9
+      risk_sentiment:
+        observations: 1
+        sample_events:
+        - global_war_escalation
+        avg_signed_weight: 0.0627
+        avg_abs_weight: 0.0627
+        avg_multiplier: 0.8
+      inflation_expectation:
+        observations: 1
+        sample_events:
+        - global_crude_surge
+        avg_signed_weight: -0.0516
+        avg_abs_weight: 0.0516
+        avg_multiplier: 0.9
+  Power:
+    beta_default: 0.9
+    primitive_sensitivities:
+      supply_shock:
+        observations: 1
+        sample_events:
+        - sector_power_demand_rise
+        avg_signed_weight: 0.0367
+        avg_abs_weight: 0.0367
+        avg_multiplier: 1.0
+      demand_shock:
+        observations: 2
+        sample_events:
+        - macro_budget_capex_boost
+        - sector_power_demand_rise
+        avg_signed_weight: 0.0471
+        avg_abs_weight: 0.0471
+        avg_multiplier: 0.95
+      cost_push:
+        observations: 1
+        sample_events:
+        - sector_power_tariff_hike
+        avg_signed_weight: 0.018
+        avg_abs_weight: 0.018
+        avg_multiplier: 0.8
+      liquidity:
+        observations: 2
+        sample_events:
+        - macro_budget_capex_boost
+        - gov_subsidy_withdrawal
+        avg_signed_weight: 0.0476
+        avg_abs_weight: 0.0476
+        avg_multiplier: 0.8
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 2
+        sample_events:
+        - macro_budget_capex_boost
+        - gov_subsidy_withdrawal
+        avg_signed_weight: 0.0665
+        avg_abs_weight: 0.0665
+        avg_multiplier: 0.8
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 1
+        sample_events:
+        - gov_subsidy_withdrawal
+        avg_signed_weight: 0.0378
+        avg_abs_weight: 0.0378
+        avg_multiplier: 0.7
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - gov_subsidy_withdrawal
+        avg_signed_weight: 0.0882
+        avg_abs_weight: 0.0882
+        avg_multiplier: 0.7
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Telecommunication:
+    beta_default: 0.85
+    primitive_sensitivities:
+      supply_shock:
+        observations: 1
+        sample_events:
+        - sector_telecom_price_war
+        avg_signed_weight: 0.0367
+        avg_abs_weight: 0.0367
+        avg_multiplier: 1.0
+      demand_shock:
+        observations: 1
+        sample_events:
+        - micro_ipl_season
+        avg_signed_weight: 0.005
+        avg_abs_weight: 0.005
+        avg_multiplier: 1.1
+      cost_push:
+        observations: 1
+        sample_events:
+        - sector_telecom_tariff_hike
+        avg_signed_weight: 0.0367
+        avg_abs_weight: 0.0367
+        avg_multiplier: 1.0
+      liquidity:
+        observations: 1
+        sample_events:
+        - gov_digital_india
+        avg_signed_weight: 0.0099
+        avg_abs_weight: 0.0099
+        avg_multiplier: 1.1
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - gov_digital_india
+        avg_signed_weight: 0.0198
+        avg_abs_weight: 0.0198
+        avg_multiplier: 1.1
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 1
+        sample_events:
+        - micro_ipl_season
+        avg_signed_weight: 0.005
+        avg_abs_weight: 0.005
+        avg_multiplier: 1.1
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - micro_ipl_season
+        avg_signed_weight: 0.0117
+        avg_abs_weight: 0.0117
+        avg_multiplier: 1.1
+      risk_sentiment:
+        observations: 2
+        sample_events:
+        - sector_telecom_price_war
+        - sector_telecom_capex
+        avg_signed_weight: 0.0356
+        avg_abs_weight: 0.0356
+        avg_multiplier: 1.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Consumer Durables:
+    beta_default: 1.0
+    primitive_sensitivities:
+      supply_shock:
+        observations: 2
+        sample_events:
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        avg_signed_weight: 0.0529
+        avg_abs_weight: 0.0529
+        avg_multiplier: 0.825
+      demand_shock:
+        observations: 5
+        sample_events:
+        - micro_diwali
+        - micro_wedding_season_start
+        - micro_school_reopen
+        - micro_summer_ac_demand
+        - micro_winter_apparel
+        avg_signed_weight: 0.036
+        avg_abs_weight: 0.036
+        avg_multiplier: 1.08
+      cost_push:
+        observations: 2
+        sample_events:
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        avg_signed_weight: 0.1411
+        avg_abs_weight: 0.1411
+        avg_multiplier: 0.825
+      liquidity:
+        observations: 3
+        sample_events:
+        - macro_cpi_cooling
+        - gov_gst_rate_hike
+        - gov_gst_rate_cut
+        avg_signed_weight: 0.0284
+        avg_abs_weight: 0.0284
+        avg_multiplier: 0.7667
+      credit_availability:
+        observations: 3
+        sample_events:
+        - macro_cpi_cooling
+        - gov_gst_rate_hike
+        - gov_gst_rate_cut
+        avg_signed_weight: 0.0823
+        avg_abs_weight: 0.0823
+        avg_multiplier: 0.7667
+      policy_restriction:
+        observations: 2
+        sample_events:
+        - gov_gst_rate_hike
+        - gov_gst_rate_cut
+        avg_signed_weight: 0.1148
+        avg_abs_weight: 0.1148
+        avg_multiplier: 0.75
+      export_competitiveness:
+        observations: 2
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0459
+        avg_multiplier: 0.8
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 2
+        sample_events:
+        - macro_cpi_spike
+        - macro_cpi_cooling
+        avg_signed_weight: 0.194
+        avg_abs_weight: 0.194
+        avg_multiplier: 0.825
+  Consumer Services:
+    beta_default: 0.95
+    primitive_sensitivities:
+      supply_shock:
+        observations: 3
+        sample_events:
+        - macro_food_inflation_spike
+        - micro_good_monsoon
+        - micro_weak_monsoon
+        avg_signed_weight: 0.0461
+        avg_abs_weight: 0.0461
+        avg_multiplier: 0.7667
+      demand_shock:
+        observations: 17
+        sample_events:
+        - sector_ad_spend_rise
+        - sector_hospitality_demand
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_sponsorship_boom
+        avg_signed_weight: 0.0323
+        avg_abs_weight: 0.0323
+        avg_multiplier: 1.0176
+      cost_push:
+        observations: 2
+        sample_events:
+        - macro_food_inflation_spike
+        - global_shipping_disruption
+        avg_signed_weight: 0.0381
+        avg_abs_weight: 0.0381
+        avg_multiplier: 0.6
+      liquidity:
+        observations: 6
+        sample_events:
+        - macro_tax_increase
+        - macro_tax_cut
+        - macro_subsidy_increase
+        - gov_gst_rate_hike
+        - gov_gst_rate_cut
+        avg_signed_weight: 0.0293
+        avg_abs_weight: 0.0293
+        avg_multiplier: 0.7333
+      credit_availability:
+        observations: 2
+        sample_events:
+        - gov_gst_rate_hike
+        - gov_gst_rate_cut
+        avg_signed_weight: 0.0952
+        avg_abs_weight: 0.0952
+        avg_multiplier: 0.8
+      policy_restriction:
+        observations: 7
+        sample_events:
+        - macro_tax_increase
+        - macro_tax_cut
+        - macro_subsidy_increase
+        - gov_gst_rate_hike
+        - gov_gst_rate_cut
+        avg_signed_weight: 0.0652
+        avg_abs_weight: 0.0652
+        avg_multiplier: 0.7429
+      export_competitiveness:
+        observations: 1
+        sample_events:
+        - global_shipping_disruption
+        avg_signed_weight: 0.021
+        avg_abs_weight: 0.021
+        avg_multiplier: 0.5
+      import_dependency:
+        observations: 5
+        sample_events:
+        - gov_pm_kisan
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_sponsorship_boom
+        - micro_ipl_disruption
+        avg_signed_weight: 0.0121
+        avg_abs_weight: 0.0121
+        avg_multiplier: 1.08
+      logistics_disruption:
+        observations: 6
+        sample_events:
+        - gov_pm_kisan
+        - global_shipping_disruption
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_sponsorship_boom
+        avg_signed_weight: 0.0352
+        avg_abs_weight: 0.0352
+        avg_multiplier: 0.9833
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 1
+        sample_events:
+        - macro_food_inflation_spike
+        avg_signed_weight: 0.1213
+        avg_abs_weight: 0.1213
+        avg_multiplier: 0.7
+  Construction:
+    beta_default: 1.25
+    primitive_sensitivities:
+      supply_shock:
+        observations: 3
+        sample_events:
+        - macro_gdp_upside
+        - macro_gdp_downside
+        - sector_realty_price_strength
+        avg_signed_weight: 0.0639
+        avg_abs_weight: 0.0639
+        avg_multiplier: 0.9167
+      demand_shock:
+        observations: 4
+        sample_events:
+        - macro_gdp_downside
+        - macro_budget_capex_boost
+        - gov_infra_spend_boost
+        - sector_realty_price_strength
+        avg_signed_weight: 0.0803
+        avg_abs_weight: 0.0803
+        avg_multiplier: 0.9875
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 2
+        sample_events:
+        - macro_gdp_upside
+        - macro_budget_capex_boost
+        avg_signed_weight: 0.0653
+        avg_abs_weight: 0.0653
+        avg_multiplier: 1.1
+      credit_availability:
+        observations: 1
+        sample_events:
+        - macro_gdp_upside
+        avg_signed_weight: 0.108
+        avg_abs_weight: 0.108
+        avg_multiplier: 1.0
+      policy_restriction:
+        observations: 6
+        sample_events:
+        - macro_budget_capex_boost
+        - gov_election_stability
+        - gov_policy_uncertainty
+        - gov_infra_spend_boost
+        - gov_housing_push
+        avg_signed_weight: 0.0835
+        avg_abs_weight: 0.0835
+        avg_multiplier: 0.9833
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - gov_infra_spend_boost
+        avg_signed_weight: 0.0574
+        avg_abs_weight: 0.0574
+        avg_multiplier: 1.0
+      risk_sentiment:
+        observations: 3
+        sample_events:
+        - macro_gdp_downside
+        - gov_policy_uncertainty
+        - sector_construction_order_win
+        avg_signed_weight: 0.058
+        avg_abs_weight: 0.058
+        avg_multiplier: 0.9167
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Construction Materials:
+    beta_default: 1.2
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - gov_pm_awas
+        avg_signed_weight: 0.045
+        avg_abs_weight: 0.045
+        avg_multiplier: 1.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 1
+        sample_events:
+        - sector_construction_order_win
+        avg_signed_weight: 0.0525
+        avg_abs_weight: 0.0525
+        avg_multiplier: 0.8
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Realty:
+    beta_default: 1.35
+    primitive_sensitivities:
+      supply_shock:
+        observations: 4
+        sample_events:
+        - macro_gdp_upside
+        - macro_gdp_downside
+        - sector_realty_price_strength
+        - sector_realty_inventory_pressure
+        avg_signed_weight: 0.0534
+        avg_abs_weight: 0.0534
+        avg_multiplier: 0.9
+      demand_shock:
+        observations: 3
+        sample_events:
+        - macro_gdp_downside
+        - macro_budget_capex_boost
+        - sector_realty_price_strength
+        avg_signed_weight: 0.0742
+        avg_abs_weight: 0.0742
+        avg_multiplier: 0.8667
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 6
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_liquidity_tightening
+        - macro_liquidity_easing
+        - macro_gdp_upside
+        avg_signed_weight: 0.0598
+        avg_abs_weight: 0.0598
+        avg_multiplier: 1.0917
+      credit_availability:
+        observations: 3
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_gdp_upside
+        avg_signed_weight: 0.2351
+        avg_abs_weight: 0.2351
+        avg_multiplier: 1.1
+      policy_restriction:
+        observations: 9
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_liquidity_tightening
+        - macro_liquidity_easing
+        - macro_budget_capex_boost
+        avg_signed_weight: 0.134
+        avg_abs_weight: 0.134
+        avg_multiplier: 1.0611
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 2
+        sample_events:
+        - macro_gdp_downside
+        - gov_policy_uncertainty
+        avg_signed_weight: 0.0462
+        avg_abs_weight: 0.0462
+        avg_multiplier: 0.75
+      inflation_expectation:
+        observations: 4
+        sample_events:
+        - macro_rbi_repo_hike
+        - macro_rbi_repo_cut
+        - macro_liquidity_tightening
+        - macro_liquidity_easing
+        avg_signed_weight: 0.0815
+        avg_abs_weight: 0.0815
+        avg_multiplier: 1.2375
+  Chemicals:
+    beta_default: 1.15
+    primitive_sensitivities:
+      supply_shock:
+        observations: 1
+        sample_events:
+        - gov_pli_expansion
+        avg_signed_weight: 0.0378
+        avg_abs_weight: 0.0378
+        avg_multiplier: 0.7
+      demand_shock:
+        observations: 1
+        sample_events:
+        - global_china_growth_slowdown
+        avg_signed_weight: 0.0315
+        avg_abs_weight: 0.0315
+        avg_multiplier: 0.8
+      cost_push:
+        observations: 2
+        sample_events:
+        - sector_chemical_spread_rise
+        - sector_chemical_spread_compression
+        avg_signed_weight: 0.0262
+        avg_abs_weight: 0.0262
+        avg_multiplier: 1.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - gov_pli_expansion
+        avg_signed_weight: 0.0756
+        avg_abs_weight: 0.0756
+        avg_multiplier: 0.7
+      export_competitiveness:
+        observations: 2
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0459
+        avg_multiplier: 0.8
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 2
+        sample_events:
+        - global_china_stimulus
+        - global_sanctions
+        avg_signed_weight: 0.0475
+        avg_abs_weight: 0.0475
+        avg_multiplier: 0.75
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Media, Entertainment & Publication:
+    beta_default: 1.05
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 5
+        sample_events:
+        - sector_ad_spend_rise
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_sponsorship_boom
+        - micro_ipl_disruption
+        avg_signed_weight: 0.037
+        avg_abs_weight: 0.037
+        avg_multiplier: 1.34
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 4
+        sample_events:
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_sponsorship_boom
+        - micro_ipl_disruption
+        avg_signed_weight: 0.016
+        avg_abs_weight: 0.016
+        avg_multiplier: 1.425
+      logistics_disruption:
+        observations: 4
+        sample_events:
+        - micro_ipl_season
+        - micro_ipl_final
+        - micro_ipl_sponsorship_boom
+        - micro_ipl_disruption
+        avg_signed_weight: 0.0374
+        avg_abs_weight: 0.0374
+        avg_multiplier: 1.425
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Services:
+    beta_default: 0.9
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 1
+        sample_events:
+        - sector_hospitality_demand
+        avg_signed_weight: 0.0546
+        avg_abs_weight: 0.0546
+        avg_multiplier: 0.8
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Diversified:
+    beta_default: 1.0
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 1
+        sample_events:
+        - corp_buyback
+        avg_signed_weight: 0.0107
+        avg_abs_weight: 0.0107
+        avg_multiplier: 1.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 16
+        sample_events:
+        - corp_earnings_beat
+        - corp_earnings_miss
+        - corp_guidance_raise
+        - corp_guidance_cut
+        - corp_merger_positive
+        avg_signed_weight: 0.0179
+        avg_abs_weight: 0.0179
+        avg_multiplier: 1.0
+      credit_availability:
+        observations: 16
+        sample_events:
+        - corp_earnings_beat
+        - corp_earnings_miss
+        - corp_guidance_raise
+        - corp_guidance_cut
+        - corp_merger_positive
+        avg_signed_weight: 0.0357
+        avg_abs_weight: 0.0357
+        avg_multiplier: 1.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - gov_sebi_probe
+        avg_signed_weight: 0.1418
+        avg_abs_weight: 0.1418
+        avg_multiplier: 0.7
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 3
+        sample_events:
+        - corp_lawsuit_adverse
+        - corp_penalty_imposed
+        - corp_case_closed
+        avg_signed_weight: 0.0298
+        avg_abs_weight: 0.0298
+        avg_multiplier: 1.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Textiles:
+    beta_default: 1.1
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 2
+        sample_events:
+        - micro_wedding_season_start
+        - micro_winter_apparel
+        avg_signed_weight: 0.0236
+        avg_abs_weight: 0.0236
+        avg_multiplier: 1.2
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 1
+        sample_events:
+        - macro_exports_boost
+        avg_signed_weight: 0.0276
+        avg_abs_weight: 0.0276
+        avg_multiplier: 0.7
+      import_dependency:
+        observations: 1
+        sample_events:
+        - macro_exports_boost
+        avg_signed_weight: 0.0276
+        avg_abs_weight: 0.0276
+        avg_multiplier: 0.7
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - macro_exports_boost
+        avg_signed_weight: 0.0643
+        avg_abs_weight: 0.0643
+        avg_multiplier: 0.7
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Forest Materials:
+    beta_default: 1.0
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Transportation:
+    beta_default: 1.0
+    primitive_sensitivities:
+      supply_shock:
+        observations: 3
+        sample_events:
+        - macro_fuel_inflation_spike
+        - global_crude_surge
+        - global_crude_collapse
+        avg_signed_weight: 0.0464
+        avg_abs_weight: 0.0464
+        avg_multiplier: 0.8667
+      demand_shock:
+        observations: 3
+        sample_events:
+        - gov_infra_spend_boost
+        - micro_summer_travel
+        - micro_winter_tourism
+        avg_signed_weight: 0.0337
+        avg_abs_weight: 0.0337
+        avg_multiplier: 0.9667
+      cost_push:
+        observations: 4
+        sample_events:
+        - macro_fuel_inflation_spike
+        - global_crude_surge
+        - global_crude_collapse
+        - global_shipping_disruption
+        avg_signed_weight: 0.0973
+        avg_abs_weight: 0.0973
+        avg_multiplier: 0.85
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - gov_infra_spend_boost
+        avg_signed_weight: 0.0918
+        avg_abs_weight: 0.0918
+        avg_multiplier: 0.8
+      export_competitiveness:
+        observations: 1
+        sample_events:
+        - global_shipping_disruption
+        avg_signed_weight: 0.0336
+        avg_abs_weight: 0.0336
+        avg_multiplier: 0.8
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 2
+        sample_events:
+        - gov_infra_spend_boost
+        - global_shipping_disruption
+        avg_signed_weight: 0.0789
+        avg_abs_weight: 0.0789
+        avg_multiplier: 0.8
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 2
+        sample_events:
+        - macro_fuel_inflation_spike
+        - global_crude_surge
+        avg_signed_weight: 0.0859
+        avg_abs_weight: 0.0859
+        avg_multiplier: 0.9
+  Materials:
+    beta_default: 1.05
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 1
+        sample_events:
+        - micro_jewelry_demand
+        avg_signed_weight: 0.0126
+        avg_abs_weight: 0.0126
+        avg_multiplier: 0.7
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Utilities:
+    beta_default: 0.95
+    primitive_sensitivities:
+      supply_shock:
+        observations: 1
+        sample_events:
+        - sector_power_demand_rise
+        avg_signed_weight: 0.0331
+        avg_abs_weight: 0.0331
+        avg_multiplier: 0.9
+      demand_shock:
+        observations: 1
+        sample_events:
+        - sector_power_demand_rise
+        avg_signed_weight: 0.0331
+        avg_abs_weight: 0.0331
+        avg_multiplier: 0.9
+      cost_push:
+        observations: 1
+        sample_events:
+        - sector_power_tariff_hike
+        avg_signed_weight: 0.018
+        avg_abs_weight: 0.018
+        avg_multiplier: 0.8
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Aviation:
+    beta_default: 1.3
+    primitive_sensitivities:
+      supply_shock:
+        observations: 3
+        sample_events:
+        - macro_fuel_inflation_spike
+        - global_crude_surge
+        - global_crude_collapse
+        avg_signed_weight: 0.054
+        avg_abs_weight: 0.054
+        avg_multiplier: 1.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 3
+        sample_events:
+        - macro_fuel_inflation_spike
+        - global_crude_surge
+        - global_crude_collapse
+        avg_signed_weight: 0.1376
+        avg_abs_weight: 0.1376
+        avg_multiplier: 1.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      export_competitiveness:
+        observations: 2
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0516
+        avg_multiplier: 0.9
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 1
+        sample_events:
+        - global_war_escalation
+        avg_signed_weight: 0.0705
+        avg_abs_weight: 0.0705
+        avg_multiplier: 0.9
+      inflation_expectation:
+        observations: 2
+        sample_events:
+        - macro_fuel_inflation_spike
+        - global_crude_surge
+        avg_signed_weight: 0.0917
+        avg_abs_weight: 0.0917
+        avg_multiplier: 1.0
+  Broking Company:
+    beta_default: 1.1
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 4
+        sample_events:
+        - gov_capital_gains_tax_hike
+        - gov_capital_gains_tax_cut
+        - gov_sebi_probe
+        - gov_sebi_relaxation
+        avg_signed_weight: 0.1149
+        avg_abs_weight: 0.1149
+        avg_multiplier: 0.825
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Cement:
+    beta_default: 1.25
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 2
+        sample_events:
+        - macro_budget_capex_boost
+        - gov_infra_spend_boost
+        avg_signed_weight: 0.0516
+        avg_abs_weight: 0.0516
+        avg_multiplier: 0.85
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 1
+        sample_events:
+        - macro_budget_capex_boost
+        avg_signed_weight: 0.0574
+        avg_abs_weight: 0.0574
+        avg_multiplier: 0.9
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 3
+        sample_events:
+        - macro_budget_capex_boost
+        - gov_infra_spend_boost
+        - gov_pm_awas
+        avg_signed_weight: 0.0662
+        avg_abs_weight: 0.0662
+        avg_multiplier: 0.9333
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - gov_infra_spend_boost
+        avg_signed_weight: 0.0459
+        avg_abs_weight: 0.0459
+        avg_multiplier: 0.8
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Fertilizer:
+    beta_default: 1.1
+    primitive_sensitivities:
+      supply_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 1
+        sample_events:
+        - macro_subsidy_increase
+        avg_signed_weight: 0.0675
+        avg_abs_weight: 0.0675
+        avg_multiplier: 1.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - macro_subsidy_increase
+        avg_signed_weight: 0.0337
+        avg_abs_weight: 0.0337
+        avg_multiplier: 1.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Manufacturing:
+    beta_default: 1.0
+    primitive_sensitivities:
+      supply_shock:
+        observations: 1
+        sample_events:
+        - gov_pli_expansion
+        avg_signed_weight: 0.054
+        avg_abs_weight: 0.054
+        avg_multiplier: 1.0
+      demand_shock:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      credit_availability:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      policy_restriction:
+        observations: 1
+        sample_events:
+        - gov_pli_expansion
+        avg_signed_weight: 0.108
+        avg_abs_weight: 0.108
+        avg_multiplier: 1.0
+      export_competitiveness:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      risk_sentiment:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+  Capital Goods:
+    beta_default: 1.2
+    primitive_sensitivities:
+      supply_shock:
+        observations: 5
+        sample_events:
+        - macro_gdp_upside
+        - macro_gdp_downside
+        - macro_ip_growth_up
+        - macro_ip_growth_down
+        - gov_pli_expansion
+        avg_signed_weight: 0.0686
+        avg_abs_weight: 0.0686
+        avg_multiplier: 0.91
+      demand_shock:
+        observations: 3
+        sample_events:
+        - macro_gdp_downside
+        - macro_budget_capex_boost
+        - gov_infra_spend_boost
+        avg_signed_weight: 0.0959
+        avg_abs_weight: 0.0959
+        avg_multiplier: 1.05
+      cost_push:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      liquidity:
+        observations: 2
+        sample_events:
+        - macro_gdp_upside
+        - macro_budget_capex_boost
+        avg_signed_weight: 0.0653
+        avg_abs_weight: 0.0653
+        avg_multiplier: 1.1
+      credit_availability:
+        observations: 1
+        sample_events:
+        - macro_gdp_upside
+        avg_signed_weight: 0.108
+        avg_abs_weight: 0.108
+        avg_multiplier: 1.0
+      policy_restriction:
+        observations: 4
+        sample_events:
+        - macro_budget_capex_boost
+        - gov_pli_expansion
+        - gov_election_stability
+        - gov_infra_spend_boost
+        avg_signed_weight: 0.0852
+        avg_abs_weight: 0.0852
+        avg_multiplier: 0.95
+      export_competitiveness:
+        observations: 2
+        sample_events:
+        - macro_inr_depreciation
+        - macro_inr_appreciation
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0459
+        avg_multiplier: 0.8
+      import_dependency:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
+      logistics_disruption:
+        observations: 1
+        sample_events:
+        - gov_infra_spend_boost
+        avg_signed_weight: 0.0574
+        avg_abs_weight: 0.0574
+        avg_multiplier: 1.0
+      risk_sentiment:
+        observations: 1
+        sample_events:
+        - macro_gdp_downside
+        avg_signed_weight: 0.077
+        avg_abs_weight: 0.077
+        avg_multiplier: 0.95
+      inflation_expectation:
+        observations: 0
+        sample_events: []
+        avg_signed_weight: 0.0
+        avg_abs_weight: 0.0
+        avg_multiplier: 0.0
