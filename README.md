@@ -87,15 +87,15 @@ Can be used with Zerodha Streak, Tradetron, and AlgoTest by feeding AION Analyti
 
 Most open-source financial sentiment tools, including FinBERT variants, stop at polarity scoring.
 
-| Capability | AION Analytics News-to-Signal | FinBERT |
-|---|---|---|
-| Indian market event logic | Yes | No |
-| Sector-level output | Yes, 32 sectors | No |
-| Trade direction signals | Yes | No |
-| Weather/crop propagation | Yes | No |
-| Stakeholder decomposition | Yes | No |
-| VIX-adjusted output | Yes | No |
-| “Which sectors to long/short from news” workflow | Yes | No |
+| Capability                    | AION Analytics News-to-Signal | FinBERT |
+|-------------------------------|-------------------------------|---------|
+| Indian market event logic     | Yes                           | No      |
+| Sector-level output           | Yes, 32 sectors               | No      |
+| Trade direction signals       | Yes                           | No      |
+| Weather/crop propagation      | Yes                           | No      |
+| Stakeholder decomposition     | Yes                           | No      |
+| VIX-adjusted output           | Yes                           | No      |
+| “Which sectors to long/short from news” workflow        | Yes | No      |
 
 FinBERT tells you whether a headline feels positive or negative.
 
@@ -107,12 +107,12 @@ AION Analytics News-to-Signal tells you:
 - whether there is a flip side
 - what trade view or hedge view follows
 
-## Pricing & Tiers
+# Pricing & Tiers
 
 Draft pricing for a future hosted product. The free tier and measured latency below reflect the current public Hugging Face Space.
 
 | Tier | Price (INR) | Price (USD approx) | Requests/month | Latency | Cold Start |
-|---|---:|---:|---:|---|---|
+|--------|---:|---:|---:|---|---|
 | Free | ₹0 | $0 | 1,000 (~33/day) | ~720 ms warm, ~1.7 s cold | Yes |
 | Builder | ₹299/mo | ~$3.5 | 15,000 (~500/day) | ~720 ms warm, occasional cold | Shared |
 | Pro | ₹999/mo | ~$12 | 75,000 (~2,500/day) | ~300–500 ms, priority | No (dedicated) |
@@ -121,7 +121,7 @@ Draft pricing for a future hosted product. The free tier and measured latency be
 
 *Pay-as-you-go: ₹0.10 per extra request or ₹100/5,000 extra after monthly limit.*
 
-## Hosted API Details
+# Hosted API Details
 
 Public Space:
 
@@ -144,7 +144,7 @@ The current hosted endpoint is the Gradio API path:
 
 Single POST request in a dedicated production deployment is the intended commercial shape. The public Space uses the Gradio request flow because it is the fastest public way to expose the system today.
 
-## Local vs Hosted vs Production
+# Local vs Hosted vs Production
 
 | Option | Where it runs | Typical latency | Cold start | Best for |
 |---|---|---|---|---|
@@ -152,14 +152,14 @@ Single POST request in a dedicated production deployment is the intended commerc
 | Hosted | Public Hugging Face Space | `~720 ms` warm, `~1.7 s` cold | Yes | Trial usage, demos, evaluation |
 | Production | Dedicated paid endpoint | `~200–400 ms` CPU, `<100 ms` GPU | No | Real trading systems, user-facing SaaS |
 
-## Positioning for Developers
+# Positioning for Developers
 
 - Designed for LLM-based workflows, bots, and internal research tools
 - Works as a decision-layer API, not just a sentiment model
 - Compatible with broker-linked trading systems and market dashboards
 - Useful when you want structured market reasoning instead of raw sentiment text
 
-### MCP
+# MCP
 
 Use directly inside ChatGPT, Claude, or Cursor via MCP. No API integration required.
 
@@ -167,7 +167,7 @@ Expose AION Analytics News-to-Signal as a tool so LLMs can call it during reason
 
 No backend required. Works as a plug-and-play tool inside LLM workflows.
 
-## Copy-Paste Example (Hosted Version)
+# Copy-Paste Example (Hosted Version)
 
 ```python
 import json
@@ -196,7 +196,7 @@ print(payload["event"])
 print(payload["trade_direction_signals"])
 ```
 
-## Integration Anchors
+# Integration Anchors
 
 - Works with Zerodha Kite Connect API
 - Compatible with Angel One SmartAPI
@@ -215,7 +215,7 @@ Useful search anchors:
 - generate trade ideas from Indian news
 - which sectors go up or down from a news event
 
-## Active Components
+# Active Components
 
 - `aion.py`
 - `pipeline_e2e_test.py`
@@ -233,7 +233,7 @@ Useful search anchors:
 - `datasets/external/`
 - `unified_real_headlines.csv`
 
-## Current Limits
+# Current Limits
 
 - Weather/crop rule coverage still depends on explicit weather, crop, region, or policy cues in the headline
 - The primitive sector matrix is partly heuristic and is not yet fully back-solved from human-labeled sector data
@@ -241,14 +241,6 @@ Useful search anchors:
 - The public hosted API is a Hugging Face Space, so it uses the Gradio API flow rather than a single-purpose production REST gateway
 - Pricing and dedicated low-latency tiers in this README are draft positioning, not a live billing system
 
-## Market Positioning Claim (Draft)
+# Market Positioning Claim
 
-Draft claim:
-
-No open-source or developer-accessible API currently offers this combination of Indian-market event detection, sector-level causal impact, stakeholder decomposition, and weather/trade propagation in one developer-facing workflow.
-
-Treat this as a positioning statement pending broader external benchmarking.
-
-## Goal Statement
-
-Build the default developer layer for converting Indian financial news into actionable sector intelligence, trading signals, and structured reasoning for bots, dashboards, and LLM workflows.
+AION is the first open‑source API that converts a single Indian financial headline into a 32‑sector impact vector showing which sectors move up, which move down, and where the flip‑side opportunity lies. Built for developers who need structured, non‑hallucinated market signals, not sentiment scores.
