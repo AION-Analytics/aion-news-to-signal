@@ -28,9 +28,37 @@ DistilBERT encoder with 4 task heads:
 
 Trained on 42,014 Indian financial news headlines with taxonomy-corrected labels.
 Temperature-scaled confidence (T=1.5) for calibrated probabilities.
+
+===========================================================================
+TROUBLESHOOTING: News Sentiment Issues
+===========================================================================
+
+If a headline is getting wrong sentiment (e.g., POSITIVE for negative news):
+
+1. THIS FILE: src/aion_sentiment/sentiment.py
+   - SentimentAnalyzer.predict() applies inference-time override for 11 negative events
+   - Override: if macro < -0.2 and event in NEGATIVE_EVENTS → force negative
+   - Version: check __version__ in __init__.py (should be >= 0.2.1)
+
+2. MODEL FILES:
+   https://huggingface.co/AION-Analytics/aion-sentiment-unified-v1/
+   - pytorch_model.bin, config.json, event_mapping.json, sector_order.json
+
+3. CRAWLER (where live news sentiment is computed):
+   /Users/lokeshgupta/projects/aion_algo_trading/src/zerodha/crawlers/gift_nifty_gap.py
+   - _unified_analysis() line ~430: same override logic
+
+4. DOWNSTREAM (reads sentiment from Redis):
+   /Users/lokeshgupta/projects/aion_algo_trading/src/aion_ML/models/predictors/nifty_open_predictor.py
+   - _collect_news_sentiment_from_redis() line ~151
+
+5. KNOWN ISSUE TRACKING:
+   - GitHub: https://github.com/AION-Analytics/aion-news-to-signal/issues/1
+   - HF: https://huggingface.co/AION-Analytics/aion-sentiment-unified-v1/discussions/1
 """
 
 import torch
+import os
 import torch.nn as nn
 from transformers import AutoModel, AutoTokenizer
 from typing import Optional, List, Dict, Union
@@ -113,6 +141,15 @@ class SentimentAnalyzer:
         >>> print(result['sector_impacts']['IT'])  # -0.34 (hurts exporters)
     """
 
+    # Inference-time override for high-impact negative events (v1.0.1)
+    # Bypasses broken sentiment head for known negative events
+    NEGATIVE_EVENTS = {
+        "global_crude_surge", "global_war_escalation", "macro_cpi_spike",
+        "global_recession_fear", "sector_oil_inventory_build", "global_sanctions",
+        "macro_inr_depreciation", "macro_rbi_repo_hike", "global_shipping_disruption",
+        "global_vix_spike", "macro_gdp_downside"
+    }
+
     LABEL_MAP = {0: 'negative', 1: 'neutral', 2: 'positive'}
     TEMPERATURE = 1.5  # Temperature scaling for calibrated confidence
 
@@ -126,28 +163,50 @@ class SentimentAnalyzer:
 
         logger.info(f"Loading unified model '{model_name}' on {self.device}")
         try:
-            self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-            self.model = MultiTaskModel(num_events=95, num_sectors=32)
-            state_dict = torch.hub.load_state_dict_from_url(
-                f"https://huggingface.co/{model_name}/resolve/main/pytorch_model.bin",
-                map_location=self.device
-            )
-            self.model.load_state_dict(state_dict)
+            # Check if model_name is a local directory path
+            if os.path.isdir(model_name):
+                # Load from local path directly — no torch.hub, no download, no cache
+                logger.info(f"Loading from local path: {model_name}")
+                self.model = MultiTaskModel(num_events=95, num_sectors=32)
+                state_dict = torch.load(
+                    os.path.join(model_name, "model.pt"),
+                    map_location=self.device,
+                    weights_only=True
+                )
+                self.model.load_state_dict(state_dict)
+
+                # Load metadata from local files
+                with open(os.path.join(model_name, "config.json")) as f:
+                    cfg = json.load(f)
+                self.event_mapping = {int(k): v for k, v in cfg.get('id2label', {}).items()}
+                self.sector_cols = cfg.get('sector_cols', [])
+
+                # Load tokenizer from local path
+                self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+            else:
+                # Load from HuggingFace Hub (original behaviour)
+                self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+                self.model = MultiTaskModel(num_events=95, num_sectors=32)
+                state_dict = torch.hub.load_state_dict_from_url(
+                    f"https://huggingface.co/{model_name}/resolve/main/pytorch_model.bin",
+                    map_location=self.device
+                )
+                self.model.load_state_dict(state_dict)
+
+                # Load metadata
+                try:
+                    import requests
+                    cfg = requests.get(
+                        f"https://huggingface.co/{model_name}/resolve/main/config.json"
+                    ).json()
+                    self.event_mapping = cfg.get('id2label', {})
+                    self.sector_cols = cfg.get('sector_cols', [])
+                except Exception:
+                    self.event_mapping = {}
+                    self.sector_cols = []
+
             self.model.to(self.device)
             self.model.eval()
-
-            # Load metadata
-            try:
-                import requests
-                cfg = requests.get(
-                    f"https://huggingface.co/{model_name}/resolve/main/config.json"
-                ).json()
-                self.event_mapping = cfg.get('id2label', {})
-                self.sector_cols = cfg.get('sector_cols', [])
-            except Exception:
-                self.event_mapping = {}
-                self.sector_cols = []
-
             logger.info(f"Model loaded: 95 events, 32 sectors on {self.device}")
         except Exception as e:
             logger.error(f"Failed to load model: {e}")
@@ -215,8 +274,15 @@ class SentimentAnalyzer:
             else:
                 sector_impacts = {f"sector_{i}": v for i, v in enumerate(sector_vals)}
 
+            sentiment = self.LABEL_MAP.get(sent_label, 'neutral')
+
+            # Override: force negative for high-impact negative events
+            if (macro < -0.2) and (event_name in self.NEGATIVE_EVENTS):
+                sentiment = 'negative'
+                confidence = max(0.7, confidence)
+
             results.append({
-                'sentiment': self.LABEL_MAP.get(sent_label, 'neutral'),
+                'sentiment': sentiment,
                 'sentiment_score': confidence,
                 'event_id': event_name,
                 'event_confidence': event_conf,

@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aion-news-to-signal"
+version = "0.1.2"
+description = "Python client for the AION News-to-Signal API for Indian markets"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "AGPL-3.0-or-later" }
+authors = [
+  { name = "AION Analytics" }
+]
+dependencies = [
+  "requests>=2.31"
+]
+keywords = [
+  "india",
+  "nse",
+  "stock-market-news-analysis",
+  "trading-signals",
+  "financial-news",
+  "sentiment-analysis",
+  "sector-analysis",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Financial and Insurance Industry",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Office/Business :: Financial",
+  "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/AION-Analytics/aion-news-to-signal"
+Documentation = "https://huggingface.co/spaces/AION-Analytics/aion-news-to-signal"
+Issues = "https://github.com/AION-Analytics/aion-news-to-signal/issues"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
