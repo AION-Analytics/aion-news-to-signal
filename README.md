@@ -39,28 +39,17 @@ print(result["top_negative_sectors"])
 
 ## Before / After
 
-### Input headline
+Headline:
+> Unseasonal rainfall and hailstorm hit apple orchards in Himachal Pradesh in April
 
-`Unseasonal rainfall and hailstorm hit apple orchards in Himachal Pradesh in April`
-
-### Typical sentiment output
-
+Typical sentiment output:
 - negative
 
-### AION Analytics News-to-Signal output
-
+AION Analytics News-to-Signal output:
 - event / rule: `rain_apple_damage`
-- likely losers:
-  - Agriculture & Horticulture
-  - Transportation
-  - Consumer Services
-- flip-side opportunity:
-  - traders can benefit from scarcity and repricing
-  - storage and substitute supply chains may gain
-- stakeholder view:
-  - producer: orchard losses, lower output, damaged harvest economics
-  - trader: inventory scarcity, freight bottlenecks, price repricing opportunity
-  - investor: second-order sector impact and timing of the cascade
+- likely losers: `Agriculture & Horticulture`, `Transportation`, `Consumer Services`
+- flip-side opportunity: traders can benefit from scarcity and repricing, and storage or substitute supply chains may gain
+- stakeholder view: producer losses, trader repricing opportunity, investor view on second-order sector timing
 
 Trade implication:
 - short agriculture-linked exposure
