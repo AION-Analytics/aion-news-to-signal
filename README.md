@@ -1,16 +1,18 @@
-# AION News-to-Signal API for Indian Markets
+# AION Analytics News-to-Signal API for Indian Markets
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
 REST API + Python SDK that converts Indian financial news into structured sector-level trading signals.
 
+First news-to-signal engine for Indian markets.
+
 Designed for NSE sector analysis and Indian financial markets.
 
-Use AION for news-based algo trading in India. Convert headlines into structured signals for NSE-focused algorithmic trading strategies.
+Use AION Analytics News-to-Signal for news-based algo trading in India. Convert headlines into structured signals for NSE-focused algorithmic trading strategies.
 
 Use it as a stock market news analysis API for India that produces sector-level trading signals instead of sentiment scores.
 
-AION outputs sector-level signals. These can be mapped to individual NSE stocks using sector-to-ticker mappings to identify which stocks to buy or sell from news.
+AION Analytics News-to-Signal outputs sector-level signals. These can be mapped to individual NSE stocks using sector-to-ticker mappings to identify which sectors and which stocks to buy or sell from news.
 
 It returns trade direction signals, including which sectors to long/short, and trade ideas derived from news events.
 
@@ -37,7 +39,7 @@ print(result["top_negative_sectors"])
 
 - negative
 
-### AION output
+### AION Analytics News-to-Signal output
 
 - event / rule: `rain_apple_damage`
 - likely losers:
@@ -57,9 +59,9 @@ Trade implication:
 - watch logistics bottlenecks
 - look for substitute supply beneficiaries
 
-In one line: AION converts a weather headline into sector moves + trade positioning.
+In one line: AION Analytics News-to-Signal converts a weather headline into sector moves + trade positioning.
 
-## What AION Does
+## What AION Analytics News-to-Signal Does
 
 - event classification from Indian financial news
 - sector-level trading signals, including trade direction signals and which sectors to long/short
@@ -82,13 +84,13 @@ In one line: AION converts a weather headline into sector moves + trade position
 - News-based algo trading:
   Build news based trading strategy India workflows for NSE sectors and map those sectors to stocks.
 
-Can be used with Zerodha Streak, Tradetron, and AlgoTest by feeding AION signals into strategy conditions.
+Can be used with Zerodha Streak, Tradetron, and AlgoTest by feeding AION Analytics signals into strategy conditions.
 
 ## Why Not FinBERT?
 
 Most open-source financial sentiment tools, including FinBERT variants, stop at polarity scoring.
 
-| Capability | AION | FinBERT |
+| Capability | AION Analytics News-to-Signal | FinBERT |
 |---|---|---|
 | Indian market event logic | Yes | No |
 | Sector-level output | Yes, 32 sectors | No |
@@ -100,7 +102,7 @@ Most open-source financial sentiment tools, including FinBERT variants, stop at 
 
 FinBERT tells you whether a headline feels positive or negative.
 
-AION tells you:
+AION Analytics News-to-Signal tells you:
 
 - what happened
 - which sectors will go up or down
@@ -163,7 +165,7 @@ Single POST request in a dedicated production deployment is the intended commerc
 
 Use directly inside ChatGPT, Claude, or Cursor via MCP. No API integration required.
 
-Expose AION as a tool so LLMs can call it during reasoning instead of guessing sector impact.
+Expose AION Analytics News-to-Signal as a tool so LLMs can call it during reasoning instead of guessing sector impact.
 
 No backend required. Works as a plug-and-play tool inside LLM workflows.
 
