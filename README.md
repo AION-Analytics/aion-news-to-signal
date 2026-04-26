@@ -18,7 +18,7 @@ Generate news based stock signals NSE traders can use, then convert them into se
 
 AION Analytics is an AI trading signals India API for developers building broker-linked bots, dashboards, and LLM workflows.
 
-AION Analytics News-to-Signal works with ChatGPT, Claude, Gemini, VS Code, Cursor, Windsurf, Antigravity, Cline, and other MCP-compatible IDEs and agent workflows.
+AION Analytics News-to-Signal works with ChatGPT, Claude, Gemini, Continue, VS Code, Cursor, Windsurf, Antigravity, Cline, and other MCP-compatible IDEs and agent workflows.
 
 AION Analytics News-to-Signal outputs sector-level signals. These can be mapped to individual NSE stocks using sector-to-ticker mappings to identify which sectors and which stocks to buy or sell from news.
 
@@ -75,7 +75,7 @@ In one line: AION Analytics News-to-Signal converts a weather headline into sect
 - RBI dashboard:
   Track inflation, logistics disruption, fiscal stress, and sector pressure from macro or weather headlines.
 - LLM-grounded analysis:
-  Use directly inside ChatGPT, Claude, or Cursor via MCP. No API integration required.
+  Use directly inside ChatGPT, Claude, Gemini, Continue, VS Code, Cursor, or Windsurf via MCP. No API integration required.
 - Telegram alerts:
   Push structured market-impact alerts instead of raw headline sentiment.
 - News-based algo trading:
@@ -161,11 +161,13 @@ Single POST request in a dedicated production deployment is the intended commerc
 
 # MCP
 
-Use directly inside ChatGPT, Claude, or Cursor via MCP. No API integration required.
+Use directly inside ChatGPT, Claude, Gemini, Continue, VS Code, Cursor, or Windsurf via MCP. No API integration required.
 
 Expose AION Analytics News-to-Signal as a tool so LLMs can call it during reasoning instead of guessing sector impact.
 
 No backend required. Works as a plug-and-play tool inside LLM workflows.
+
+Continue configs for local install and Hub publication are in [`continue/`](continue).
 
 # Copy-Paste Example (Hosted Version)
 
