@@ -1,4 +1,4 @@
-# AION Analytics - News-to-Signal Engine for Indian Markets
+# AION Analytics — News-to-Signal Engine for Indian Markets
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 
@@ -12,11 +12,19 @@ Use AION Analytics News-to-Signal for news-based algo trading in India. Convert 
 
 Use it as a stock market news analysis API for India that produces sector-level trading signals instead of sentiment scores.
 
+Use AION Analytics News-to-Signal as a stock picker from news India: convert headlines into sector signals, then map to NSE stocks.
+
+Generate news-based stock signals for NSE and convert them into sector rotation, stock picker, and trading bot workflows.
+
+AION Analytics is an AI trading signals India API for developers building broker-linked bots, dashboards, and LLM workflows.
+
+AION Analytics News-to-Signal works with ChatGPT, Claude, Gemini, VS Code, Cursor, Windsurf, Antigravity, Cline, and other MCP-compatible IDEs and agent workflows.
+
 AION Analytics News-to-Signal outputs sector-level signals. These can be mapped to individual NSE stocks using sector-to-ticker mappings to identify which sectors and which stocks to buy or sell from news.
 
 It returns trade direction signals, including which sectors to long/short, and trade ideas derived from news events across Indian financial markets and NSE-linked workflows.
 
-# Local Python Snippet
+## Local Python Snippet
 
 ```python
 from aion import analyze
@@ -29,17 +37,17 @@ print(result["trade_direction_signals"])
 print(result["top_negative_sectors"])
 ```
 
-# Before / After
+## Before / After
 
-# Input headline
+### Input headline
 
 `Unseasonal rainfall and hailstorm hit apple orchards in Himachal Pradesh in April`
 
-# Typical sentiment output
+### Typical sentiment output
 
 - negative
 
-# AION Analytics News-to-Signal output
+### AION Analytics News-to-Signal output
 
 - event / rule: `rain_apple_damage`
 - likely losers:
@@ -61,7 +69,7 @@ Trade implication:
 
 In one line: AION Analytics News-to-Signal converts a weather headline into sector moves + trade positioning.
 
-# What AION Analytics News-to-Signal Does
+## What AION Analytics News-to-Signal Does
 
 - event classification from Indian financial news
 - sector-level trading signals, including trade direction signals and which sectors to long/short
@@ -71,14 +79,14 @@ In one line: AION Analytics News-to-Signal converts a weather headline into sect
 - weather/crop and supply-chain propagation where relevant
 - structured output for bots, dashboards, and LLM workflows
 
-# Use Cases
+## Use Cases
 
 - Zerodha bot:
   Generate trade ideas from Indian news and feed them into Zerodha Kite Connect execution logic.
 - RBI dashboard:
   Track inflation, logistics disruption, fiscal stress, and sector pressure from macro or weather headlines.
 - LLM-grounded analysis:
-  Use directly inside ChatGPT, Claude, or Cursor, VS CODE, TRAE via MCP. No API integration required.
+  Use directly inside ChatGPT, Claude, or Cursor via MCP. No API integration required.
 - Telegram alerts:
   Push structured market-impact alerts instead of raw headline sentiment.
 - News-based algo trading:
@@ -86,19 +94,19 @@ In one line: AION Analytics News-to-Signal converts a weather headline into sect
 
 Can be used with Zerodha Streak, Tradetron, and AlgoTest by feeding AION Analytics signals into strategy conditions.
 
-# Why Not FinBERT?
+## Why Not FinBERT?
 
 Most open-source financial sentiment tools, including FinBERT variants, stop at polarity scoring.
 
-| Capability                 | AION Analytics News-to-Signal | FinBERT |
-|----------------------------|-------------------------------|---------|
-| Indian market event logic  | Yes                           | No      |
-| Sector-level output        | Yes, 32 sectors               | No      |
-| Trade direction signals    | Yes                           | No      |
-| Weather/crop propagation   | Yes                           | No      |
-| Stakeholder decomposition  | Yes                           | No      |
-| VIX-adjusted output        | Yes                           | No      |
-| “Which sectors to long/short from news” workflow | Yes     | No      |
+| Capability | AION Analytics News-to-Signal | FinBERT |
+|---|---|---|
+| Indian market event logic | Yes | No |
+| Sector-level output | Yes, 32 sectors | No |
+| Trade direction signals | Yes | No |
+| Weather/crop propagation | Yes | No |
+| Stakeholder decomposition | Yes | No |
+| VIX-adjusted output | Yes | No |
+| “Which sectors to long/short from news” workflow | Yes | No |
 
 FinBERT tells you whether a headline feels positive or negative.
 
@@ -110,21 +118,21 @@ AION Analytics News-to-Signal tells you:
 - whether there is a flip side
 - what trade view or hedge view follows
 
-# Pricing & Tiers
+## Pricing & Tiers
 
 Draft pricing for a future hosted product. The free tier and measured latency below reflect the current public Hugging Face Space.
 
-| Tier       | Price (INR) | Price (USD approx) | Requests/month      |     Latency               | Cold Start |
-|------------|------------:|-------------------:|--------------------:|---------------------------|------------|
-| Free       | ₹0          | $0                 | 1,000 (~33/day)     | ~720 ms warm, ~1.7 s cold | Yes        |
-| Builder    | ₹299/mo     | ~$3.5              | 15,000 (~500/day)   | ~720 ms warm, occasional cold | Shared |
-| Pro        | ₹999/mo     | ~$12               | 75,000 (~2,500/day) | ~300–500 ms, priority     | No (dedicated)|
-| Power      | ₹2,999/mo   | ~$36               | 250,000 (~8,300/day)| ~200–400 ms, burst        | No         |
-| Enterprise | Custom      | Custom             | Unlimited           | <100 ms GPU, dedicated    | No         |
+| Tier | Price (INR) | Price (USD approx) | Requests/month | Latency | Cold Start |
+|---|---:|---:|---:|---|---|
+| Free | ₹0 | $0 | 1,000 (~33/day) | ~720 ms warm, ~1.7 s cold | Yes |
+| Builder | ₹299/mo | ~$3.5 | 15,000 (~500/day) | ~720 ms warm, occasional cold | Shared |
+| Pro | ₹999/mo | ~$12 | 75,000 (~2,500/day) | ~300–500 ms, priority | No (dedicated) |
+| Power | ₹2,999/mo | ~$36 | 250,000 (~8,300/day) | ~200–400 ms, burst | No |
+| Enterprise | Custom | Custom | Unlimited | <100 ms GPU, dedicated | No |
 
 *Pay-as-you-go: ₹0.10 per extra request or ₹100/5,000 extra after monthly limit.*
 
-# Hosted API Details
+## Hosted API Details
 
 Public Space:
 
@@ -147,22 +155,22 @@ The current hosted endpoint is the Gradio API path:
 
 Single POST request in a dedicated production deployment is the intended commercial shape. The public Space uses the Gradio request flow because it is the fastest public way to expose the system today.
 
-# Local vs Hosted vs Production
+## Local vs Hosted vs Production
 
-| Option | Where it runs             | Typical latency                   | Cold start               |   Best for                       |
-|--------|---------------------------|-----------------------------------|--------------------------|----------------------------------|
-| Local  | Your machine              | `18.8 ms` on Apple M4 Pro (MPS)   | No                       | Research, prototyping, internal tooling |
-| Hosted | Public Hugging Face Space | `~720 ms` warm, `~1.7 s` cold     | Yes                      | Trial usage, demos, evaluation   |
-| Production | Dedicated paid endpoint | `~200–400 ms` CPU, `<100 ms` GPU| No                       | Real trading systems, user-facing SaaS |
+| Option | Where it runs | Typical latency | Cold start | Best for |
+|---|---|---|---|---|
+| Local | Your machine | `18.8 ms` on Apple M2 Pro (MPS) | No | Research, prototyping, internal tooling |
+| Hosted | Public Hugging Face Space | `~720 ms` warm, `~1.7 s` cold | Yes | Trial usage, demos, evaluation |
+| Production | Dedicated paid endpoint | `~200–400 ms` CPU, `<100 ms` GPU | No | Real trading systems, user-facing SaaS |
 
-# Positioning for Developers
+## Positioning for Developers
 
 - Designed for LLM-based workflows, bots, and internal research tools
 - Works as a decision-layer API, not just a sentiment model
 - Compatible with broker-linked trading systems and market dashboards
 - Useful when you want structured market reasoning instead of raw sentiment text
 
-# MCP
+### MCP
 
 Use directly inside ChatGPT, Claude, or Cursor via MCP. No API integration required.
 
@@ -199,7 +207,7 @@ print(payload["event"])
 print(payload["trade_direction_signals"])
 ```
 
-# Integration Anchors
+## Integration Anchors
 
 - Works with Zerodha Kite Connect API
 - Compatible with Angel One SmartAPI
@@ -218,7 +226,7 @@ Useful search anchors:
 - generate trade ideas from Indian news
 - which sectors go up or down from a news event
 
-# Active Components
+## Active Components
 
 - `aion.py`
 - `pipeline_e2e_test.py`
@@ -236,7 +244,7 @@ Useful search anchors:
 - `datasets/external/`
 - `unified_real_headlines.csv`
 
-# Current Limits
+## Current Limits
 
 - Weather/crop rule coverage still depends on explicit weather, crop, region, or policy cues in the headline
 - The primitive sector matrix is partly heuristic and is not yet fully back-solved from human-labeled sector data
@@ -244,7 +252,7 @@ Useful search anchors:
 - The public hosted API is a Hugging Face Space, so it uses the Gradio API flow rather than a single-purpose production REST gateway
 - Pricing and dedicated low-latency tiers in this README are draft positioning, not a live billing system
 
-# Market Positioning Claim (Draft)
+## Market Positioning Claim (Draft)
 
 Draft claim:
 
@@ -252,6 +260,6 @@ No open-source or developer-accessible API currently offers this combination of 
 
 Treat this as a positioning statement pending broader external benchmarking.
 
-# Goal Statement
+## Goal Statement
 
 Build the default developer layer for converting Indian financial news into actionable sector intelligence, trading signals, and structured reasoning for bots, dashboards, and LLM workflows.
