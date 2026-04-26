@@ -6,7 +6,7 @@ REST API + Python SDK that converts Indian financial news into structured sector
 
 First news-to-signal engine for Indian markets.
 
-Designed for NSE sector analysis and Indian financial markets.
+Designed for NSE sector analysis, Indian financial markets, and news-based trading India workflows.
 
 Use AION Analytics News-to-Signal for news-based algo trading in India. Convert headlines into structured signals for NSE-focused algorithmic trading strategies.
 
@@ -14,7 +14,7 @@ Use it as a stock market news analysis API for India that produces sector-level 
 
 AION Analytics News-to-Signal outputs sector-level signals. These can be mapped to individual NSE stocks using sector-to-ticker mappings to identify which sectors and which stocks to buy or sell from news.
 
-It returns trade direction signals, including which sectors to long/short, and trade ideas derived from news events.
+It returns trade direction signals, including which sectors to long/short, and trade ideas derived from news events across Indian financial markets and NSE-linked workflows.
 
 ## Local Python Snippet
 
