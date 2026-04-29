@@ -1,0 +1,7 @@
+# AION Taxonomy - Core Dependencies
+pyyaml>=6.0
+pandas>=2.0
+
+# Optional dependencies (installed separately)
+# aion-sectormap>=1.0
+# aion-sentiment-in>=2.0

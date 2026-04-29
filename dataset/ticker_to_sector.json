@@ -1,0 +1,223 @@
+{
+  "ticker_to_sector": {
+    "ADANIENT": "Metals & Mining",
+    "ADANIPOWER": "Power",
+    "AMBUJACEM": "Construction Materials",
+    "APOLLOHOSP": "Healthcare",
+    "ASIANPAINT": "Consumer Durables",
+    "AXISBANK": "Financial Services",
+    "BAJAJ-AUTO": "Automobile and Auto Components",
+    "BAJFINANCE": "Financial Services",
+    "BAJAJFINSV": "Financial Services",
+    "BPCL": "Oil Gas & Consumable Fuels",
+    "BHARTIARTL": "Telecommunication",
+    "BHEL": "Capital Goods",
+    "BEL": "Capital Goods",
+    "BANKBARODA": "Financial Services",
+    "BOSCHLTD": "Automobile and Auto Components",
+    "BRITANNIA": "Fast Moving Consumer Goods",
+    "ZYDUSLIFE": "Healthcare",
+    "CANBK": "Financial Services",
+    "CHOLAFIN": "Financial Services",
+    "CIPLA": "Healthcare",
+    "COALINDIA": "Energy",
+    "DABUR": "Fast Moving Consumer Goods",
+    "DIVISLAB": "Healthcare",
+    "DLF": "Realty",
+    "EICHERMOT": "Automobile and Auto Components",
+    "GAIL": "Oil Gas & Consumable Fuels",
+    "GODREJCP": "Fast Moving Consumer Goods",
+    "GRASIM": "Construction Materials",
+    "HAVELLS": "Consumer Durables",
+    "HDFCBANK": "Financial Services",
+    "HEROMOTOCO": "Automobile and Auto Components",
+    "HINDUNILVR": "Fast Moving Consumer Goods",
+    "HINDALCO": "Metals & Mining",
+    "IOC": "Oil Gas & Consumable Fuels",
+    "ICICIBANK": "Financial Services",
+    "INDUSINDBK": "Financial Services",
+    "INFY": "Information Technology",
+    "ITC": "Fast Moving Consumer Goods",
+    "JSWSTEEL": "Metals & Mining",
+    "JSWENERGY": "Power",
+    "KOTAKBANK": "Automobile and Auto Components",
+    "LT": "Construction",
+    "M&M": "Automobile and Auto Components",
+    "MARUTI": "Automobile and Auto Components",
+    "ADANIPORTS": "Services",
+    "NTPC": "Power",
+    "NHPC": "Power",
+    "ONGC": "Oil Gas & Consumable Fuels",
+    "PIDILITIND": "Chemicals",
+    "PFC": "Financial Services",
+    "POWERGRID": "Power",
+    "PNB": "Financial Services",
+    "RELIANCE": "Oil Gas & Consumable Fuels",
+    "REC": "Financial Services",
+    "SBIN": "Financial Services",
+    "VEDL": "Metals & Mining",
+    "SHREECEM": "Construction Materials",
+    "SHRIRAMFIN": "Financial Services",
+    "SIEMENS": "Capital Goods",
+    "SUNPHARMA": "Healthcare",
+    "TCS": "Information Technology",
+    "TATACONSUM": "Fast Moving Consumer Goods",
+    "TATAMOTORS": "Automobile and Auto Components",
+    "TATAPOWER": "Power",
+    "TATASTEEL": "Metals & Mining",
+    "TECHM": "Automobile and Auto Components",
+    "TITAN": "Consumer Durables",
+    "TORNTPHARM": "Healthcare",
+    "TRENT": "Consumer Services",
+    "TVSMOTOR": "Automobile and Auto Components",
+    "ULTRACEMCO": "Construction Materials",
+    "WIPRO": "Information Technology",
+    "NESTLEIND": "Fast Moving Consumer Goods",
+    "ADANIENSOL": "Power",
+    "INDIGO": "Services",
+    "LTIM": "Information Technology",
+    "ICICIPRULI": "Financial Services",
+    "VARUNBEV": "Fast Moving Consumer Goods",
+    "DMART": "Consumer Services",
+    "ICICIGI": "Financial Services",
+    "HDFCLIFE": "Financial Services",
+    "HAL": "Capital Goods",
+    "ADANIGREEN": "Power",
+    "ATGL": "Oil Gas & Consumable Fuels",
+    "IRCTC": "Consumer Services",
+    "IRFC": "Financial Services",
+    "LODHA": "Realty",
+    "ZOMATO": "Consumer Services",
+    "LIC": "Financial Services",
+    "JIOFIN": "Financial Services"
+  },
+  "sector_to_tickers": {
+    "Metals & Mining": [
+      "ADANIENT",
+      "HINDALCO",
+      "JSWSTEEL",
+      "VEDL",
+      "TATASTEEL"
+    ],
+    "Power": [
+      "ADANIPOWER",
+      "JSWENERGY",
+      "NTPC",
+      "NHPC",
+      "POWERGRID",
+      "TATAPOWER",
+      "ADANIENSOL",
+      "ADANIGREEN"
+    ],
+    "Construction Materials": [
+      "AMBUJACEM",
+      "GRASIM",
+      "SHREECEM",
+      "ULTRACEMCO"
+    ],
+    "Healthcare": [
+      "APOLLOHOSP",
+      "ZYDUSLIFE",
+      "CIPLA",
+      "DIVISLAB",
+      "SUNPHARMA",
+      "TORNTPHARM"
+    ],
+    "Consumer Durables": [
+      "ASIANPAINT",
+      "HAVELLS",
+      "TITAN"
+    ],
+    "Financial Services": [
+      "AXISBANK",
+      "BAJFINANCE",
+      "BAJAJFINSV",
+      "BANKBARODA",
+      "CANBK",
+      "CHOLAFIN",
+      "HDFCBANK",
+      "ICICIBANK",
+      "INDUSINDBK",
+      "PFC",
+      "PNB",
+      "REC",
+      "SBIN",
+      "SHRIRAMFIN",
+      "ICICIPRULI",
+      "ICICIGI",
+      "SBIN",
+      "HDFCLIFE",
+      "IRFC",
+      "LIC",
+      "JIOFIN"
+    ],
+    "Automobile and Auto Components": [
+      "BAJAJ-AUTO",
+      "BOSCHLTD",
+      "EICHERMOT",
+      "HEROMOTOCO",
+      "KOTAKBANK",
+      "M&M",
+      "MARUTI",
+      "TATAMOTORS",
+      "TECHM",
+      "TVSMOTOR"
+    ],
+    "Oil Gas & Consumable Fuels": [
+      "BPCL",
+      "GAIL",
+      "IOC",
+      "ONGC",
+      "RELIANCE",
+      "ATGL"
+    ],
+    "Telecommunication": [
+      "BHARTIARTL"
+    ],
+    "Capital Goods": [
+      "BHEL",
+      "BEL",
+      "SIEMENS",
+      "HAL"
+    ],
+    "Fast Moving Consumer Goods": [
+      "BRITANNIA",
+      "DABUR",
+      "GODREJCP",
+      "HINDUNILVR",
+      "ITC",
+      "TATACONSUM",
+      "NESTLEIND",
+      "VARUNBEV"
+    ],
+    "Energy": [
+      "COALINDIA"
+    ],
+    "Realty": [
+      "DLF",
+      "LODHA"
+    ],
+    "Information Technology": [
+      "INFY",
+      "TCS",
+      "WIPRO",
+      "LTIM"
+    ],
+    "Construction": [
+      "LT"
+    ],
+    "Services": [
+      "ADANIPORTS",
+      "INDIGO"
+    ],
+    "Chemicals": [
+      "PIDILITIND"
+    ],
+    "Consumer Services": [
+      "TRENT",
+      "DMART",
+      "IRCTC",
+      "ZOMATO"
+    ]
+  }
+}

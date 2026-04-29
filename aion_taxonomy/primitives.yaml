@@ -1,0 +1,34 @@
+primitives:
+  supply_shock:
+    range: [-1, 1]
+    description: "Change in availability of goods/services"
+  demand_shock:
+    range: [-1, 1]
+    description: "Change in consumption/investment demand"
+  cost_push:
+    range: [-1, 1]
+    description: "Input cost pressure (energy, wages, raw materials)"
+  liquidity:
+    range: [-1, 1]
+    description: "System-wide liquidity availability"
+  credit_availability:
+    range: [-1, 1]
+    description: "Ease of borrowing"
+  policy_restriction:
+    range: [-1, 1]
+    description: "Regulatory constraint (ban, tax, quota)"
+  export_competitiveness:
+    range: [-1, 1]
+    description: "Global competitiveness of Indian exports"
+  import_dependency:
+    range: [-1, 1]
+    description: "Reliance on imports becoming riskier/cheaper"
+  logistics_disruption:
+    range: [0, 1]
+    description: "Transport/storage breakdown"
+  risk_sentiment:
+    range: [-1, 1]
+    description: "Market risk appetite (feeds VIX layer)"
+  inflation_expectation:
+    range: [-1, 1]
+    description: "Forward inflation expectations"

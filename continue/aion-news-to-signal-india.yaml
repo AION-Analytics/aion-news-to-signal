@@ -1,0 +1,7 @@
+name: AION Analytics — News-to-Signal for Indian Markets
+version: 1.0.0
+schema: v1
+mcpServers:
+  - name: AION Analytics News-to-Signal
+    type: stdio
+    command: aion-news-to-signal-mcp

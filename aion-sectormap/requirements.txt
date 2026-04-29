@@ -1,0 +1,36 @@
+# =============================================================================
+# AION Open-Source Project: AION SectorMap
+# File: requirements.txt
+# Description: Runtime dependencies
+# License: Apache License, Version 2.0
+#
+# Copyright 2026 AION Contributors
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# AION Attribution: This file is part of the AION open-source ecosystem.
+# Please visit https://github.com/aion for more information.
+# =============================================================================
+# Runtime Dependencies for AION SectorMap
+#
+# Install with: pip install -r requirements.txt
+#
+
+# Core dependencies
+pandas>=2.0.0
+
+# Optional: For update script (NSE scraping)
+# requests>=2.31.0
+
+# Optional: For Excel file reading (update script)
+# openpyxl>=3.0.0

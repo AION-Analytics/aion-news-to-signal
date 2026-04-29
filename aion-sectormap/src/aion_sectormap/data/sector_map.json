@@ -1,0 +1,4146 @@
+{
+  "BAJFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Rahul Bajaj Group",
+    "gin": "RAHULBAJAJGR-01",
+    "company_name": "Bajaj Finance Limited"
+  },
+  "SIDBI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Small Industries Development Bank of India",
+    "gin": "SMALLINDUSTR-01",
+    "company_name": "Small Industries Development Bank of India"
+  },
+  "JAMNAGAR": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Jamnagar Utilities and Power Private Limited"
+  },
+  "REC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Power Finance Corporation Limited",
+    "gin": "POWERFINANCE-01",
+    "company_name": "REC LIMITED"
+  },
+  "NATIONALBANKFOR": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "National Bank for Financing Infrastructure and Development",
+    "gin": "NATIONALBANK-02",
+    "company_name": "National Bank for Financing Infrastructure and Development"
+  },
+  "PFC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Power Finance Corporation Limited",
+    "gin": "POWERFINANCE-01",
+    "company_name": "Power Finance Corporation Limited"
+  },
+  "HDFCBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "HDFC Bank Limited",
+    "gin": "HDFCBANKLIMI-01",
+    "company_name": "HDFC Bank Limited"
+  },
+  "LICHSGFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "LIFE INSURANCE CORPORATION OF INDIA\t",
+    "gin": "LIFEINSURANC-01",
+    "company_name": "LIC Housing Finance Limited"
+  },
+  "HDBFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "HDFC Bank Limited",
+    "gin": "HDFCBANKLIMI-01",
+    "company_name": "HDB Financial Services Limited"
+  },
+  "MUTHOOTFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Muthoot Group",
+    "gin": "MUTHOOTGROUP-01",
+    "company_name": "Muthoot Finance Limited"
+  },
+  "SIKKAPORTSTERMI": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Sikka Ports & Terminals Limited"
+  },
+  "MINDSPACEBUSINE": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Mindspace Business Parks Reit",
+    "gin": "MINDSPACEBUS-01",
+    "company_name": "Mindspace Business Parks REIT (Mindspace REIT)"
+  },
+  "PNB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Punjab National Bank",
+    "gin": "PUNJABNATION-01",
+    "company_name": "Punjab National Bank"
+  },
+  "AXISBANK": {
+    "sector": "Financial Services",
+    "industry": "Banks",
+    "group": "Axis Bank",
+    "gin": "AXISBANK-01",
+    "company_name": "Axis Bank Limited"
+  },
+  "GODREJINDUSTRIE": {
+    "sector": "Diversified",
+    "industry": "Diversified",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "GODREJ INDUSTRIES LIMITED"
+  },
+  "LARSENANDTOUBRO": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Larsen And Toubro Limited",
+    "gin": "LARSENANDTOU-01",
+    "company_name": "Larsen and Toubro Limited"
+  },
+  "CHOLAFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Murugappa Group",
+    "gin": "MURUGAPPAGRO-01",
+    "company_name": "Cholamandalam Investment and Finance Company Limited"
+  },
+  "NETWORK18MEDIAA": {
+    "sector": "Media, Entertainment & Publication",
+    "industry": "Media, Entertainment & Publication",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Network18 Media and Investments Limited"
+  },
+  "BANKBARODA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Bank Of Baroda",
+    "gin": "BANKOFBARODA-01",
+    "company_name": "Bank of Baroda"
+  },
+  "ICICIBANK": {
+    "sector": "Financial Services",
+    "industry": "Banks",
+    "group": "ICICI Bank Limited",
+    "gin": "ICICIBANKLIMI-01",
+    "company_name": "ICICI Bank Limited"
+  },
+  "ONGC": {
+    "sector": "Energy",
+    "industry": "Oil & Gas",
+    "group": "ONGC",
+    "gin": "ONGC-01",
+    "company_name": "Oil and Natural Gas Corporation Limited"
+  },
+  "CANBK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Canara Bank",
+    "gin": "CANARABANK00-01",
+    "company_name": "Canara Bank"
+  },
+  "SHRIRAMFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "SHRIRAM OWNERSHIP TRUST",
+    "gin": "SHRIRAMOWNER-01",
+    "company_name": "Shriram Finance Limited"
+  },
+  "AXISFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Axis Bank Limited",
+    "gin": "AXISBANKLIMI-01",
+    "company_name": "Axis Finance Limited"
+  },
+  "INDIANB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Indian Bank",
+    "gin": "INDIANBANK00-01",
+    "company_name": "Indian Bank"
+  },
+  "PANATONEFINVEST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Panatone Finvest Limited"
+  },
+  "TMFBUSINESSSERV": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "TMF Business Services Ltd"
+  },
+  "NTPC": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "NTPC Limited",
+    "gin": "NTPCLIMITED0-01",
+    "company_name": "NTPC Limited"
+  },
+  "TATAPROJECTS": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Projects Limited"
+  },
+  "BHARTITELECOM": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Sunil Bharti Mittal",
+    "gin": "SUNILBHARTIM-01",
+    "company_name": "Bharti Telecom Limited"
+  },
+  "SBIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "State Bank Of India",
+    "gin": "STATEBANKOFI-01",
+    "company_name": "State Bank of India"
+  },
+  "BHARTIHEXACOM": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Sunil Bharti Mittal",
+    "gin": "SUNILBHARTIM-01",
+    "company_name": "Bharti Hexacom Limited"
+  },
+  "MANAPPURAM": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "V P Nandakumar",
+    "gin": "VPNANDAKUMAR-01",
+    "company_name": "Manappuram Finance Limited"
+  },
+  "SUMMITDIGITELIN": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Altius Telecom Infrastructure Trust",
+    "gin": "ALTIUSTELECO-01",
+    "company_name": "Summit Digitel Infrastructure Limited"
+  },
+  "KOTAKMAHINDRAPR": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Uday Suresh Kotak",
+    "gin": "UDAYSURESHKO-01",
+    "company_name": "Kotak Mahindra Prime Limited"
+  },
+  "TATACAPITAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Capital Limited"
+  },
+  "VEDL": {
+    "sector": "Metals & Mining",
+    "industry": "Metals & Mining",
+    "group": "Vedanta Group",
+    "gin": "VEDANTAGROUP-01",
+    "company_name": "Vedanta Limited"
+  },
+  "STANDARDCHARTER": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "Standard Chartered Bank",
+    "gin": "STANDARDCHAR-01",
+    "company_name": "Standard Chartered Bank"
+  },
+  "KOTAKBANK": {
+    "sector": "Financial Services",
+    "industry": "Banks",
+    "group": "Uday Suresh Kotak",
+    "gin": "UDAYSURESHKO-01",
+    "company_name": "Kotak Mahindra Bank Limited"
+  },
+  "BAJAJHOUSINGFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Rahul Bajaj Group",
+    "gin": "RAHULBAJAJGR-01",
+    "company_name": "Bajaj Housing Finance Limited"
+  },
+  "POWERGRID": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Power Grid Corporation Of India Limited",
+    "gin": "POWERGRIDCOR-01",
+    "company_name": "Power Grid Corporation of India Limited"
+  },
+  "NIIFINFRASTRUCT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "National Investment and Infrastructure Fund",
+    "gin": "NATIONALINVE-01",
+    "company_name": "NIIF Infrastructure Finance Ltd."
+  },
+  "MANGALOREREFINE": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Oil And Natural Gas Corporation Limited",
+    "gin": "OILANDNATURA-01",
+    "company_name": "Mangalore Refinery and Petrochemicals Limited"
+  },
+  "NRAILWAYFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Indian Railway Finance Corporation Limited",
+    "gin": "INDIANRAILWA-01",
+    "company_name": "Indian Railway Finance Corporation Limited"
+  },
+  "NUCLEARPOWEROF": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Nuclear Power Corporation of India Limited",
+    "gin": "NUCLEARPOWER-01",
+    "company_name": "Nuclear Power Corporation of India Limited"
+  },
+  "SUNDARAMHOMEFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Santhanam Viji",
+    "gin": "SANTHANAMVIJ-01",
+    "company_name": "Sundaram Home Finance Limited"
+  },
+  "EXPORTIMPORTBAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Export Import Bank of India",
+    "gin": "EXPORTIMPORT-01",
+    "company_name": "Export Import Bank of India"
+  },
+  "NHPC": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "NHPC Limited",
+    "gin": "NHPCLIMITED0-01",
+    "company_name": "NHPC Limited"
+  },
+  "BPCL": {
+    "sector": "Energy",
+    "industry": "Oil & Gas",
+    "group": "Bharat Petroleum",
+    "gin": "BHARATPETROL-01",
+    "company_name": "Bharat Petroleum Corporation Limited"
+  },
+  "MAHINDRAANDMAHI": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Anand Gopal Mahindra",
+    "gin": "ANANDGOPALMA-01",
+    "company_name": "Mahindra and Mahindra Limited"
+  },
+  "NATIONALHOUSING": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "National Housing Bank",
+    "gin": "NATIONALHOUS-01",
+    "company_name": "National Housing Bank"
+  },
+  "UNIONBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Union Bank Of India",
+    "gin": "UNIONBANKOFI-01",
+    "company_name": "Union Bank of India"
+  },
+  "NATIONALHIGHWAY": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "National Highways Infra Trust",
+    "gin": "NATIONALHIGH-02",
+    "company_name": "National Highways Infra Trust"
+  },
+  "SMFGCREDIT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Sumitomo Mitsui Financial Group",
+    "gin": "SUMITOMOMITS-01",
+    "company_name": "SMFG India Credit Company Limited"
+  },
+  "ICICIHOMEFINANC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Icici Bank Limited",
+    "gin": "ICICIBANKLIM-01",
+    "company_name": "ICICI Home Finance Company Limited"
+  },
+  "ADITYABIRLAFINA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Finance Limited"
+  },
+  "TRUHOMEFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Warburg Pincus",
+    "gin": "WARBURGPINCU-01",
+    "company_name": "Truhome Finance Limited"
+  },
+  "KOTAKMAHINDRAIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Uday Suresh Kotak",
+    "gin": "UDAYSURESHKO-01",
+    "company_name": "Kotak Mahindra Investments Limited"
+  },
+  "LTF": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Larsen And Toubro Limited",
+    "gin": "LARSENANDTOU-01",
+    "company_name": "L&T Finance Limited"
+  },
+  "INTERISETRUST": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Interise trust",
+    "gin": "INTERISETRUS-01",
+    "company_name": "Interise Trust"
+  },
+  "EMBASSYOFFICEPA": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Embassy Office Parks Reit",
+    "gin": "EMBASSYOFFIC-01",
+    "company_name": "Embassy Office Parks Reit"
+  },
+  "PIPELINEINFRAST": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Energy Infrastructure Trust",
+    "gin": "ENERGYINFRAS-01",
+    "company_name": "Pipeline Infrastructure Limited"
+  },
+  "DMEDEVELOPMENT": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "National Highways Authority Of India",
+    "gin": "NATIONALHIGH-01",
+    "company_name": "DME Development Limited"
+  },
+  "JMFINANCIALCRED": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "JM Financial Credit Solutions Limited"
+  },
+  "UPPOWER": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "U. P. Power Corporation Limited",
+    "gin": "UPPOWERCORPO-01",
+    "company_name": "U. P. Power Corporation Limited"
+  },
+  "OXYZOFINANCIALS": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Asish Mohapatra",
+    "gin": "ASISHMOHAPAT-01",
+    "company_name": "Oxyzo Financial Services Limited"
+  },
+  "YESBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "YES Bank Limited",
+    "gin": "YESBANKLIMIT-01",
+    "company_name": "YES Bank Limited"
+  },
+  "GRINFRAPROJECTS": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Gumani Ram Agarwal",
+    "gin": "GUMANIRAMAGA-01",
+    "company_name": "G R Infraprojects Limited"
+  },
+  "CREDITACC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "CREDITACCESS INDIA B.V.",
+    "gin": "CREDITACCESS-01",
+    "company_name": "CreditAccess Grameen Limited"
+  },
+  "VARANASISANGAME": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Indus Infra Trust",
+    "gin": "INDUSINFRATR-01",
+    "company_name": "Varanasi Sangam Expressway Private Limited"
+  },
+  "GICHOUSINGFINAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "GENERAL INSURANCE CORPORATION OF INDIA",
+    "gin": "GENERALINSUR-01",
+    "company_name": "GIC Housing Finance Limited"
+  },
+  "JMFINANCIALPROD": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "JM Financial Products Limited"
+  },
+  "SKFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Rajendra Kumar Setia",
+    "gin": "RAJENDRAKUMA-01",
+    "company_name": "SK finance Limited"
+  },
+  "AVANSEFINANCIAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Warburg Pincus",
+    "gin": "WARBURGPINCU-01",
+    "company_name": "Avanse Financial Services Limited"
+  },
+  "NEXUSSELECTTRUS": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Nexus Select Trust",
+    "gin": "NEXUSSELECTT-01",
+    "company_name": "Nexus Select Trust"
+  },
+  "ADITYABIRLAREAL": {
+    "sector": "Forest Materials",
+    "industry": "Forest Materials",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Real Estate Limited"
+  },
+  "SAIL": {
+    "sector": "Metals & Mining",
+    "industry": "Metals & Mining",
+    "group": "Steel Authority Of India Limited",
+    "gin": "STEELAUTHORI-01",
+    "company_name": "Steel Authority of India Limited"
+  },
+  "ONGCPETROADDITI": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Oil And Natural Gas Corporation Limited",
+    "gin": "OILANDNATURA-01",
+    "company_name": "ONGC Petro Additions Limited"
+  },
+  "JSWSTEEL": {
+    "sector": "Metals & Mining",
+    "industry": "Steel",
+    "group": "JSW Group",
+    "gin": "JSWGROUP-01",
+    "company_name": "JSW Steel Limited"
+  },
+  "ADANIENSOL": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Adani Energy Solutions Limited"
+  },
+  "THETATAPOWER": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "The Tata Power Company Limited"
+  },
+  "ARKAFINCAP": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Atul and Rahul Chandrakant Kirloskar",
+    "gin": "ATULANDRAHUL-01",
+    "company_name": "ARKA Fincap Limited"
+  },
+  "DLFCYBERCITYDEV": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Rajiv Singh",
+    "gin": "RAJIVSINGH00-01",
+    "company_name": "DLF Cyber City Developers Ltd."
+  },
+  "ANDHRAPRADESHCA": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Andhra Pradesh Capital Region Development Authority",
+    "gin": "ANDHRAPRADES-02",
+    "company_name": "Andhra Pradesh Capital Region Development Authority"
+  },
+  "TMFHOLDINGS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "TMF Holdings Limited"
+  },
+  "SUNDEWPROPERTIE": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "MINDSPACE BUSINESS PARKS REIT",
+    "gin": "MINDSPACEBUS-01",
+    "company_name": "Sundew Properties Limited"
+  },
+  "ICICISECURITIES": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Icici Bank Limited",
+    "gin": "ICICIBANKLIM-01",
+    "company_name": "ICICI Securities Primary Dealership Limited"
+  },
+  "TATACAPITALHOUS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Capital Housing Finance Limited"
+  },
+  "ADITYABIRLAHOUS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Housing Finance Limited"
+  },
+  "INFINAFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Uday Suresh Kotak",
+    "gin": "UDAYSURESHKO-01",
+    "company_name": "INFINA Finance Private Ltd"
+  },
+  "TOYOTAFINANCIAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Toyota Motor Corporation",
+    "gin": "TOYOTAMOTORC-01",
+    "company_name": "Toyota Financial Services India Limited"
+  },
+  "BROOKFIELDREALE": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Brookfield India Real Estate Trust",
+    "gin": "BROOKFIELDIN-01",
+    "company_name": "Brookfield India Real Estate Trust"
+  },
+  "BARCLAYSINVESTM": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Barclays Bank Plc.",
+    "gin": "BARCLAYSBANK-01",
+    "company_name": "Barclays Investments and Loans India Limited"
+  },
+  "IOC": {
+    "sector": "Energy",
+    "industry": "Oil & Gas",
+    "group": "Indian Oil",
+    "gin": "INDIANOIL-01",
+    "company_name": "Indian Oil Corporation Limited"
+  },
+  "BRITANNIA": {
+    "sector": "FMCG",
+    "industry": "Food Products",
+    "group": "Britannia",
+    "gin": "BRITANNIA-01",
+    "company_name": "Britannia Industries Limited"
+  },
+  "LTMETRORAILHYDE": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Larsen And Toubro Limited",
+    "gin": "LARSENANDTOU-01",
+    "company_name": "L&T Metro Rail (Hyderabad) Limited"
+  },
+  "GODREJAGROVET": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Godrej Agrovet Limited"
+  },
+  "TATAMOTORSFINAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Motors Finance Limited"
+  },
+  "IDFCFIRSTB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "IDFC First Bank Limited",
+    "gin": "IDFCFIRSTBAN-01",
+    "company_name": "IDFC First Bank Limited"
+  },
+  "BIRLAGROUPHOLDI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "BIRLA GROUP HOLDINGS PRIVATE LIMITED"
+  },
+  "TATAREALTYANDIN": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Realty and Infrastructure Limited"
+  },
+  "INDUSINDBK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Hinduja Group",
+    "gin": "HINDUJAGROUP-01",
+    "company_name": "IndusInd Bank Limited"
+  },
+  "GODREJPROP": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Godrej Properties Limited"
+  },
+  "MOTILALOSWALFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Motilal Oswal Group",
+    "gin": "MOTILALOSWAL-01",
+    "company_name": "Motilal Oswal Financial Services Limited"
+  },
+  "HEROHOUSINGFINA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Pawan Munjal",
+    "gin": "PAWANMUNJAL0-01",
+    "company_name": "Hero Housing Finance Limited"
+  },
+  "PILANIINVESTMEN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Pilani Investment and Inds. Corpn. Limited"
+  },
+  "JMFINANCIALSERV": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "JM FINANCIAL SERVICES LIMITED"
+  },
+  "SIMTOINVESTMENT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Simto Investment Company Limited"
+  },
+  "TATAHOUSINGDEVE": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Housing Development Company Limited"
+  },
+  "SBICAPSECURITIE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "State Bank Of India",
+    "gin": "STATEBANKOFI-01",
+    "company_name": "SBICAP Securities Limited"
+  },
+  "MIRAEASSETSHARE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Mirae Asset Financial Group",
+    "gin": "MIRAEASSETFI-01",
+    "company_name": "Mirae Asset Sharekhan Financial Services Limited"
+  },
+  "BHARTIENTERPRIS": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Sunil Bharti Mittal",
+    "gin": "SUNILBHARTIM-01",
+    "company_name": "Bharti Enterprises (Holding) Private Limited"
+  },
+  "HDFCSECURITIES": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "HDFC Bank Limited",
+    "gin": "HDFCBANKLIMI-01",
+    "company_name": "HDFC Securities Limited"
+  },
+  "SHAREKHAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Mirae Asset Financial Group",
+    "gin": "MIRAEASSETFI-01",
+    "company_name": "Sharekhan Limited"
+  },
+  "POONAWALLAFINCO": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "ADAR CYRUS POONAWALLA",
+    "gin": "ADARCYRUSPOO-01",
+    "company_name": "Poonawalla Fincorp Limited"
+  },
+  "DEUTSCHEINVESTM": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Deutsche Bank A. G.",
+    "gin": "DEUTSCHEBANK-01",
+    "company_name": "Deutsche Investments India Private Limited"
+  },
+  "TATATELESERVICE": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Teleservices Limited"
+  },
+  "NUVOCOVISTAS": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Karsanbhai Khodidas Patel",
+    "gin": "KARSANBHAIKH-01",
+    "company_name": "Nuvoco Vistas Corporation Limited"
+  },
+  "JSWENERGY": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Sajjan Jindal",
+    "gin": "SAJJANJINDAL-01",
+    "company_name": "JSW Energy Limited"
+  },
+  "PNBHOUSINGFINAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Punjab National Bank",
+    "gin": "PUNJABNATION-01",
+    "company_name": "PNB Housing Finance Limited"
+  },
+  "HSBCINVESTDIREC": {
+    "sector": "Broking Company",
+    "industry": "Broking Company",
+    "group": "HSBC Holdings PLC",
+    "gin": "HSBCHOLDINGS-01",
+    "company_name": "HSBC Investdirect Securities (India) Private Limited"
+  },
+  "REDINGTON": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Redington Limited",
+    "gin": "REDINGTONLIM-01",
+    "company_name": "Redington Limited"
+  },
+  "JULIUSBAERCAPIT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Julius Baer Group Limited",
+    "gin": "JULIUSBAERGR-01",
+    "company_name": "Julius Baer Capital India Private Limited"
+  },
+  "TVSCREDITSERVIC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Venu Srinivasan",
+    "gin": "VENUSRINIVAS-01",
+    "company_name": "TVS Credit Services Limited"
+  },
+  "CANFINHOMES": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Canara Bank",
+    "gin": "CANARABANK00-01",
+    "company_name": "Can Fin Homes Limited"
+  },
+  "TATAMOTORSPASSE": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Motors Passenger Vehicles Limited"
+  },
+  "PSB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Punjab and Sind Bank",
+    "gin": "PUNJABANDSIN-01",
+    "company_name": "Punjab and Sind Bank"
+  },
+  "FEDERALBNK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "The Federal Bank Ltd",
+    "gin": "THEFEDERALBA-01",
+    "company_name": "Federal Bank Limited"
+  },
+  "BARCLAYSBANKPLC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Barclays Bank Plc.",
+    "gin": "BARCLAYSBANK-01",
+    "company_name": "Barclays Bank Plc."
+  },
+  "DBSBANK": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "DBS Bank Ltd",
+    "gin": "DBSBANKLTD00-01",
+    "company_name": "DBS Bank India Limited"
+  },
+  "IGHHOLDINGS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "IGH Holdings Private Limited"
+  },
+  "SUNPETROCHEMICA": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Dilip Shantilal Shanghvi",
+    "gin": "DILIPSHANTIL-01",
+    "company_name": "SUN Petrochemicals Private Limited"
+  },
+  "MAHINDRARURALHO": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Anand Gopal Mahindra",
+    "gin": "ANANDGOPALMA-01",
+    "company_name": "Mahindra Rural Housing Finance Limited"
+  },
+  "TORNTPOWER": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Torrent Group",
+    "gin": "TORRENTGROUP-01",
+    "company_name": "Torrent Power Limited"
+  },
+  "GODREJCP": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Godrej Consumer Products Limited"
+  },
+  "RBLBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Rbl Bank Limited",
+    "gin": "RBLBANKLIMIT-01",
+    "company_name": "RBL Bank Limited"
+  },
+  "AUSMALLFINANCEB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Sanjay Agarwal",
+    "gin": "SANJAYAGARWA-01",
+    "company_name": "AU Small Finance Bank Limited"
+  },
+  "PIRAMALFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Ajay G. Piramal",
+    "gin": "AJAYGPIRAMAL-01",
+    "company_name": "Piramal Finance Limited"
+  },
+  "BAHADURCHANDINV": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Pawan Munjal",
+    "gin": "PAWANMUNJAL0-01",
+    "company_name": "Bahadur Chand Investments Private Limited"
+  },
+  "NLCINDIA": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Nlc India Limited",
+    "gin": "NLCINDIALIMI-01",
+    "company_name": "NLC India Limited"
+  },
+  "THEJAMMUANDKASH": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "The Jammu and Kashmir Bank Limited",
+    "gin": "THEJAMMUANDK-01",
+    "company_name": "The Jammu and Kashmir Bank Limited"
+  },
+  "CHOLAMANDALAMFI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Murugappa Group",
+    "gin": "MURUGAPPAGRO-01",
+    "company_name": "Cholamandalam Financial Holdings Limited"
+  },
+  "HINDALCO": {
+    "sector": "Metals & Mining",
+    "industry": "Aluminium",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLGR-01",
+    "company_name": "Hindalco Industries Limited"
+  },
+  "HINDUJALEYLANDF": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Hinduja Group",
+    "gin": "HINDUJAGROUP-01",
+    "company_name": "Hinduja Leyland Finance Limited"
+  },
+  "CROMPTON": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Crompton Greaves Consumer Electricals Limited",
+    "gin": "CROMPTONGREA-01",
+    "company_name": "Crompton Greaves Consumer Electricals Limited"
+  },
+  "CREDILAFINANCIA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "EQT Group",
+    "gin": "EQTGROUP0000-01",
+    "company_name": "Credila Financial Services Limited"
+  },
+  "RELIANCE": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Reliance Industries Limited"
+  },
+  "VIVRITICAPITAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Vineet S Kumar",
+    "gin": "VINEETSKUMAR-01",
+    "company_name": "Vivriti Capital Limited"
+  },
+  "INDOSTARCAPITAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Brookfield Asset Management",
+    "gin": "BROOKFIELDAS-01",
+    "company_name": "IndoStar Capital Finance Limited"
+  },
+  "AADHARHOUSINGFI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Blackstone group",
+    "gin": "BLACKSTONEGR-01",
+    "company_name": "Aadhar Housing Finance Limited"
+  },
+  "SUNDARAMFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Santhanam Viji",
+    "gin": "SANTHANAMVIJ-01",
+    "company_name": "Sundaram Finance Limited"
+  },
+  "INFRADEBT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Icici Bank Limited",
+    "gin": "ICICIBANKLIM-01",
+    "company_name": "India Infradebt Limited"
+  },
+  "INDIGRIDINFRAST": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "IndiGrid Infrastructure Trust",
+    "gin": "INDIGRIDINFR-01",
+    "company_name": "IndiGrid Infrastructure Trust"
+  },
+  "GODREJHOUSINGFI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Godrej Housing Finance Limited"
+  },
+  "VERITASFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "ARULMANY DURAISAMY",
+    "gin": "ARULMANYDURA-01",
+    "company_name": "Veritas Finance Limited"
+  },
+  "GREENLAMINDUSTR": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Saurabh Mittal",
+    "gin": "SAURABHMITTA-01",
+    "company_name": "Greenlam Industries Limited"
+  },
+  "SAMVARDHANAMOTH": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Vivek Chaand Sehgal",
+    "gin": "VIVEKCHAANDS-01",
+    "company_name": "Samvardhana Motherson International Ltd."
+  },
+  "JKCEMENT": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Nidhipati Singhania",
+    "gin": "NIDHIPATISIN-01",
+    "company_name": "JK Cement Limited"
+  },
+  "GRIHUMHOUSINGFI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "TPG Group",
+    "gin": "TPGGROUP0000-01",
+    "company_name": "Grihum Housing Finance Limited"
+  },
+  "KOGTAFINANCIAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Prem Lal Kogta",
+    "gin": "PREMLALKOGTA-01",
+    "company_name": "Kogta Financial India Limited"
+  },
+  "ORIENTALNAGPURB": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Oriental Infratrust",
+    "gin": "ORIENTALINFR-01",
+    "company_name": "Oriental Nagpur Betul Highway Limited"
+  },
+  "SEPSETCONSTRUCT": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Temasek Holdings",
+    "gin": "TEMASEKHOLDI-01",
+    "company_name": "Sepset Constructions Limited"
+  },
+  "BIRLA": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Birla Corporation Limited"
+  },
+  "FOODOF": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Food Corporation of India",
+    "gin": "FOODCORPORAT-01",
+    "company_name": "Food Corporation of India"
+  },
+  "HOUSINGANDURBAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Housing and Urban Development Corporation Limited",
+    "gin": "HOUSINGANDUR-01",
+    "company_name": "Housing and Urban Development Corporation Limited"
+  },
+  "INFRASTRUCTUREF": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "India Infrastructure Finance Company Limited",
+    "gin": "INDIAINFRAST-03",
+    "company_name": "India Infrastructure Finance Company Limited"
+  },
+  "AIASSETSHOLDING": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Air India Assets Holding Limited",
+    "gin": "AIRINDIAASSE-01",
+    "company_name": "AI Assets Holding Limited"
+  },
+  "MAHANAGARTELEPH": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Mahanagar Telephone Nigam Limited",
+    "gin": "MAHANAGARTEL-01",
+    "company_name": "Mahanagar Telephone Nigam Limited"
+  },
+  "RELIANCERETAILV": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Reliance Retail Ventures Limited"
+  },
+  "PIRAMALENTERPRI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Ajay G. Piramal",
+    "gin": "AJAYGPIRAMAL-01",
+    "company_name": "Piramal Enterprises Limited"
+  },
+  "NUVISTA": {
+    "sector": "Materials",
+    "industry": "Materials",
+    "group": "Karsanbhai Khodidas Patel",
+    "gin": "KARSANBHAIKH-01",
+    "company_name": "NU Vista Limited"
+  },
+  "NOMURACAPITAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nomura Group",
+    "gin": "NOMURAGROUP0-01",
+    "company_name": "Nomura Capital India Private Limited"
+  },
+  "360ONEPRIME": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Karan Bhagat",
+    "gin": "KARANBHAGAT0-01",
+    "company_name": "360 One Prime Limited"
+  },
+  "INDUSTOWERS": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Sunil Bharti Mittal",
+    "gin": "SUNILBHARTIM-01",
+    "company_name": "Indus Towers Limited"
+  },
+  "PHOENIXARC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Uday Suresh Kotak",
+    "gin": "UDAYSURESHKO-01",
+    "company_name": "Phoenix ARC Private Limited"
+  },
+  "VECTORGREENPRAY": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Temasek Holdings",
+    "gin": "TEMASEKHOLDI-01",
+    "company_name": "Vector Green Prayagraj Solar Private Limited"
+  },
+  "HEROFINCORP": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Pawan Munjal",
+    "gin": "PAWANMUNJAL0-01",
+    "company_name": "Hero FinCorp Limited"
+  },
+  "YARROWINFRASTRU": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Temasek Holdings",
+    "gin": "TEMASEKHOLDI-01",
+    "company_name": "Yarrow Infrastructure Private Limited"
+  },
+  "MALWASOLARPOWER": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Temasek Holdings",
+    "gin": "TEMASEKHOLDI-01",
+    "company_name": "Malwa Solar Power Generation Private Limited"
+  },
+  "NUVAMAWEALTHFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "PAG",
+    "gin": "PAG000000000-01",
+    "company_name": "Nuvama Wealth Finance Limited"
+  },
+  "ADITYABIRLAMONE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Money Limited"
+  },
+  "AXISSECURITIES": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Axis Bank Limited",
+    "gin": "AXISBANKLIMI-01",
+    "company_name": "Axis Securities Limited"
+  },
+  "HINDPETRO": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Oil And Natural Gas Corporation Limited",
+    "gin": "OILANDNATURA-01",
+    "company_name": "Hindustan Petroleum Corporation Limited"
+  },
+  "GRASIM": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Grasim Industries Limited"
+  },
+  "ULTRATECHCEMENT": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "UltraTech Cement Limited"
+  },
+  "ABFRL": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Fashion and Retail Limited"
+  },
+  "KOTAKSECURITIES": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Uday Suresh Kotak",
+    "gin": "UDAYSURESHKO-01",
+    "company_name": "Kotak Securities Limited"
+  },
+  "TATASTEEL": {
+    "sector": "Metals & Mining",
+    "industry": "Steel",
+    "group": "Tata Group",
+    "gin": "TATAGROUP-01",
+    "company_name": "Tata Steel Limited"
+  },
+  "RELIANCEJIOINFO": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Reliance Jio Infocomm Limited"
+  },
+  "ACCELARATINGEDU": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Ram Kishan Verma",
+    "gin": "RAMKISHANVER-01",
+    "company_name": "Accelarating Education And Development Private Limited"
+  },
+  "IIFLFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nirmal Bhanwarlal Jain",
+    "gin": "NIRMALBHANWA-01",
+    "company_name": "IIFL Finance Ltd"
+  },
+  "RKVENTERPRISES": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Ram Kishan Verma",
+    "gin": "RAMKISHANVER-01",
+    "company_name": "Rkv Enterprises Private Limited"
+  },
+  "BHARATSANCHARNI": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Bharat Sanchar Nigam Limited",
+    "gin": "BHARATSANCHA-01",
+    "company_name": "Bharat Sanchar Nigam Limited"
+  },
+  "GAIL": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Gail India Limited",
+    "gin": "GAILINDIALIM-01",
+    "company_name": "Gail India Limited"
+  },
+  "ANDHRAPRADESHST": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Andhra Pradesh State Beverages Corporation Limited",
+    "gin": "ANDHRAPRADES-01",
+    "company_name": "Andhra Pradesh State Beverages Corporation Limited"
+  },
+  "360ONEWAM": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Karan Bhagat",
+    "gin": "KARANBHAGAT0-01",
+    "company_name": "360 ONE WAM Ltd"
+  },
+  "KIRLOSKARFERROU": {
+    "sector": "Metals & Mining",
+    "industry": "Metals & Mining",
+    "group": "Atul and Rahul Chandrakant Kirloskar",
+    "gin": "ATULANDRAHUL-01",
+    "company_name": "Kirloskar Ferrous Industries Limited"
+  },
+  "PIRAMALPHARMA": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "Ajay G. Piramal",
+    "gin": "AJAYGPIRAMAL-01",
+    "company_name": "Piramal Pharma Limited"
+  },
+  "BELSTARMICROFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Muthoot Group",
+    "gin": "MUTHOOTGROUP-01",
+    "company_name": "Belstar Microfinance Limited"
+  },
+  "BAJAJFINANCIALS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Rahul Bajaj Group",
+    "gin": "RAHULBAJAJGR-01",
+    "company_name": "Bajaj Financial Securities Limited"
+  },
+  "MAHABANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Bank Of Maharashtra",
+    "gin": "BANKOFMAHARA-01",
+    "company_name": "Bank of Maharashtra"
+  },
+  "FEDBANKFINANCIA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "The Federal Bank Ltd",
+    "gin": "THEFEDERALBA-01",
+    "company_name": "Fedbank Financial Services Limited"
+  },
+  "NUVAMAWEALTHAND": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "PAG",
+    "gin": "PAG000000000-01",
+    "company_name": "Nuvama Wealth and Investment Limited"
+  },
+  "NUVAMAWEALTHMAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "PAG",
+    "gin": "PAG000000000-01",
+    "company_name": "Nuvama Wealth Management Limited"
+  },
+  "BOBCARD": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Bank Of Baroda",
+    "gin": "BANKOFBARODA-01",
+    "company_name": "Bobcard Limited"
+  },
+  "BLUESTARCO": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Mohan Advani",
+    "gin": "MOHANADVANI0-01",
+    "company_name": "Blue Star Limited"
+  },
+  "TATASONS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Sons Private Limited"
+  },
+  "CHENNAIPETROLEU": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Indian Oil Corporation Limited",
+    "gin": "INDIANOILCOR-01",
+    "company_name": "Chennai Petroleum Corporation Limited"
+  },
+  "SIMPLEXINFRASTR": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Bithal Das Mundhra",
+    "gin": "BITHALDASMUN-01",
+    "company_name": "Simplex Infrastructures Limited"
+  },
+  "BHEL": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Bharat Heavy Electricals Limited",
+    "gin": "BHARATHEAVYE-01",
+    "company_name": "Bharat Heavy Electricals Limited"
+  },
+  "JMFINANCIALASSE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "Jm Financial Asset Reconstruction Company Limited"
+  },
+  "PROMONTHILLSIDE": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Promont Hillside Private Limited"
+  },
+  "RESCOGLOBALWIND": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Vivek Kumar Jain",
+    "gin": "VIVEKKUMARJA-01",
+    "company_name": "Resco Global Wind Services Private Limited"
+  },
+  "GERADEVELOPMENT": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Kumar Pritamdas Gera",
+    "gin": "KUMARPRITAMD-01",
+    "company_name": "Gera Developments Private Limited"
+  },
+  "ASHOKACONCESSIO": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Ashok Motilal Katariya",
+    "gin": "ASHOKMOTILAL-01",
+    "company_name": "Ashoka Concessions Limited"
+  },
+  "SMFGHOMEFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Sumitomo Mitsui Financial Group",
+    "gin": "SUMITOMOMITS-01",
+    "company_name": "SMFG India Home Finance Company Limited"
+  },
+  "KALPATARUPROJEC": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Parag Mofatraj Munot",
+    "gin": "PARAGMOFATRA-01",
+    "company_name": "Kalpataru Projects International Limited"
+  },
+  "INOXWIND": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Vivek Kumar Jain",
+    "gin": "VIVEKKUMARJA-01",
+    "company_name": "Inox Wind Limited"
+  },
+  "JOHNDEEREFINANC": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "John Deere Asia (Singapore) Pte. Limited",
+    "gin": "JOHNDEEREASI-01",
+    "company_name": "John Deere Financial India Private Limited"
+  },
+  "HDFCERGOGENERAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "HDFC Bank Limited",
+    "gin": "HDFCBANKLIMI-01",
+    "company_name": "HDFC Ergo General Insurance Company Ltd."
+  },
+  "ANDHRAPRADESHEX": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Cube Highways Trust",
+    "gin": "CUBEHIGHWAYS-02",
+    "company_name": "Andhra Pradesh Expressway Private Limited"
+  },
+  "GODREJANDBOYCEM": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Godrej Enterprises Group",
+    "gin": "GODREJENTERP-02",
+    "company_name": "Godrej and Boyce Manufacturing Company Limited"
+  },
+  "TATAPOWERRENEWA": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Power Renewable Energy Limited"
+  },
+  "SEILENERGY": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Tanweer Infrastructure SAOC",
+    "gin": "TANWEERINFRA-01",
+    "company_name": "SEIL Energy India Ltd"
+  },
+  "INOXAIRPRODUCTS": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Pavan Kumar Jain",
+    "gin": "PAVANKUMARJA-01",
+    "company_name": "Inox Air Products Private Ltd"
+  },
+  "PRIAPUSINFRASTR": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Temasek Holdings",
+    "gin": "TEMASEKHOLDI-01",
+    "company_name": "Priapus Infrastructure Limited"
+  },
+  "CITRAREALESTATE": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Temasek Holdings",
+    "gin": "TEMASEKHOLDI-01",
+    "company_name": "Citra Real Estate Limited"
+  },
+  "PATELKNRHEAVYIN": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Kamidi Narasimha Reddy",
+    "gin": "KAMIDINARASI-01",
+    "company_name": "Patel Knr Heavy Infrastructures Limited"
+  },
+  "LANDKARTBUILDER": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Land Kart Builders Pvt Ltd."
+  },
+  "THEGREATEASTERN": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Kanaiyalal Maneklal Sheth",
+    "gin": "KANAIYALALMA-01",
+    "company_name": "The Great Eastern Shipping Company Limited"
+  },
+  "AAVASFINANCIERS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "CVC Capital Partners Group",
+    "gin": "CVCCAPITALPA-01",
+    "company_name": "AAVAS Financiers Limited"
+  },
+  "HAMPIEXPRESSWAY": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Hampi Expressways Private Limited"
+  },
+  "JODHPURWINDFARM": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Torrent Group",
+    "gin": "TORRENTGROUP-01",
+    "company_name": "Jodhpur Wind Farms Private Limited"
+  },
+  "MOTILALOSWALHOM": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Motilal Oswal Group",
+    "gin": "MOTILALOSWAL-01",
+    "company_name": "MOTILAL OSWAL HOME FINANCE LIMITED"
+  },
+  "IIFLHOMEFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nirmal Bhanwarlal Jain",
+    "gin": "NIRMALBHANWA-01",
+    "company_name": "IIFL Home Finance Limited"
+  },
+  "PRESTIGE": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Irfan Razack",
+    "gin": "IRFANRAZACK0-01",
+    "company_name": "Prestige Estates Projects Limited"
+  },
+  "LODHADEVELOPERS": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Abhishek Lodha",
+    "gin": "ABHISHEKLODH-01",
+    "company_name": "Lodha Developers Limited"
+  },
+  "DABUR": {
+    "sector": "FMCG",
+    "industry": "Personal Care",
+    "group": "Dabur",
+    "gin": "DABUR-01",
+    "company_name": "Dabur India Limited"
+  },
+  "NIRMA": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Karsanbhai Khodidas Patel",
+    "gin": "KARSANBHAIKH-01",
+    "company_name": "Nirma Limited"
+  },
+  "CREAMLINEDAIRYP": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Creamline Dairy Products Limited"
+  },
+  "VARROCENGINEERI": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Tarang Jain",
+    "gin": "TARANGJAIN00-01",
+    "company_name": "Varroc Engineering Limited"
+  },
+  "GRPHAGWARAEXPRE": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "Indus Infra Trust",
+    "gin": "INDUSINFRATR-01",
+    "company_name": "GR Phagwara Expressway Private Limited"
+  },
+  "JHAJJARPOWER": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "CLP GPEC (Mauritius) Holding Limited",
+    "gin": "CLPGPECMAURI-01",
+    "company_name": "Jhajjar Power Limited"
+  },
+  "ASTECLIFESCIENC": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Astec Lifesciences Limited"
+  },
+  "PRISMJOHNSON": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Rajan B Raheja",
+    "gin": "RAJANBRAHEJA-01",
+    "company_name": "Prism Johnson Limited"
+  },
+  "ALTIUSTELECOMIN": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Altius Telecom Infrastructure Trust",
+    "gin": "ALTIUSTELECO-01",
+    "company_name": "Altius Telecom Infrastructure Trust"
+  },
+  "SRF": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "ARUN BHARAT RAM",
+    "gin": "ARUNBHARATRA-01",
+    "company_name": "SRF Ltd."
+  },
+  "PVRINOX": {
+    "sector": "Media, Entertainment & Publication",
+    "industry": "Media, Entertainment & Publication",
+    "group": "Pavan Kumar Jain",
+    "gin": "PAVANKUMARJA-01",
+    "company_name": "PVR INOX Limited"
+  },
+  "APLAPOLLOBUILDI": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Sanjay Gupta",
+    "gin": "SANJAYGUPTA0-01",
+    "company_name": "APL Apollo Building Products Limited"
+  },
+  "FUTURELIFESTYLE": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Lifestyle Trust",
+    "gin": "LIFESTYLETRU-01",
+    "company_name": "Future Lifestyle Fashions Limited"
+  },
+  "THDC": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "NTPC Limited",
+    "gin": "NTPCLIMITED0-01",
+    "company_name": "Thdc India Limited"
+  },
+  "PERFORMANCECHEM": {
+    "sector": "Materials",
+    "industry": "Materials",
+    "group": "Sailesh C Mehta",
+    "gin": "SAILESHCMEHT-01",
+    "company_name": "Performance Chemiserve Limited"
+  },
+  "GODREJFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Godrej Finance Ltd."
+  },
+  "HINDZINC": {
+    "sector": "Metals & Mining",
+    "industry": "Metals & Mining",
+    "group": "Vedanta Group",
+    "gin": "VEDANTAGROUP-01",
+    "company_name": "Hindustan Zinc Limited"
+  },
+  "IOTUTKALENERGYS": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Indian Oil Corporation Limited",
+    "gin": "INDIANOILCOR-01",
+    "company_name": "IOT Utkal Energy Services Limited"
+  },
+  "THERAMCOCEMENTS": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "P.R. Venketrama Raja",
+    "gin": "PRVENKETRAMA-01",
+    "company_name": "The Ramco Cements Limited"
+  },
+  "BERGERPAINTS": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Gurbachan Singh Dhingra",
+    "gin": "GURBACHANSIN-01",
+    "company_name": "Berger Paints India Limited"
+  },
+  "NORTHERNARCCAPI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Northern Arc Capital Limited",
+    "gin": "NORTHERNARCC-01",
+    "company_name": "Northern Arc Capital Limited"
+  },
+  "TIMETECHNOPLAST": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Naveen Jain",
+    "gin": "NAVEENJAIN00-01",
+    "company_name": "Time Technoplast Limited"
+  },
+  "HDFCLIFEINSURAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "HDFC Bank Limited",
+    "gin": "HDFCBANKLIMI-01",
+    "company_name": "HDFC Life Insurance Company Limited"
+  },
+  "SWARNATOLLWAY": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Vertis Infrastructure Trust",
+    "gin": "VERTISINFRAS-01",
+    "company_name": "Swarna Tollway Private Limited"
+  },
+  "TRUSTINVESTMENT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nipa Utpal Sheth",
+    "gin": "NIPAUTPALSHE-01",
+    "company_name": "Trust Investment Advisors Private Limited"
+  },
+  "SPANDANASPHOORT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Kedaara Capital",
+    "gin": "KEDAARACAPIT-01",
+    "company_name": "Spandana Sphoorty Financial Ltd."
+  },
+  "PROFECTUSCAPITA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Actis Group",
+    "gin": "ACTISGROUP00-01",
+    "company_name": "Profectus Capital Private Limited"
+  },
+  "SHELTERFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "WestBridge Capital",
+    "gin": "WESTBRIDGECA-01",
+    "company_name": "India Shelter Finance Corporation Limited"
+  },
+  "RENSERVGLOBAL": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "RENEW ENERGY GLOBAL PLC",
+    "gin": "RENEWENERGYG-01",
+    "company_name": "Renserv Global Private Limited"
+  },
+  "INDUSINDGENERAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Hinduja Group",
+    "gin": "HINDUJAGROUP-01",
+    "company_name": "Indusind General Insurance Company Limited"
+  },
+  "RELCAPITAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Hinduja Group",
+    "gin": "HINDUJAGROUP-01",
+    "company_name": "Reliance Capital Limited"
+  },
+  "ASIRVADMICROFIN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "V P Nandakumar",
+    "gin": "VPNANDAKUMAR-01",
+    "company_name": "Asirvad Microfinance Limited"
+  },
+  "DCMSHRIRAM": {
+    "sector": "Diversified",
+    "industry": "Diversified",
+    "group": "AJAY S SHRIRAM",
+    "gin": "AJAYSSHRIRAM-01",
+    "company_name": "DCM Shriram Limited"
+  },
+  "VERTISINFRASTRU": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Vertis Infrastructure Trust",
+    "gin": "VERTISINFRAS-01",
+    "company_name": "Vertis Infrastructure Trust"
+  },
+  "NORTHEASTERNELE": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "NTPC Limited",
+    "gin": "NTPCLIMITED0-01",
+    "company_name": "North Eastern Electric Power Corporation Ltd"
+  },
+  "IIFLSAMASTAFINA": {
+    "sector": "Microfinance",
+    "industry": "Microfinance",
+    "group": "Nirmal Bhanwarlal Jain",
+    "gin": "NIRMALBHANWA-01",
+    "company_name": "IIFL Samasta Finance Limited"
+  },
+  "TATACOMM": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Communications Limited"
+  },
+  "BANKINDIA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Bank of India",
+    "gin": "BANKOFINDIA0-01",
+    "company_name": "Bank of India"
+  },
+  "CITICORPFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Citibank N A",
+    "gin": "CITIBANKNA00-01",
+    "company_name": "Citicorp Finance India Limited"
+  },
+  "TIRUMALAHIGHWAY": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Cube Highways Trust",
+    "gin": "CUBEHIGHWAYS-02",
+    "company_name": "Tirumala Highways Private Limited"
+  },
+  "JINDALSTAINLESS": {
+    "sector": "Metals & Mining",
+    "industry": "Metals & Mining",
+    "group": "Naveen Jindal",
+    "gin": "NAVEENJINDAL-01",
+    "company_name": "Jindal Stainless Limited"
+  },
+  "LATURRENEWABLE": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Torrent Group",
+    "gin": "TORRENTGROUP-01",
+    "company_name": "Latur Renewable Private Limited"
+  },
+  "MANGLOORHIGHWAY": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Cube Highways Trust",
+    "gin": "CUBEHIGHWAYS-02",
+    "company_name": "Mangloor Highways Private Limited"
+  },
+  "JMFINANCIALPROP": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "JM Financial Properties And Holdings Limited"
+  },
+  "NAGPURSEONIEXPR": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "INTERISE TRUST",
+    "gin": "INTERISETRUS-01",
+    "company_name": "Nagpur - Seoni Express Way Limited"
+  },
+  "EQUITASBNK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Equitas Small Finance Bank Limited",
+    "gin": "EQUITASSMALL-01",
+    "company_name": "Equitas Small Finance Bank Limited"
+  },
+  "CSBBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Fih Mauritius Investment Limited",
+    "gin": "FIHMAURITIUS-01",
+    "company_name": "CSB Bank Ltd."
+  },
+  "SBICARDSANDPAYM": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "State Bank Of India",
+    "gin": "STATEBANKOFI-01",
+    "company_name": "SBI Cards and Payment Services Ltd."
+  },
+  "TAPIRCONSTRUCTI": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "Indiabulls Real Estate Limited",
+    "gin": "INDIABULLSRE-01",
+    "company_name": "Tapir Constructions Limited"
+  },
+  "ALEMBICPHARMACE": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "Chirayu Ramanbhai Amin",
+    "gin": "CHIRAYURAMAN-01",
+    "company_name": "Alembic Pharmaceuticals Limited"
+  },
+  "JUBILANTINGREVI": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Shyam Sunder Bhartia",
+    "gin": "SHYAMSUNDERB-01",
+    "company_name": "Jubilant Ingrevia Limited"
+  },
+  "APOLLOTYRE": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Onkar Kanwar",
+    "gin": "ONKARKANWAR0-01",
+    "company_name": "Apollo Tyres Limited"
+  },
+  "ENERGYINFRASTRU": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Energy Infrastructure Trust",
+    "gin": "ENERGYINFRAS-01",
+    "company_name": "Energy Infrastructure Trust"
+  },
+  "IRBINVITFUND": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Irb Invit Fund",
+    "gin": "IRBINVITFUND-01",
+    "company_name": "IRB Invit Fund"
+  },
+  "CUBEHIGHWAYSTRU": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Cube Highways Trust",
+    "gin": "CUBEHIGHWAYS-02",
+    "company_name": "Cube Highways Trust"
+  },
+  "POWERGRIDINFRAS": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Powergrid Infrastructure Investment Trust",
+    "gin": "POWERGRIDINF-01",
+    "company_name": "Powergrid Infrastructure Investment Trust"
+  },
+  "CARATLANETRADIN": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Titan Company Limited",
+    "gin": "TITANCOMPANY-01",
+    "company_name": "Carat Lane Trading Private Limited"
+  },
+  "INTELLIGENTSUPP": {
+    "sector": "Retailing",
+    "industry": "Retailing",
+    "group": "Intelligent Supply Chain Infrastructure Trust",
+    "gin": "INTELLIGENTS-01",
+    "company_name": "Intelligent Supply Chain Infrastructure Trust"
+  },
+  "SHEELAFOAM": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Tushar Gautam",
+    "gin": "TUSHARGAUTAM-01",
+    "company_name": "Sheela Foam Limited"
+  },
+  "ANGELONE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Dinesh Dariyanumal Thakkar",
+    "gin": "DINESHDARIYA-01",
+    "company_name": "Angel One Ltd."
+  },
+  "NRENEWABLEENERG": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Indian Renewable Energy Development Agency Limited",
+    "gin": "INDIANRENEWA-01",
+    "company_name": "Indian Renewable Energy Development Agency Limited"
+  },
+  "TITAN": {
+    "sector": "Consumer Durables",
+    "industry": "Consumer Durables",
+    "group": "Titan Company Limited",
+    "gin": "TITANCOMPANY-01",
+    "company_name": "Titan Company Limited"
+  },
+  "VASTUFINSERVE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Multiples Alternate Asset Management",
+    "gin": "MULTIPLESALT-01",
+    "company_name": "Vastu Finserve India Private Limited"
+  },
+  "JMFINANCIALHOME": {
+    "sector": "Housing Finance Company",
+    "industry": "Housing Finance Company",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "JM Financial Home Loans Limited"
+  },
+  "IIFLSECURITIES": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nirmal Bhanwarlal Jain",
+    "gin": "NIRMALBHANWA-01",
+    "company_name": "IIFL Securities Ltd."
+  },
+  "TATACONSUMERPRO": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Consumer Products Limited"
+  },
+  "DEUTSCHEBANKAG": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Deutsche Bank A. G.",
+    "gin": "DEUTSCHEBANK-01",
+    "company_name": "Deutsche Bank A. G."
+  },
+  "UJJIVANSFB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Ujjivan Financial Services Limited",
+    "gin": "UJJIVANFINAN-01",
+    "company_name": "Ujjivan Small Finance Bank Limited"
+  },
+  "PCBLCHEMICAL": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Sanjiv Goenka",
+    "gin": "SANJIVGOENKA-01",
+    "company_name": "PCBL Chemical Limited"
+  },
+  "HINDUJAHOUSINGF": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Hinduja Group",
+    "gin": "HINDUJALEYLA-01",
+    "company_name": "Hinduja Housing Finance Limited"
+  },
+  "KISETSUSAISONFI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Credit SaisonCo. Ltd",
+    "gin": "CREDITSAISON-01",
+    "company_name": "Kisetsu Saison Finance India Private Limited"
+  },
+  "MIRAEASSETCAPIT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Mirae Asset Financial Group",
+    "gin": "MIRAEASSETFI-01",
+    "company_name": "Mirae Asset Capital Markets (India) Private Limited"
+  },
+  "DMIFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "DMI Limited",
+    "gin": "DMILIMITED00-01",
+    "company_name": "DMI Finance Private Limited"
+  },
+  "SBIFACTORS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "State Bank Of India",
+    "gin": "STATEBANKOFI-01",
+    "company_name": "SBI Factors Limited"
+  },
+  "INDUSINFRATRUST": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Indus Infra Trust",
+    "gin": "INDUSINFRATR-01",
+    "company_name": "Indus Infra Trust"
+  },
+  "UTKARSHBNK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "UTKARSH COREINVEST LIMITED",
+    "gin": "UTKARSHCOREI-01",
+    "company_name": "Utkarsh Small Finance Bank Limited"
+  },
+  "AADHARSHILAINFR": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "RIYA AGARWAL",
+    "gin": "RIYAAGARWAL0-01",
+    "company_name": "Aadharshila Infratech Private Limited"
+  },
+  "SBIGENERALINSUR": {
+    "sector": "Insurance",
+    "industry": "Insurance",
+    "group": "State Bank Of India",
+    "gin": "STATEBANKOFI-01",
+    "company_name": "SBI General Insurance Company Limited"
+  },
+  "AARTIIND": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Chandrakant Vallabhaji Gogri",
+    "gin": "CHANDRAKANTV-01",
+    "company_name": "Aarti Industries Limited"
+  },
+  "MAITHONPOWER": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Maithon Power Limited"
+  },
+  "DLFHOMEDEVELOPE": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Rajiv Singh",
+    "gin": "RAJIVSINGH00-01",
+    "company_name": "DLF Home Developers Ltd."
+  },
+  "TYGERCAPITAL": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Bain Capital",
+    "gin": "BAINCAPITAL0-01",
+    "company_name": "Tyger Capital Private Limited"
+  },
+  "SBFCFINANCE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "SBFC Holdings Pte. Ltd",
+    "gin": "SBFCHOLDINGS-01",
+    "company_name": "SBFC Finance Ltd."
+  },
+  "NARAYANAHRUDAYA": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "SHAKUNTALA SHETTY",
+    "gin": "SHAKUNTALASH-01",
+    "company_name": "Narayana Hrudayalaya Ltd."
+  },
+  "ERISLIFESCIENCE": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "Amit Indubhushan Bakshi",
+    "gin": "AMITINDUBHUS-01",
+    "company_name": "Eris Lifesciences Ltd."
+  },
+  "PRESTIGEPROJECT": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Irfan Razack",
+    "gin": "IRFANRAZACK0-01",
+    "company_name": "Prestige Projects Private Ltd."
+  },
+  "NIWASHOSINGFINA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "EQT Group",
+    "gin": "EQTGROUP0000-01",
+    "company_name": "Niwas Hosing Finance Limited"
+  },
+  "VISTAARFINANCIA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Warbug Pincus LLC",
+    "gin": "WARBUGPINCUS-03",
+    "company_name": "Vistaar Financial Services Pvt Ltd."
+  },
+  "IDBIBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "IDBI Bank Ltd.",
+    "gin": "IDBIBANKLTD0-01",
+    "company_name": "IDBI Bank Ltd."
+  },
+  "FIRSTBUSINESSRE": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "First Business Receivables Trust",
+    "gin": "FIRSTBUSINES-01",
+    "company_name": "First Business Receivables Trust"
+  },
+  "VAJRA003TRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Vajra 003 Trust",
+    "gin": "VAJRA003TRUS-01",
+    "company_name": "Vajra 003 Trust"
+  },
+  "SANSARTRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Sansar Trust",
+    "gin": "SANSARTRUST0-01",
+    "company_name": "Sansar Trust"
+  },
+  "VAJRA006TRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "VAJRA 006 Trust",
+    "gin": "VAJRA006TRUS-01",
+    "company_name": "VAJRA 006 Trust"
+  },
+  "VAJRA004TRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "VAJRA 004 TRUST",
+    "gin": "VAJRA004TRUS-01",
+    "company_name": "VAJRA 004 TRUST"
+  },
+  "PLUTUS092022": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Plutus 09 2022",
+    "gin": "PLUTUS092022-01",
+    "company_name": "Plutus 09 2022"
+  },
+  "MUFASA112022": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Mufasa 11 2022",
+    "gin": "MUFASA112022-01",
+    "company_name": "Mufasa 11 2022"
+  },
+  "QUEEN032023": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Queen 03 2023",
+    "gin": "QUEEN0320230-01",
+    "company_name": "Queen 03 2023"
+  },
+  "INDIGO023": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Indigo 023",
+    "gin": "INDIGO023000-01",
+    "company_name": "Indigo 023"
+  },
+  "SHREECEM": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Hari Mohan Bangur",
+    "gin": "HARIMOHANBAN-01",
+    "company_name": "Shree Cement Limited"
+  },
+  "MILLENNIAREALTO": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Raj and Manoj Menda",
+    "gin": "RAJANDMANOJM-01",
+    "company_name": "Millennia Realtors Private Limited"
+  },
+  "CEAT": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Harsh Vardhan Goenka",
+    "gin": "HARSHVARDHAN-01",
+    "company_name": "Ceat Limited"
+  },
+  "CESC": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Sanjiv Goenka",
+    "gin": "SANJIVGOENKA-01",
+    "company_name": "CESC Limited"
+  },
+  "TRIVENIENGINEER": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "DHRUV MANMOHAN SAWHNEY",
+    "gin": "DHRUVMANMOHA-01",
+    "company_name": "Triveni Engineering and Industries Limited"
+  },
+  "UCOBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "UCO Bank",
+    "gin": "UCOBANK00000-01",
+    "company_name": "UCO Bank"
+  },
+  "THEKARURVYSYABA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "A J SURIYANARAYANA",
+    "gin": "AJSURIYANARA-01",
+    "company_name": "The Karur Vysya Bank Limited"
+  },
+  "ADANIPORTSANDSP": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Adani Ports And Special Economic Zone Ltd."
+  },
+  "ASHIANAHOUSING": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Ankur and Varun Gupta",
+    "gin": "ANKURANDVARU-01",
+    "company_name": "Ashiana Housing Ltd."
+  },
+  "UPL": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "UPL Group",
+    "gin": "UPLGROUP0000-01",
+    "company_name": "UPL Limited"
+  },
+  "IOB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Indian Overseas Bank",
+    "gin": "INDIANOVERSE-01",
+    "company_name": "Indian Overseas Bank"
+  },
+  "WELSPUNLIVING": {
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "group": "Balkrishan Gopiram Goenka",
+    "gin": "BALKRISHANGO-01",
+    "company_name": "Welspun Living Ltd."
+  },
+  "NAOMI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "NAOMI 05 2024",
+    "gin": "NAOMI0520240-01",
+    "company_name": "Naomi"
+  },
+  "MUTHOOTFINCORP": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Muthoot Pappachan group",
+    "gin": "MUTHOOTPAPPA-01",
+    "company_name": "Muthoot Fincorp Ltd."
+  },
+  "ASEEMINFRASTRUC": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "National Investment and Infrastructure Fund",
+    "gin": "NATIONALINVE-01",
+    "company_name": "Aseem Infrastructure Finance Limited"
+  },
+  "BHARTIARTL": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Sunil Bharti Mittal",
+    "gin": "SUNILBHARTIM-01",
+    "company_name": "Bharti Airtel Limited"
+  },
+  "CHOLAMANDALAMSE": {
+    "sector": "Broking Company",
+    "industry": "Broking Company",
+    "group": "Murugappa Group",
+    "gin": "MURUGAPPAGRO-01",
+    "company_name": "Cholamandalam Securities Limited"
+  },
+  "INFOPARKPROPERT": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Infopark Properties Limited"
+  },
+  "NOMURAFIXEDINCO": {
+    "sector": "Broking Company",
+    "industry": "Broking Company",
+    "group": "Nomura Group",
+    "gin": "NOMURAGROUP0-01",
+    "company_name": "Nomura Fixed Income Securities Limited"
+  },
+  "NXTINFRATRUST": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Nxt-Infra Trust",
+    "gin": "NXTINFRATRUS-01",
+    "company_name": "Nxt-Infra Trust"
+  },
+  "TVSHOLDINGS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Venu Srinivasan",
+    "gin": "VENUSRINIVAS-01",
+    "company_name": "TVS Holdings Limited"
+  },
+  "VAJRA009TRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "VAJRA 009 Trust",
+    "gin": "VAJRA009TRUS-01",
+    "company_name": "VAJRA 009 Trust"
+  },
+  "KOHIMAMARIANITR": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "CLP GPEC (Mauritius) Holding Limited",
+    "gin": "CLPGPECMAURI-01",
+    "company_name": "Kohima Mariani Transmission Limited"
+  },
+  "DELHIINTERNATIO": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "GRANDHI MALLIKARJUNA RAO",
+    "gin": "GRANDHIMALLI-01",
+    "company_name": "Delhi International Airport Limited"
+  },
+  "MUTHOOTHOMEFIN": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Muthoot Group",
+    "gin": "MUTHOOTGROUP-01",
+    "company_name": "Muthoot Homefin India Limited"
+  },
+  "MIRAEASSETFINAN": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Mirae Asset Financial Group",
+    "gin": "MIRAEASSETFI-01",
+    "company_name": "Mirae Asset Financial Services (India) Private Limited"
+  },
+  "APLAPOLLOTUBES": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Sanjay Gupta",
+    "gin": "SANJAYGUPTA0-01",
+    "company_name": "APL Apollo Tubes Limited"
+  },
+  "CNHINDUSTRIALCA": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "CNH Industrial Asian holding Limited NV",
+    "gin": "CNHINDUSTRIA-02",
+    "company_name": "CNH Industrial Capital (India) Private Limited"
+  },
+  "EIDPARRY": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Murugappa Group",
+    "gin": "MURUGAPPAGRO-01",
+    "company_name": "E.I.D. Parry India Limited"
+  },
+  "JIOCREDIT": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Jio Credit Limited"
+  },
+  "JIOLEASINGSERVI": {
+    "sector": "Financial Institutions",
+    "industry": "Financial Institutions",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Jio Leasing Service Limited"
+  },
+  "JIOFINANCIALSER": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Jio Financial Services Limited"
+  },
+  "IDBICAPITALMARK": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "IDBI Bank Ltd.",
+    "gin": "IDBIBANKLTD0-01",
+    "company_name": "IDBI Capital Markets and Securities Limited"
+  },
+  "DCBBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aga Khan Fund For Economic Development SA",
+    "gin": "AGAKHANFUNDF-01",
+    "company_name": "DCB Bank Limited"
+  },
+  "ADITYABIRLADIGI": {
+    "sector": "Retailing",
+    "industry": "Retailing",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Digital Fashion Ventures Limited"
+  },
+  "MAHINDRALIFESPA": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Anand Gopal Mahindra",
+    "gin": "ANANDGOPALMA-01",
+    "company_name": "Mahindra Lifespace Developers Limited"
+  },
+  "VAJRA011TRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Vajra 011 Trust",
+    "gin": "VAJRA011TRUS-01",
+    "company_name": "Vajra 011 Trust"
+  },
+  "DHRUVATRUST": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Dhruva Trust",
+    "gin": "DHRUVATRUST0-01",
+    "company_name": "Dhruva Trust"
+  },
+  "VAJRA012TRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Vajra 012 Trust",
+    "gin": "VAJRA012TRUS-01",
+    "company_name": "Vajra 012 Trust"
+  },
+  "AVAADASOLARISEE": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Avaada restricted Group",
+    "gin": "AVAADARESTRI-01",
+    "company_name": "Avaada Solarise Energy Private Limited"
+  },
+  "AVAADASATARAMH": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Avaada restricted Group",
+    "gin": "AVAADARESTRI-01",
+    "company_name": "Avaada SataraMH Private Limited"
+  },
+  "FERMISOLARFARMS": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Avaada restricted Group",
+    "gin": "AVAADARESTRI-01",
+    "company_name": "Fermi Solarfarms Private Limited"
+  },
+  "CLEANSUSTAINABL": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Avaada restricted Group",
+    "gin": "AVAADARESTRI-01",
+    "company_name": "Clean Sustainable Energy Private Limited"
+  },
+  "UNIVERSALTRUSTA": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "India Universal Trust AL2",
+    "gin": "INDIAUNIVERS-02",
+    "company_name": "India Universal Trust AL2"
+  },
+  "MANKINDPHARMA": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "Ramesh Juneja",
+    "gin": "RAMESHJUNEJA-01",
+    "company_name": "Mankind Pharma Limited"
+  },
+  "ADANIAIRPORTHOL": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Adani Airport Holdings Limited"
+  },
+  "ADITYABIRLARENE": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Renewables Limited"
+  },
+  "APTUSVALUEHOUSI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "MUNUSWAMY ANANDAN",
+    "gin": "MUNUSWAMYANA-01",
+    "company_name": "Aptus Value Housing Finance India Limited"
+  },
+  "MINDA": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Ashok Minda",
+    "gin": "ASHOKMINDA00-01",
+    "company_name": "Minda Corporation Limited"
+  },
+  "RENEWSOLARENERG": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "RENEW ENERGY GLOBAL PLC",
+    "gin": "RENEWSOLARPO-01",
+    "company_name": "ReNew Solar Energy (Jharkhand Five) Private Limited"
+  },
+  "ACTIONCONSTRUCT": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Vijay Agarwal",
+    "gin": "VIJAYAGARWAL-01",
+    "company_name": "Action Construction Equipment Limited"
+  },
+  "PETRONETLNG": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "Petronet LNG Limited",
+    "gin": "PETRONETLNGL-01",
+    "company_name": "Petronet LNG Limited"
+  },
+  "DALMIACEMENTBHA": {
+    "sector": "Materials",
+    "industry": "Materials",
+    "group": "DBL Group",
+    "gin": "DBLGROUP0000-01",
+    "company_name": "Dalmia Cement (Bharat) Limited"
+  },
+  "RASHTRIYACHEMIC": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Rashtriya Chemicals and Fertilizers Limited",
+    "gin": "RASHTRIYACHE-01",
+    "company_name": "Rashtriya Chemicals and Fertilizers Limited"
+  },
+  "SANDURMANGANESE": {
+    "sector": "Oil, Gas & Consumable Fuels",
+    "industry": "Oil, Gas & Consumable Fuels",
+    "group": "AJAI MURAR RAO GHORPADE",
+    "gin": "AJAIMURARRAO-01",
+    "company_name": "Sandur Manganese and Iron Ores Limited"
+  },
+  "OBEROIRLTY": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Vikas Ranvir Oberoi",
+    "gin": "VIKASRANVIRO-01",
+    "company_name": "Oberoi Realty Limited"
+  },
+  "CHAMBALFERTILIS": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Shobhana Bhartia",
+    "gin": "SHOBHANABHAR-01",
+    "company_name": "Chambal Fertilisers and Chemicals Limited"
+  },
+  "SURYAPETKHAMMAM": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Suryapet Khammam Road Private Limited"
+  },
+  "TRENT": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Trent Limited"
+  },
+  "JSWINFRASTRUCTU": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Sajjan Jindal",
+    "gin": "SAJJANJINDAL-01",
+    "company_name": "JSW Infrastructure Limited"
+  },
+  "RELIANCELIFESCI": {
+    "sector": "Pharmaceutical Biotechnology & Life Sciences",
+    "industry": "Pharmaceutical Biotechnology & Life Sciences",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Reliance Life Sciences Private Limited"
+  },
+  "GMRAIRPORTS": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "GRANDHI MALLIKARJUNA RAO",
+    "gin": "GRANDHIMALLI-01",
+    "company_name": "GMR Airports Limited"
+  },
+  "JKTYREANDINDUST": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Raghupati Singhania",
+    "gin": "RAGHUPATISIN-01",
+    "company_name": "JK Tyre and Industries Limited"
+  },
+  "ASHOKABUILDCON": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Ashok Motilal Katariya",
+    "gin": "ASHOKMOTILAL-01",
+    "company_name": "Ashoka Buildcon Limited"
+  },
+  "TELANGANASTATEI": {
+    "sector": "Capital goods",
+    "industry": "Capital goods",
+    "group": "Telangana State Industrial Infrastructure Corporation Limited",
+    "gin": "TELANGANASTA-01",
+    "company_name": "Telangana State Industrial Infrastructure Corporation Limited"
+  },
+  "ADANITRANSMISSI": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Adani Transmission Step-Two Limited"
+  },
+  "ADITYABIRLACAPI": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Capital Limited"
+  },
+  "ALIPURDUARTRANS": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Alipurduar Transmission Limited"
+  },
+  "ANZENENERGYYIEL": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "ANZEN INDIA ENERGY YIELD PLUS TRUST",
+    "gin": "ANZENINDIAEN-01",
+    "company_name": "Anzen India Energy Yield Plus Trust"
+  },
+  "APTUSFINANCE": {
+    "sector": "Housing Finance Company",
+    "industry": "Housing Finance Company",
+    "group": "MUNUSWAMY ANANDAN",
+    "gin": "MUNUSWAMYANA-01",
+    "company_name": "Aptus Finance India Private Limited"
+  },
+  "ARVINDSMARTSPAC": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Sanjaybhai Shrenikbhai Lalbhai",
+    "gin": "SANJAYBHAISH-01",
+    "company_name": "Arvind Smartspaces Limited"
+  },
+  "ASHOKLEY": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Hinduja Group",
+    "gin": "HINDUJAGROUP-01",
+    "company_name": "Ashok Leyland Limited"
+  },
+  "BALRAMPURCHINIM": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "VIVEK SARAOGI",
+    "gin": "VIVEKSARAOGI-01",
+    "company_name": "Balrampur Chini Mills Limited"
+  },
+  "BANKOFAMERICANA": {
+    "sector": "Commercial\u00a0 & Professional Services",
+    "industry": "Commercial\u00a0 & Professional Services",
+    "group": "Bank of America",
+    "gin": "BANKOFAMERIC-01",
+    "company_name": "Bank of America N.A."
+  },
+  "BASF": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "BASF Societas Europaea",
+    "gin": "BASFSOCIETAS-01",
+    "company_name": "BASF India Limited"
+  },
+  "BHARATALUMINIUM": {
+    "sector": "Materials",
+    "industry": "Materials",
+    "group": "Vedanta Group",
+    "gin": "VEDANTAGROUP-01",
+    "company_name": "Bharat Aluminium Company Limited"
+  },
+  "CITIBANKNA": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "CITI BANK",
+    "gin": "CITIBANKNA00-01",
+    "company_name": "Citibank N. A."
+  },
+  "COROMANDEL": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Murugappa Group",
+    "gin": "MURUGAPPAGRO-01",
+    "company_name": "Coromandel International Limited"
+  },
+  "UBSFINANCE": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "UBS Group AG",
+    "gin": "UBSGROUPAG00-01",
+    "company_name": "UBS Finance India Private Limited"
+  },
+  "DORFKETALCHEMIC": {
+    "sector": "Materials",
+    "industry": "Materials",
+    "group": "Menon Group",
+    "gin": "MENONGROUP00-01",
+    "company_name": "Dorf-Ketal Chemicals India Limited"
+  },
+  "EMAMILTD": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Radhe Shyam Agarwal",
+    "gin": "RADHESHYAMAG-01",
+    "company_name": "Emami Limited"
+  },
+  "TVSEMERALD": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "Venu Srinivasan",
+    "gin": "VENUSRINIVAS-01",
+    "company_name": "TVS Emerald Limited"
+  },
+  "ESSELMININGANDI": {
+    "sector": "Materials",
+    "industry": "Materials",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Essel Mining and Industries Limited"
+  },
+  "FORCEMOTORS": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Abhaykumar Navalmal Firodia",
+    "gin": "ABHAYKUMARNA-01",
+    "company_name": "Force Motors Limited"
+  },
+  "FORTISHEALTHCAR": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "IHH Healthcare Berhad",
+    "gin": "IHHHEALTHCAR-01",
+    "company_name": "Fortis Healthcare Limited"
+  },
+  "FORTISHOSPOTEL": {
+    "sector": "Health Care Equipment & Services",
+    "industry": "Health Care Equipment & Services",
+    "group": "IHH Healthcare Berhad",
+    "gin": "IHHHEALTHCAR-01",
+    "company_name": "Fortis Hospotel Limited"
+  },
+  "GATEWAY": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Prem Kishan Dass Gupta",
+    "gin": "PREMKISHANDA-01",
+    "company_name": "Gateway Distriparks Limited"
+  },
+  "GREENKOENERGIES": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Greenko Mauritius",
+    "gin": "GREENKOMAURI-01",
+    "company_name": "Greenko Energies Private Limited"
+  },
+  "GUJFLUORO": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Vivek Kumar Jain",
+    "gin": "VIVEKKUMARJA-01",
+    "company_name": "Gujarat Fluorochemicals Limited"
+  },
+  "HALDIAENERGY": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Sanjiv Goenka",
+    "gin": "SANJIVGOENKA-01",
+    "company_name": "Haldia Energy Limited"
+  },
+  "HEROFUTUREENERG": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Pawan Munjal",
+    "gin": "PAWANMUNJAL0-01",
+    "company_name": "Hero Future Energies Private Limited"
+  },
+  "HEROSOLARENERGY": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Pawan Munjal",
+    "gin": "PAWANMUNJAL0-01",
+    "company_name": "Hero Solar Energy Private Limited"
+  },
+  "HEROWINDENERGY": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Pawan Munjal",
+    "gin": "PAWANMUNJAL0-01",
+    "company_name": "Hero Wind Energy Private Limited"
+  },
+  "HINDUSTANAERONA": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "HINDUSTAN AERONAUTICS LTD.",
+    "gin": "HINDUSTANAER-01",
+    "company_name": "Hindustan Aeronautics Limited"
+  },
+  "HIRANANDANIFINA": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Harsh S. Hiranandani",
+    "gin": "HARSHSHIRANA-01",
+    "company_name": "Hiranandani Financial Services Private Limited"
+  },
+  "HPCLMITTALENERG": {
+    "sector": "Energy",
+    "industry": "Energy",
+    "group": "Mittal Energy Investments Pte Ltd",
+    "gin": "MITTALENERGY-01",
+    "company_name": "Hpcl - Mittal Energy Limited"
+  },
+  "ICICIPRUDENTIAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Icici Bank Limited",
+    "gin": "ICICIBANKLIM-01",
+    "company_name": "ICICI Prudential Life Insurance Company Limited"
+  },
+  "IKFFINANCE": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "VUPPUTURI GOPALA KISHAN PRASAD",
+    "gin": "VUPPUTURIGOP-01",
+    "company_name": "IKF Finance Limited"
+  },
+  "EMBASSYDEVELOPM": {
+    "sector": "Consumer Discretionary",
+    "industry": "Consumer Discretionary",
+    "group": "Jitendra Mohandas Virwani",
+    "gin": "JITENDRAMOHA-01",
+    "company_name": "Embassy Developments Limited"
+  },
+  "INDUSTRIALANDCO": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "Industrial and Commercial Bank of China Limited",
+    "gin": "INDUSTRIALAN-01",
+    "company_name": "Industrial and Commercial Bank of China Limited"
+  },
+  "INTERNATIONALHO": {
+    "sector": "Health Care Equipment & Services",
+    "industry": "Health Care Equipment & Services",
+    "group": "IHH Healthcare Berhad",
+    "gin": "IHHHEALTHCAR-01",
+    "company_name": "International Hospital Limited"
+  },
+  "JMFINANCIAL": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "JM Financial Limited"
+  },
+  "JKLAKSHMI": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Raghupati Singhania",
+    "gin": "RAGHUPATISIN-01",
+    "company_name": "JK Lakshmi Cement Limited"
+  },
+  "JPMORGANCHASEBA": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "JP MORGAN CHASE BANK, NA",
+    "gin": "JPMORGANCHAS-01",
+    "company_name": "JP Morgan Chase Bank N.A. India"
+  },
+  "KECINTERNATIONA": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Harsh Vardhan Goenka",
+    "gin": "HARSHVARDHAN-01",
+    "company_name": "KEC International Limited"
+  },
+  "LIQUIDGOLDSERIE": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Liquid Gold Series 10",
+    "gin": "LIQUIDGOLDSE-03",
+    "company_name": "Liquid Gold Series 10"
+  },
+  "AXISMAXLIFEINSU": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "ANALJIT SINGH",
+    "gin": "ANALJITSINGH-01",
+    "company_name": "Axis MAX Life Insurance Limited"
+  },
+  "MERCEDESBENZFIN": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Mercedes-Benz Mobility AG",
+    "gin": "MERCEDESBENZ-01",
+    "company_name": "Mercedes-Benz Financial Services India Private Limited"
+  },
+  "MONTECARLO": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Kanubhai M Patel",
+    "gin": "KANUBHAIMPAT-01",
+    "company_name": "Montecarlo Limited"
+  },
+  "MRF": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "K Mammen Mappilai Group",
+    "gin": "KMAMMENMAPPI-01",
+    "company_name": "MRF Limited"
+  },
+  "NABSAMRUDDHIFIN": {
+    "sector": "Microfinance",
+    "industry": "Microfinance",
+    "group": "NABSAMRUDDHI FINANCE LIMITED",
+    "gin": "NABSAMRUDDHI-01",
+    "company_name": "Nabsamruddhi Finance Limited"
+  },
+  "NATIONALUM": {
+    "sector": "Metals & Mining",
+    "industry": "Metals & Mining",
+    "group": "NATIONAL ALUMINIUM CO.LTD",
+    "gin": "NATIONALALUM-02",
+    "company_name": "National Aluminium Company Limited"
+  },
+  "NATIONALFERTILI": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "NATIONAL FERTILIZERS LIMITED",
+    "gin": "NATIONALFERT-02",
+    "company_name": "National Fertilizers Limited"
+  },
+  "NAVIGATORTRUST2": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "NAVIGATOR TRUST 2024 01",
+    "gin": "NAVIGATORTRU-01",
+    "company_name": "NAVIGATOR TRUST 2024 01"
+  },
+  "NTTGLOBALDATACE": {
+    "sector": "Software & Services",
+    "industry": "Software & Services",
+    "group": "NTT limited",
+    "gin": "NTTLIMITED00-02",
+    "company_name": "NTT Global Data Centers and Cloud Infrastructure India Private Limited"
+  },
+  "NXTRADATA": {
+    "sector": "Software & Services",
+    "industry": "Software & Services",
+    "group": "Sunil Bharti Mittal",
+    "gin": "SUNILBHARTIM-01",
+    "company_name": "Nxtra Data Limited"
+  },
+  "ONGCVIDESH": {
+    "sector": "Energy",
+    "industry": "Energy",
+    "group": "Oil And Natural Gas Corporation Limited",
+    "gin": "OILANDNATURA-01",
+    "company_name": "ONGC Videsh Limited"
+  },
+  "PHOENIXLTD": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Atul Ashok kumar Ruia",
+    "gin": "ATULASHOKKUM-01",
+    "company_name": "Phoenix Mills Limited"
+  },
+  "PNBGILTS": {
+    "sector": "Broking Company",
+    "industry": "Broking Company",
+    "group": "Punjab National Bank",
+    "gin": "PUNJABNATION-01",
+    "company_name": "PNB Gilts Limited"
+  },
+  "RALLIS": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Rallis India Limited"
+  },
+  "RELIANCERETAIL": {
+    "sector": "Food & Staples Retailing",
+    "industry": "Food & Staples Retailing",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Reliance Retail Limited"
+  },
+  "SJVN": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "SJVN LTD.",
+    "gin": "SJVNLTD00000-01",
+    "company_name": "SJVN Limited"
+  },
+  "SKODAAUTOVOLKSW": {
+    "sector": "Automobiles & Components",
+    "industry": "Automobiles & Components",
+    "group": "Volkswagen AG",
+    "gin": "VOLKSWAGENAG-01",
+    "company_name": "SKODA AUTO Volkswagen India Private Limited"
+  },
+  "THESOUTHNBANK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "SOUTH INDIAN BANK LTD.",
+    "gin": "SOUTHINDIANB-01",
+    "company_name": "The South Indian Bank Limited"
+  },
+  "STCIPRIMARYDEAL": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Bank of India",
+    "gin": "BANKOFINDIA0-01",
+    "company_name": "STCI Primary Dealer Limited"
+  },
+  "STERLITETECHNOL": {
+    "sector": "Telecommunication",
+    "industry": "Telecommunication",
+    "group": "Vedanta Group",
+    "gin": "VEDANTAGROUP-01",
+    "company_name": "Sterlite Technologies Limited"
+  },
+  "SUMITOMOMITSUIB": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "Sumitomo Mitsui Financial Group",
+    "gin": "SUMITOMOMITS-01",
+    "company_name": "Sumitomo Mitsui Banking Corporation"
+  },
+  "SUNPHARMA": {
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "group": "Sun Pharma",
+    "gin": "SUNPHARMA-01",
+    "company_name": "Sun Pharmaceutical Industries Limited"
+  },
+  "SURYODAY": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "BASKAR BABU RAMACHANDRAN",
+    "gin": "BASKARBABURA-01",
+    "company_name": "Suryoday Small Finance Bank Limited"
+  },
+  "TATACHEMICALS": {
+    "sector": "Chemicals",
+    "industry": "Chemicals",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Chemicals Limited"
+  },
+  "TATACUMMINS": {
+    "sector": "Automobiles & Components",
+    "industry": "Automobiles & Components",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Cummins Private Limited"
+  },
+  "TATAINDUSTRIES": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Industries Limited"
+  },
+  "TATAPLAY": {
+    "sector": "Media",
+    "industry": "Media",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Play Limited"
+  },
+  "TATAVALUEHOMES": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "Tata Value Homes Limited"
+  },
+  "THENHOTELS": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Noel Tata Group",
+    "gin": "NOELTATAGROU-01",
+    "company_name": "The Indian Hotels Company Limited"
+  },
+  "TUBEINVESTMENTS": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Murugappa Group",
+    "gin": "MURUGAPPAGRO-01",
+    "company_name": "Tube Investments Of India Limited"
+  },
+  "VAJRATRUST007": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "VAJRA TRUST 007",
+    "gin": "VAJRATRUST00-02",
+    "company_name": "VAJRA TRUST 007"
+  },
+  "VARDHMANSPECIAL": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "SHRI PAUL OSWAL",
+    "gin": "SHRIPAULOSWA-01",
+    "company_name": "Vardhman Special Steels Limited"
+  },
+  "VTL": {
+    "sector": "Textiles",
+    "industry": "Textiles",
+    "group": "SHRI PAUL OSWAL",
+    "gin": "SHRIPAULOSWA-01",
+    "company_name": "Vardhman Textiles Limited"
+  },
+  "VASTUHOUSINGFIN": {
+    "sector": "Housing Finance Company",
+    "industry": "Housing Finance Company",
+    "group": "Multiples Alternate Asset Management",
+    "gin": "MULTIPLESALT-01",
+    "company_name": "Vastu Housing Finance Corporation Limited"
+  },
+  "STUDIO18MEDIA": {
+    "sector": "Media",
+    "industry": "Media",
+    "group": "Mukesh Ambani Group",
+    "gin": "MUKESHAMBANI-01",
+    "company_name": "Studio 18 Media Private Limited"
+  },
+  "WELSPUNCORP": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Balkrishan Gopiram Goenka",
+    "gin": "BALKRISHANGO-01",
+    "company_name": "Welspun Corp Limited"
+  },
+  "WELSPUNENTERPRI": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Balkrishan Gopiram Goenka",
+    "gin": "BALKRISHANGO-01",
+    "company_name": "Welspun Enterprises Limited"
+  },
+  "ZYDUSLIFESCIENC": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "Pankaj Ramanbhai Patel",
+    "gin": "PANKAJRAMANB-01",
+    "company_name": "Zydus Lifesciences Limited"
+  },
+  "JMFINANCIALINST": {
+    "sector": "Broking Company",
+    "industry": "Broking Company",
+    "group": "Nimesh N Kampani",
+    "gin": "NIMESHNKAMPA-01",
+    "company_name": "JM Financial Institutional Securities Limited"
+  },
+  "AUSTRALIAANDNEW": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED",
+    "gin": "AUSTRALIAAND-01",
+    "company_name": "Australia and New Zealand Banking Group Limited"
+  },
+  "BNPPARIBAS": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "Bnp Paribas",
+    "gin": "BNPPARIBAS00-01",
+    "company_name": "BNP Paribas"
+  },
+  "UBSAG": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "UBS Group AG",
+    "gin": "UBSGROUPAG00-01",
+    "company_name": "UBS AG"
+  },
+  "THEHONGKONGANDS": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "HSBC Holdings PLC",
+    "gin": "HSBCHOLDINGS-01",
+    "company_name": "The Hongkong and Shanghai Banking Corporation Limited"
+  },
+  "RENEW": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "RENEW ENERGY GLOBAL PLC",
+    "gin": "RENEWENERGYG-01",
+    "company_name": "Renew Private Limited"
+  },
+  "SHINHANBANK": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "Shinhan Bank",
+    "gin": "SHINHANBANK0-01",
+    "company_name": "Shinhan Bank"
+  },
+  "CAPITALINFRATRU": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Capital Infra Trust",
+    "gin": "CAPITALINFRA-01",
+    "company_name": "Capital Infra Trust"
+  },
+  "BAMBOOHOTELANDG": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "Irfan Razack",
+    "gin": "PRESTIGEHOSP-01",
+    "company_name": "Bamboo Hotel And Global Centre (Delhi) Private Limited"
+  },
+  "UNIVERSETRUSTDE": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Universe Trust Dec 2024",
+    "gin": "UNIVERSETRUS-01",
+    "company_name": "Universe Trust Dec 2024"
+  },
+  "BIOCON": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "Kiran Mazumdar Shaw",
+    "gin": "KIRANMAZUMDA-01",
+    "company_name": "Biocon Limited"
+  },
+  "JUBILANTBEVCO": {
+    "sector": "Food & Staples Retailing",
+    "industry": "Food & Staples Retailing",
+    "group": "Shyam Sunder Bhartia",
+    "gin": "SHYAMSUNDERB-01",
+    "company_name": "Jubilant Bevco Limited"
+  },
+  "JUBILANTBEVERAG": {
+    "sector": "Food & Staples Retailing",
+    "industry": "Food & Staples Retailing",
+    "group": "Shyam Sunder Bhartia",
+    "gin": "SHYAMSUNDERB-01",
+    "company_name": "Jubilant Beverages Limited"
+  },
+  "RAMCOINDUSTRIES": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "P.R. Venketrama Raja",
+    "gin": "PRVENKETRAMA-01",
+    "company_name": "Ramco Industries Limited"
+  },
+  "GOLDMANSACHSCAP": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "The Goldman Sachs Group Inc",
+    "gin": "THEGOLDMANSA-01",
+    "company_name": "Goldman Sachs (India) Capital Markets Limited"
+  },
+  "BAJAJAUTOCREDIT": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Rahul Bajaj Group",
+    "gin": "RAHULBAJAJGR-01",
+    "company_name": "Bajaj Auto Credit Limited"
+  },
+  "SUZLON": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Suzlon Group",
+    "gin": "SUZLONGROUP0-01",
+    "company_name": "Suzlon Energy Limited"
+  },
+  "TORRENTINVESTME": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Torrent Group",
+    "gin": "TORRENTGROUP-01",
+    "company_name": "Torrent Investments Limited"
+  },
+  "SIS": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Ravindra Kishore Sinha",
+    "gin": "RAVINDRAKISH-01",
+    "company_name": "SIS Limited"
+  },
+  "THECOTTONOF": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "THE COTTON CORPORATION OF INDIA LIMITED",
+    "gin": "THECOTTONCOR-01",
+    "company_name": "The Cotton Corporation of India Limited"
+  },
+  "TORRENTELECTRIC": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Torrent Group",
+    "gin": "TORRENTGROUP-01",
+    "company_name": "Torrent Electricals Limited"
+  },
+  "ROADSTARINFRAIN": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Roadstar Trust",
+    "gin": "ROADSTARTRUS-01",
+    "company_name": "Roadstar Infra Investment Trust"
+  },
+  "INDIGO041": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "INDIGO 041",
+    "gin": "INDIGO041000-01",
+    "company_name": "INDIGO 041"
+  },
+  "MUTHOOTCAP": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Muthoot Pappachan group",
+    "gin": "MUTHOOTPAPPA-01",
+    "company_name": "Muthoot Capital Services Limited"
+  },
+  "CHALETHOTELS": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "K Raheja Corp Group",
+    "gin": "KRAHEJACORPG-01",
+    "company_name": "Chalet Hotels Private Limited"
+  },
+  "MOTILALOSWALWEA": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Motilal Oswal Group",
+    "gin": "MOTILALOSWAL-01",
+    "company_name": "Motilal Oswal Wealth Limited"
+  },
+  "KRAZYBEESERVICE": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Finnov Private Limited",
+    "gin": "FINNOVPRIVAT-01",
+    "company_name": "KrazyBee Services Limited"
+  },
+  "NAVIFINSERV": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Sachin Bansal",
+    "gin": "SACHINBANSAL-01",
+    "company_name": "Navi Finserv Private Limited"
+  },
+  "INCREDFINANCIAL": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "InCred Group",
+    "gin": "INCREDGROUP0-01",
+    "company_name": "Incred Financial Services Private Limited"
+  },
+  "EARLYSALARYSERV": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Fibe Group",
+    "gin": "FIBEGROUP000-01",
+    "company_name": "Earlysalary Services Private Limited"
+  },
+  "CTBCBANKCO": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "CTBC Holding",
+    "gin": "CTBCHOLDING0-01",
+    "company_name": "CTBC Bank Co Ltd."
+  },
+  "NUVAMACLEARINGS": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "PAG",
+    "gin": "PAG000000000-01",
+    "company_name": "Nuvama Clearing Services Limited"
+  },
+  "MASHREQBANKPSC": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "Mashreq Bank",
+    "gin": "MASHREQBANK0-01",
+    "company_name": "Mashreq Bank Psc."
+  },
+  "ALTUMCREDOHOMEF": {
+    "sector": "Housing Finance Company",
+    "industry": "Housing Finance Company",
+    "group": "Ashish Tewari",
+    "gin": "ASHISHTEWARI-01",
+    "company_name": "Altum Credo Home Finance Private Limited"
+  },
+  "DCMSHRIRAMINDUS": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Alok Bansidhar Shriram",
+    "gin": "ALOKBANSIDHA-01",
+    "company_name": "DCM Shriram Industries Limited"
+  },
+  "UNOMINDA": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Nirmal Kumar Minda",
+    "gin": "NIRMALKUMARM-01",
+    "company_name": "Uno Minda Limited"
+  },
+  "SICREVACAPITALS": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Ranvir Hariram Singh",
+    "gin": "RANVIRHARIRA-01",
+    "company_name": "Si Creva Capital Services Private Limited"
+  },
+  "GMRHYDERABADINT": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "GRANDHI MALLIKARJUNA RAO",
+    "gin": "GRANDHIMALLI-01",
+    "company_name": "GMR Hyderabad International Airport Limited"
+  },
+  "JKPAPER": {
+    "sector": "Forest Materials",
+    "industry": "Forest Materials",
+    "group": "Raghupati Singhania",
+    "gin": "RAGHUPATISIN-01",
+    "company_name": "JK Paper Limited"
+  },
+  "MANCHERIALREPAL": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Mancherial Repallewada Road Private Limited"
+  },
+  "FIRSTABUDHABIBA": {
+    "sector": "Banks",
+    "industry": "Banks",
+    "group": "First Abu Dhabi Bank P.J.S.C.",
+    "gin": "FIRSTABUDHAB-01",
+    "company_name": "First Abu Dhabi Bank Pjsc"
+  },
+  "ARMANFINANCIALS": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Jayendrabhai Bhailalbhai Patel",
+    "gin": "JAYENDRABHAI-01",
+    "company_name": "Arman Financial Services Limited"
+  },
+  "RAREEQUITY": {
+    "sector": "Broking Company",
+    "industry": "Broking Company",
+    "group": "Rekha Rakesh Jhunjhunwala",
+    "gin": "REKHARAKESHJ-01",
+    "company_name": "Rare Equity Private Limited"
+  },
+  "INDIACEM": {
+    "sector": "Construction Materials",
+    "industry": "Construction Materials",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "India Cements Limited"
+  },
+  "EPLERSTWHILEESS": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Epsilon Bidco Pte. Ltd",
+    "gin": "EPSILONBIDCO-01",
+    "company_name": "EPL Limited (Erstwhile Essel Propack Ltd.)"
+  },
+  "FIVESTARBUSINES": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Deenadayalan Lakshmipathy",
+    "gin": "DEENADAYALAN-01",
+    "company_name": "Five-Star Business Finance Limited"
+  },
+  "THESUPREMEINDUS": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Mahaveer Prasad Taparia Group",
+    "gin": "MAHAVEERPRAS-01",
+    "company_name": "The Supreme Industries Limited"
+  },
+  "CLIXCAPITALSERV": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Plutus Financials Private Limited",
+    "gin": "PLUTUSFINANC-01",
+    "company_name": "Clix Capital Services Private Limited"
+  },
+  "ANTHEMBIOSCIENC": {
+    "sector": "Pharmaceuticals Biotechnology & Life Sciences",
+    "industry": "Pharmaceuticals Biotechnology & Life Sciences",
+    "group": "Ajay Bhardwaj",
+    "gin": "AJAYBHARDWAJ-01",
+    "company_name": "Anthem Biosciences Limited"
+  },
+  "SANSARTRUSTSEPT": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Sansar Trust Sept 2023",
+    "gin": "SANSARTRUSTS-01",
+    "company_name": "Sansar Trust Sept 2023"
+  },
+  "VAJRATRUST016": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Vajra Trust 016",
+    "gin": "VAJRATRUST01-01",
+    "company_name": "Vajra Trust 016"
+  },
+  "SUSTAINABLEENER": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Sustainable Energy Infra Trust",
+    "gin": "SUSTAINABLEE-01",
+    "company_name": "Sustainable Energy Infra Trust"
+  },
+  "HIGHWAYINFRASTR": {
+    "sector": "Capital Goods",
+    "industry": "Capital Goods",
+    "group": "Arun Kumar Jain",
+    "gin": "ARUNKUMARJAI-01",
+    "company_name": "Highway Infrastructure Limited"
+  },
+  "GODREJSEEDSANDG": {
+    "sector": "Retailing",
+    "industry": "Retailing",
+    "group": "Godrej Industries Group",
+    "gin": "GODREJINDUST-02",
+    "company_name": "Godrej Seeds and Genetics Limited"
+  },
+  "MASFINANCIALSER": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Kamlesh Chimanlal Gandhi",
+    "gin": "KAMLESHCHIMA-01",
+    "company_name": "MAS Financial Services Limited"
+  },
+  "NJCAPITAL": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "NJ Group",
+    "gin": "NJGROUP00000-01",
+    "company_name": "NJ Capital Private Limited"
+  },
+  "DSPFINANCE": {
+    "sector": "Asset Management Company",
+    "industry": "Asset Management Company",
+    "group": "Hemendra Mathradas Kothari",
+    "gin": "HEMENDRAMATH-01",
+    "company_name": "DSP Finance Private Limited"
+  },
+  "NUMALIGARHREFIN": {
+    "sector": "Energy",
+    "industry": "Energy",
+    "group": "Oil India Limited",
+    "gin": "OILINDIALIMI-01",
+    "company_name": "Numaligarh Refinery Limited"
+  },
+  "KNOWLEDGEREALTY": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "Knowledge Realty Trust",
+    "gin": "KNOWLEDGEREA-01",
+    "company_name": "Knowledge Realty Trust"
+  },
+  "SOLARENERGYOF": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Solar Energy Corporation Of India Limited",
+    "gin": "SOLARENERGYC-01",
+    "company_name": "Solar Energy Corporation Of India Limited"
+  },
+  "HGINFRAENGINEER": {
+    "sector": "Construction",
+    "industry": "Construction",
+    "group": "Hodal Singh",
+    "gin": "HODALSINGH00-01",
+    "company_name": "H.G. Infra Engineering Limited"
+  },
+  "SRGHOUSINGFINAN": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Vinod Kumar Jain",
+    "gin": "VINODKUMARJA-01",
+    "company_name": "SRG Housing Finance Limited"
+  },
+  "INDIGO043": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Indigo 043",
+    "gin": "INDIGO043000-01",
+    "company_name": "Indigo 043"
+  },
+  "JTPMMETALTRADER": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Sajjan Jindal",
+    "gin": "SAJJANJINDAL-01",
+    "company_name": "JTPM Metal Traders Limited"
+  },
+  "SIDDHIVINAYAKSE": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "Siddhivinayak Securitisation Trust",
+    "gin": "SIDDHIVINAYA-01",
+    "company_name": "Siddhivinayak Securitisation Trust"
+  },
+  "SHIVSHAKTISECUR": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "Shivshakti Securitisation Trust",
+    "gin": "SHIVSHAKTISE-01",
+    "company_name": "Shivshakti Securitisation Trust"
+  },
+  "RADHAKRISHNASEC": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Radhakrishna Securitisation Trust",
+    "gin": "RADHAKRISHNA-04",
+    "company_name": "Radhakrishna Securitisation Trust"
+  },
+  "KEYSTONEREALTOR": {
+    "sector": "Realty",
+    "industry": "Realty",
+    "group": "Boman Rustom Irani",
+    "gin": "BOMANRUSTOMI-01",
+    "company_name": "Keystone Realtors Private Limited"
+  },
+  "GOLDMANSACHSFIN": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "The Goldman Sachs Group Inc",
+    "gin": "THEGOLDMANSA-01",
+    "company_name": "Goldman Sachs India Finance Private Limited"
+  },
+  "KOSAMATTAMFINAN": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Mathew K Cherian",
+    "gin": "MATHEWKCHERI-01",
+    "company_name": "Kosamattam Finance Limited"
+  },
+  "DMART": {
+    "sector": "Consumer Services",
+    "industry": "Consumer Services",
+    "group": "Radhakishan Shivkishan Damani",
+    "gin": "RADHAKISHANS-01",
+    "company_name": "Avenue Supermarts Limited"
+  },
+  "MAHAVEERFINANCE": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Mahaveerchand Dugar",
+    "gin": "MAHAVEERCHAN-01",
+    "company_name": "Mahaveer Finance India Limited"
+  },
+  "THEBOMBAYBURMAH": {
+    "sector": "Fast Moving Consumer Goods",
+    "industry": "Fast Moving Consumer Goods",
+    "group": "Wadia Group",
+    "gin": "WADIAGROUP00-01",
+    "company_name": "The Bombay Burmah Trading Corporation Limited"
+  },
+  "TATAMOTORS": {
+    "sector": "Automobile",
+    "industry": "Automobiles",
+    "group": "Tata Group",
+    "gin": "TATAGROUP-01",
+    "company_name": "Tata Motors Limited"
+  },
+  "INDIGO045": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Indigo 045",
+    "gin": "INDIGO045000-01",
+    "company_name": "Indigo 045"
+  },
+  "ADANIENT": {
+    "sector": "Metals & Mining",
+    "industry": "Metals & Mining",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Adani Enterprises Limited"
+  },
+  "ORIENTALINFRATR": {
+    "sector": "Services",
+    "industry": "Services",
+    "group": "Oriental Infratrust",
+    "gin": "ORIENTALINFR-01",
+    "company_name": "Oriental Infratrust"
+  },
+  "SURATMUNICIPAL": {
+    "sector": "Utilities",
+    "industry": "Utilities",
+    "group": "Surat Municipal Corporation",
+    "gin": "SURATMUNICIP-01",
+    "company_name": "Surat Municipal Corporation"
+  },
+  "SGFINSERVE": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Sanjay Gupta",
+    "gin": "SANJAYGUPTA0-01",
+    "company_name": "SG Finserve Limited"
+  },
+  "PROGFIN": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Progcap Group",
+    "gin": "PROGCAPGROUP-01",
+    "company_name": "Progfin Private Limited"
+  },
+  "ANANTAMHIGHWAYS": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "Anantam Highways Trust",
+    "gin": "ANANTAMHIGHW-01",
+    "company_name": "Anantam Highways Trust"
+  },
+  "THEANDHRAPRADES": {
+    "sector": "Materials",
+    "industry": "Materials",
+    "group": "The Andhra Pradesh Mineral Development Corporation Limited",
+    "gin": "THEANDHRAPRA-01",
+    "company_name": "The Andhra Pradesh Mineral Development Corporation Limited"
+  },
+  "ASCENDASITPARKP": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "CapitaLand India Trust",
+    "gin": "CAPITALANDIN-01",
+    "company_name": "Ascendas IT Park (Pune) Private Limited"
+  },
+  "CUB": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "City Union Bank Limited",
+    "gin": "CITYUNIONBAN-01",
+    "company_name": "City Union Bank Limited"
+  },
+  "NTPCGREENENERGY": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "NTPC Limited",
+    "gin": "NTPCLIMITED0-01",
+    "company_name": "NTPC Green Energy Limited"
+  },
+  "ADITYABIRLALIFE": {
+    "sector": "Retailing",
+    "industry": "Retailing",
+    "group": "Aditya Birla Group",
+    "gin": "ADITYABIRLAG-01",
+    "company_name": "Aditya Birla Lifestyle Brands Limited"
+  },
+  "RJCORP": {
+    "sector": "Food & Staples Retailing",
+    "industry": "Food & Staples Retailing",
+    "group": "Ravi Kant Jaipuria",
+    "gin": "RAVIKANTJAIP-01",
+    "company_name": "RJ Corp Ltd"
+  },
+  "SHREMINFRAINVES": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "Shrem Group",
+    "gin": "SHREMGROUP00-01",
+    "company_name": "Shrem Infra Invest Private Limited"
+  },
+  "SHRIRAMPISTONSR": {
+    "sector": "Automobile and Auto Components",
+    "industry": "Automobile and Auto Components",
+    "group": "Meenakshi Dass And Luv Deepak Shriram",
+    "gin": "MEENAKSHIDAS-01",
+    "company_name": "Shriram Pistons & Rings Limited"
+  },
+  "GAURSONS": {
+    "sector": "Real Estate Development",
+    "industry": "Real Estate Development",
+    "group": "Manoj Kumar Gaur",
+    "gin": "MANOJKUMARGA-01",
+    "company_name": "Gaursons India Private Limited"
+  },
+  "CENTRALBK": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Central Bank of India",
+    "gin": "CENTRALBANKO-01",
+    "company_name": "Central Bank of India"
+  },
+  "TORNTPHARM": {
+    "sector": "Healthcare",
+    "industry": "Healthcare",
+    "group": "Torrent Group",
+    "gin": "TORRENTGROUP-01",
+    "company_name": "Torrent Pharmaceuticals Limited"
+  },
+  "GMRGOAINTERNATI": {
+    "sector": "Transportation",
+    "industry": "Transportation",
+    "group": "GRANDHI MALLIKARJUNA RAO",
+    "gin": "GRANDHIMALLI-01",
+    "company_name": "GMR Goa International Airport Limited"
+  },
+  "ADANIPOWER": {
+    "sector": "Power",
+    "industry": "Power",
+    "group": "Gautambhai Shantilal Adani",
+    "gin": "GAUTAMBHAISH-01",
+    "company_name": "Adani Power Limited"
+  },
+  "SAMRIDDHITRUST": {
+    "sector": "Financial Services",
+    "industry": "Financial Services",
+    "group": "Samriddhi Trust",
+    "gin": "SAMRIDDHITRU-01",
+    "company_name": "Samriddhi Trust"
+  },
+  "NAMRAFINANCE": {
+    "sector": "Microfinance",
+    "industry": "Microfinance",
+    "group": "Jayendrabhai Bhailalbhai Patel",
+    "gin": "JAYENDRABHAI-01",
+    "company_name": "Namra Finance Limited"
+  },
+  "NABKISANFINANCE": {
+    "sector": "Non Banking Financial Company",
+    "industry": "Non Banking Financial Company",
+    "group": "National Bank For Agriculture and Rural Development",
+    "gin": "NATIONALBANK-01",
+    "company_name": "Nabkisan Finance Limited"
+  },
+  "TCS": {
+    "sector": "IT",
+    "industry": "IT - Software",
+    "group": "Tata Group",
+    "gin": "TATAGROUP-01",
+    "company_name": "Tata Consultancy Services Limited"
+  },
+  "INFY": {
+    "sector": "IT",
+    "industry": "IT - Software",
+    "group": "Infosys",
+    "gin": "INFOSYS-01",
+    "company_name": "Infosys Limited"
+  },
+  "HCLTECH": {
+    "sector": "IT",
+    "industry": "IT - Software",
+    "group": "HCL",
+    "gin": "HCL-01",
+    "company_name": "HCL Technologies Limited"
+  },
+  "WIPRO": {
+    "sector": "IT",
+    "industry": "IT - Software",
+    "group": "Wipro",
+    "gin": "WIPRO-01",
+    "company_name": "Wipro Limited"
+  },
+  "TECHM": {
+    "sector": "IT",
+    "industry": "IT - Software",
+    "group": "Tech Mahindra",
+    "gin": "TECHMAHIND-01",
+    "company_name": "Tech Mahindra Limited"
+  },
+  "ITC": {
+    "sector": "FMCG",
+    "industry": "Diversified FMCG",
+    "group": "ITC Limited",
+    "gin": "ITCLIMITED-01",
+    "company_name": "ITC Limited"
+  },
+  "HINDUNILVR": {
+    "sector": "FMCG",
+    "industry": "Personal Care",
+    "group": "Hindustan Unilever",
+    "gin": "HINDUSTANUNI-01",
+    "company_name": "Hindustan Unilever Limited"
+  },
+  "NESTLEIND": {
+    "sector": "FMCG",
+    "industry": "Food Products",
+    "group": "Nestle",
+    "gin": "NESTLE-01",
+    "company_name": "Nestle India Limited"
+  },
+  "MARUTI": {
+    "sector": "Automobile",
+    "industry": "Automobiles",
+    "group": "Suzuki",
+    "gin": "SUZUKI-01",
+    "company_name": "Maruti Suzuki India Limited"
+  },
+  "M&M": {
+    "sector": "Automobile",
+    "industry": "Automobiles",
+    "group": "Mahindra & Mahindra",
+    "gin": "MAHINDRA-01",
+    "company_name": "Mahindra & Mahindra Limited"
+  },
+  "BAJAJ-AUTO": {
+    "sector": "Automobile",
+    "industry": "Automobiles",
+    "group": "Rahul Bajaj Group",
+    "gin": "RAHULBAJAJGR-01",
+    "company_name": "Bajaj Auto Limited"
+  },
+  "HEROMOTOCO": {
+    "sector": "Automobile",
+    "industry": "Automobiles",
+    "group": "Hero Group",
+    "gin": "HEROGROUP-01",
+    "company_name": "Hero MotoCorp Limited"
+  },
+  "HPCL": {
+    "sector": "Energy",
+    "industry": "Oil & Gas",
+    "group": "Hindustan Petroleum",
+    "gin": "HINDUSTANPETR-01",
+    "company_name": "Hindustan Petroleum Corporation Limited"
+  },
+  "DRREDDY": {
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "group": "Dr Reddys",
+    "gin": "DRREDDYS-01",
+    "company_name": "Dr Reddys Laboratories Limited"
+  },
+  "CIPLA": {
+    "sector": "Healthcare",
+    "industry": "Pharmaceuticals",
+    "group": "Cipla",
+    "gin": "CIPLA-01",
+    "company_name": "Cipla Limited"
+  },
+  "COALINDIA": {
+    "sector": "Metals & Mining",
+    "industry": "Coal",
+    "group": "Coal India",
+    "gin": "COALINDIA-01",
+    "company_name": "Coal India Limited"
+  }
+}
