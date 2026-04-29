@@ -1,0 +1,27 @@
+name: Poll NSE RSS and Request Review
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: pip install feedparser
+      - name: Run poller
+        run: python scripts/poll_nse_rss.py
+      - name: Create Pull Request if review file changed
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "chore: queue new NSE circular review materials"
+          branch: auto/review-materials
+          title: "Review: New NSE circulars for possible holiday changes"
+          body: |
+            This PR was automatically created by the RSS poller.
+            Review `review_queue/latest.md`, update `live_events.json` if needed,
+            and merge to publish the reviewed delta feed.
+          labels: review-needed

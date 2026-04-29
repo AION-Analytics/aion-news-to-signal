@@ -1,0 +1,3579 @@
+{
+  "timezone": "Asia/Kolkata",
+  "version": "v4_20260429_segment_calendars",
+  "range": {
+    "start": "2026-03-24",
+    "end": "2027-03-24"
+  },
+  "events": [
+    {
+      "id": "MCX_HOLIDAY_20260101",
+      "name": "Mcx Holiday: New Year Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-01-01T00:00:00+05:30",
+      "end": "2026-01-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "New Year Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "New Year Day"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_HOLIDAY_20260101",
+      "name": "Nse Commodity Derivatives Holiday: New Year",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-01-01T00:00:00+05:30",
+      "end": "2026-01-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "New Year holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "New Year"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260115",
+      "name": "Nse Corporate Bonds Holiday: Municipal Corporation Election - Maharashtra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-01-15T00:00:00+05:30",
+      "end": "2026-01-15T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Municipal Corporation Election - Maharashtra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Municipal Corporation Election - Maharashtra"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260115",
+      "name": "Nse Commodity Derivatives Special Session: Municipal Corporation Election - Maharashtra",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-01-15T00:00:00+05:30",
+      "end": "2026-01-15T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Municipal Corporation Election - Maharashtra; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Municipal Corporation Election - Maharashtra",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260115",
+      "name": "Nse Currency Derivatives Holiday: Municipal Corporation Election - Maharashtra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-01-15T00:00:00+05:30",
+      "end": "2026-01-15T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Municipal Corporation Election - Maharashtra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Municipal Corporation Election - Maharashtra"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260115",
+      "name": "Nse Equity Holiday: Municipal Corporation Election - Maharashtra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-01-15T00:00:00+05:30",
+      "end": "2026-01-15T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Municipal Corporation Election - Maharashtra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Municipal Corporation Election - Maharashtra"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260115",
+      "name": "Nse Equity Derivatives Holiday: Municipal Corporation Election - Maharashtra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-01-15T00:00:00+05:30",
+      "end": "2026-01-15T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Municipal Corporation Election - Maharashtra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Municipal Corporation Election - Maharashtra"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260115",
+      "name": "Nse Interest Rate Derivatives Holiday: Municipal Corporation Election - Maharashtra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-01-15T00:00:00+05:30",
+      "end": "2026-01-15T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Municipal Corporation Election - Maharashtra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Municipal Corporation Election - Maharashtra"
+      }
+    },
+    {
+      "id": "MCX_HOLIDAY_20260126",
+      "name": "Mcx Holiday: Republic Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-01-26T00:00:00+05:30",
+      "end": "2026-01-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Republic Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Republic Day"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260126",
+      "name": "Nse Corporate Bonds Holiday: Republic Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-01-26T00:00:00+05:30",
+      "end": "2026-01-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Republic Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Republic Day"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_HOLIDAY_20260126",
+      "name": "Nse Commodity Derivatives Holiday: Republic Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-01-26T00:00:00+05:30",
+      "end": "2026-01-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Republic Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Republic Day"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260126",
+      "name": "Nse Currency Derivatives Holiday: Republic Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-01-26T00:00:00+05:30",
+      "end": "2026-01-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Republic Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Republic Day"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260126",
+      "name": "Nse Equity Holiday: Republic Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-01-26T00:00:00+05:30",
+      "end": "2026-01-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Republic Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Republic Day"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260126",
+      "name": "Nse Equity Derivatives Holiday: Republic Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-01-26T00:00:00+05:30",
+      "end": "2026-01-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Republic Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Republic Day"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260126",
+      "name": "Nse Interest Rate Derivatives Holiday: Republic Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-01-26T00:00:00+05:30",
+      "end": "2026-01-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Republic Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Republic Day"
+      }
+    },
+    {
+      "id": "FOMC_20260128",
+      "name": "FOMC Decision (Jan 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-01-28T15:30:00+05:30",
+      "end": "2026-01-29T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "UNION_BUDGET_20260201",
+      "name": "Union Budget 2026",
+      "category": "GOVERNMENT",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-02-01T09:00:00+05:30",
+      "end": "2026-02-01T15:30:00+05:30",
+      "windows": {
+        "pre_minutes": 0,
+        "post_minutes": 120
+      },
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Union Budget announcement"
+      }
+    },
+    {
+      "id": "RBI_MPC_20260206",
+      "name": "RBI MPC Decision (Feb 2026)",
+      "category": "CENTRAL_BANK",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-02-06T09:00:00+05:30",
+      "end": "2026-02-06T15:30:00+05:30",
+      "windows": {
+        "pre_minutes": 120,
+        "post_minutes": 60
+      },
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "LONG_VOL",
+          "HEDGE_ONLY"
+        ],
+        "reason": "RBI monetary policy decision"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260219",
+      "name": "Nse Corporate Bonds Holiday: Chatrapati Shivaji Maharaj Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-02-19T00:00:00+05:30",
+      "end": "2026-02-19T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Chatrapati Shivaji Maharaj Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Chatrapati Shivaji Maharaj Jayanti"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260219",
+      "name": "Nse Currency Derivatives Holiday: Chatrapati Shivaji Maharaj Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-02-19T00:00:00+05:30",
+      "end": "2026-02-19T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Chatrapati Shivaji Maharaj Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Chatrapati Shivaji Maharaj Jayanti"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260219",
+      "name": "Nse Interest Rate Derivatives Holiday: Chatrapati Shivaji Maharaj Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-02-19T00:00:00+05:30",
+      "end": "2026-02-19T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Chatrapati Shivaji Maharaj Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Chatrapati Shivaji Maharaj Jayanti"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260303",
+      "name": "MCX Partial Trading Day (Evening Only): Holi (2nd Day)",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Holi (2nd Day)",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260303",
+      "name": "Nse Corporate Bonds Holiday: Holi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Holi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Holi"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260303",
+      "name": "Nse Commodity Derivatives Special Session: Holi",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Holi; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Holi",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260303",
+      "name": "Nse Currency Derivatives Holiday: Holi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Holi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Holi"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260303",
+      "name": "Nse Equity Holiday: Holi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Holi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Holi"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260303",
+      "name": "Nse Equity Derivatives Holiday: Holi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Holi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Holi"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260303",
+      "name": "Nse Interest Rate Derivatives Holiday: Holi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-03-03T00:00:00+05:30",
+      "end": "2026-03-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Holi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Holi"
+      }
+    },
+    {
+      "id": "FOMC_20260318",
+      "name": "FOMC Decision (Mar 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-03-18T15:30:00+05:30",
+      "end": "2026-03-19T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260319",
+      "name": "Nse Corporate Bonds Holiday: Gudi Padwa",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-03-19T00:00:00+05:30",
+      "end": "2026-03-19T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Gudi Padwa holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Gudi Padwa"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260319",
+      "name": "Nse Currency Derivatives Holiday: Gudi Padwa",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-03-19T00:00:00+05:30",
+      "end": "2026-03-19T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Gudi Padwa holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Gudi Padwa"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260319",
+      "name": "Nse Interest Rate Derivatives Holiday: Gudi Padwa",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-03-19T00:00:00+05:30",
+      "end": "2026-03-19T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Gudi Padwa holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Gudi Padwa"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260326",
+      "name": "MCX Partial Trading Day (Evening Only): Shri Ram Navmi",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-03-26T00:00:00+05:30",
+      "end": "2026-03-26T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Shri Ram Navmi",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260326",
+      "name": "Nse Corporate Bonds Holiday: Shri Ram Navami",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-03-26T00:00:00+05:30",
+      "end": "2026-03-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Ram Navami holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Ram Navami"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260326",
+      "name": "Nse Commodity Derivatives Special Session: Shri Ram Navami",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-03-26T00:00:00+05:30",
+      "end": "2026-03-26T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Shri Ram Navami; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Ram Navami",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260326",
+      "name": "Nse Currency Derivatives Holiday: Shri Ram Navami",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-03-26T00:00:00+05:30",
+      "end": "2026-03-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Ram Navami holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Ram Navami"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260326",
+      "name": "Nse Equity Holiday: Shri Ram Navami",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-03-26T00:00:00+05:30",
+      "end": "2026-03-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Ram Navami holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Ram Navami"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260326",
+      "name": "Nse Equity Derivatives Holiday: Shri Ram Navami",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-03-26T00:00:00+05:30",
+      "end": "2026-03-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Ram Navami holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Ram Navami"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260326",
+      "name": "Nse Interest Rate Derivatives Holiday: Shri Ram Navami",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-03-26T00:00:00+05:30",
+      "end": "2026-03-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Ram Navami holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Ram Navami"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260331",
+      "name": "MCX Partial Trading Day (Evening Only): Shri Mahavir Jayanti",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-03-31T00:00:00+05:30",
+      "end": "2026-03-31T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Shri Mahavir Jayanti",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260331",
+      "name": "Nse Corporate Bonds Holiday: Shri Mahavir Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-03-31T00:00:00+05:30",
+      "end": "2026-03-31T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Mahavir Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Mahavir Jayanti"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260331",
+      "name": "Nse Commodity Derivatives Special Session: Shri Mahavir Jayanti",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-03-31T00:00:00+05:30",
+      "end": "2026-03-31T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Shri Mahavir Jayanti; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Mahavir Jayanti",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260331",
+      "name": "Nse Currency Derivatives Holiday: Shri Mahavir Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-03-31T00:00:00+05:30",
+      "end": "2026-03-31T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Mahavir Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Mahavir Jayanti"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260331",
+      "name": "Nse Equity Holiday: Shri Mahavir Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-03-31T00:00:00+05:30",
+      "end": "2026-03-31T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Mahavir Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Mahavir Jayanti"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260331",
+      "name": "Nse Equity Derivatives Holiday: Shri Mahavir Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-03-31T00:00:00+05:30",
+      "end": "2026-03-31T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Mahavir Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Mahavir Jayanti"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260331",
+      "name": "Nse Interest Rate Derivatives Holiday: Shri Mahavir Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-03-31T00:00:00+05:30",
+      "end": "2026-03-31T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Shri Mahavir Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Shri Mahavir Jayanti"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260401",
+      "name": "Nse Corporate Bonds Holiday: Annual Bank Closing",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-04-01T00:00:00+05:30",
+      "end": "2026-04-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Annual Bank Closing holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Annual Bank Closing"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260401",
+      "name": "Nse Currency Derivatives Holiday: Annual Bank Closing",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-04-01T00:00:00+05:30",
+      "end": "2026-04-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Annual Bank Closing holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Annual Bank Closing"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260401",
+      "name": "Nse Interest Rate Derivatives Holiday: Annual Bank Closing",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-04-01T00:00:00+05:30",
+      "end": "2026-04-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Annual Bank Closing holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Annual Bank Closing"
+      }
+    },
+    {
+      "id": "MCX_HOLIDAY_20260403",
+      "name": "Mcx Holiday: Good Friday",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-04-03T00:00:00+05:30",
+      "end": "2026-04-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Good Friday holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Good Friday"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260403",
+      "name": "Nse Corporate Bonds Holiday: Good Friday",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-04-03T00:00:00+05:30",
+      "end": "2026-04-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Good Friday holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Good Friday"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_HOLIDAY_20260403",
+      "name": "Nse Commodity Derivatives Holiday: Good Friday",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-04-03T00:00:00+05:30",
+      "end": "2026-04-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Good Friday holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Good Friday"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260403",
+      "name": "Nse Currency Derivatives Holiday: Good Friday",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-04-03T00:00:00+05:30",
+      "end": "2026-04-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Good Friday holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Good Friday"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260403",
+      "name": "Nse Equity Holiday: Good Friday",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-04-03T00:00:00+05:30",
+      "end": "2026-04-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Good Friday holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Good Friday"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260403",
+      "name": "Nse Equity Derivatives Holiday: Good Friday",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-04-03T00:00:00+05:30",
+      "end": "2026-04-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Good Friday holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Good Friday"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260403",
+      "name": "Nse Interest Rate Derivatives Holiday: Good Friday",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-04-03T00:00:00+05:30",
+      "end": "2026-04-03T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Good Friday holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Good Friday"
+      }
+    },
+    {
+      "id": "RBI_MPC_20260408",
+      "name": "RBI MPC Decision (Apr 2026)",
+      "category": "CENTRAL_BANK",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-04-08T09:00:00+05:30",
+      "end": "2026-04-08T15:30:00+05:30",
+      "windows": {
+        "pre_minutes": 120,
+        "post_minutes": 60
+      },
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "LONG_VOL",
+          "HEDGE_ONLY"
+        ],
+        "reason": "RBI monetary policy decision"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260414",
+      "name": "MCX Partial Trading Day (Evening Only): Dr. Baba Saheb Ambedkar Jayanti",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-04-14T00:00:00+05:30",
+      "end": "2026-04-14T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Dr. Baba Saheb Ambedkar Jayanti",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260414",
+      "name": "Nse Corporate Bonds Holiday: Dr. Baba Saheb Ambedkar Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-04-14T00:00:00+05:30",
+      "end": "2026-04-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dr. Baba Saheb Ambedkar Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dr. Baba Saheb Ambedkar Jayanti"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260414",
+      "name": "Nse Commodity Derivatives Special Session: Dr. Baba Saheb Ambedkar Jayanti",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-04-14T00:00:00+05:30",
+      "end": "2026-04-14T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Dr. Baba Saheb Ambedkar Jayanti; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dr. Baba Saheb Ambedkar Jayanti",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260414",
+      "name": "Nse Currency Derivatives Holiday: Dr. Baba Saheb Ambedkar Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-04-14T00:00:00+05:30",
+      "end": "2026-04-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dr. Baba Saheb Ambedkar Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dr. Baba Saheb Ambedkar Jayanti"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260414",
+      "name": "Nse Equity Holiday: Dr. Baba Saheb Ambedkar Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-04-14T00:00:00+05:30",
+      "end": "2026-04-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dr. Baba Saheb Ambedkar Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dr. Baba Saheb Ambedkar Jayanti"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260414",
+      "name": "Nse Equity Derivatives Holiday: Dr. Baba Saheb Ambedkar Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-04-14T00:00:00+05:30",
+      "end": "2026-04-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dr. Baba Saheb Ambedkar Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dr. Baba Saheb Ambedkar Jayanti"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260414",
+      "name": "Nse Interest Rate Derivatives Holiday: Dr. Baba Saheb Ambedkar Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-04-14T00:00:00+05:30",
+      "end": "2026-04-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dr. Baba Saheb Ambedkar Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dr. Baba Saheb Ambedkar Jayanti"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260501",
+      "name": "MCX Partial Trading Day (Evening Only): Maharashtra Day",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-05-01T00:00:00+05:30",
+      "end": "2026-05-01T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Maharashtra Day",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260501",
+      "name": "Nse Corporate Bonds Holiday: Maharashtra Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-05-01T00:00:00+05:30",
+      "end": "2026-05-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Maharashtra Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Maharashtra Day"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260501",
+      "name": "Nse Commodity Derivatives Special Session: Maharashtra Day",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-05-01T00:00:00+05:30",
+      "end": "2026-05-01T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Maharashtra Day; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Maharashtra Day",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260501",
+      "name": "Nse Currency Derivatives Holiday: Maharashtra Day / Buddha Pournima",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-05-01T00:00:00+05:30",
+      "end": "2026-05-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Maharashtra Day / Buddha Pournima holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Maharashtra Day / Buddha Pournima"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260501",
+      "name": "Nse Equity Holiday: Maharashtra Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-05-01T00:00:00+05:30",
+      "end": "2026-05-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Maharashtra Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Maharashtra Day"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260501",
+      "name": "Nse Equity Derivatives Holiday: Maharashtra Day",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-05-01T00:00:00+05:30",
+      "end": "2026-05-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Maharashtra Day holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Maharashtra Day"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260501",
+      "name": "Nse Interest Rate Derivatives Holiday: Maharashtra Day / Buddha Pournima",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-05-01T00:00:00+05:30",
+      "end": "2026-05-01T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Maharashtra Day / Buddha Pournima holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Maharashtra Day / Buddha Pournima"
+      }
+    },
+    {
+      "id": "FOMC_20260506",
+      "name": "FOMC Decision (May 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-05-06T15:30:00+05:30",
+      "end": "2026-05-07T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260528",
+      "name": "MCX Partial Trading Day (Evening Only): Bakri Id",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-05-28T00:00:00+05:30",
+      "end": "2026-05-28T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Bakri Id",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260528",
+      "name": "Nse Corporate Bonds Holiday: Bakri Id",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-05-28T00:00:00+05:30",
+      "end": "2026-05-28T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Bakri Id holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Bakri Id"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260528",
+      "name": "Nse Commodity Derivatives Special Session: Bakri Id",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-05-28T00:00:00+05:30",
+      "end": "2026-05-28T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Bakri Id; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Bakri Id",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260528",
+      "name": "Nse Currency Derivatives Holiday: Bakri Id",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-05-28T00:00:00+05:30",
+      "end": "2026-05-28T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Bakri Id holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Bakri Id"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260528",
+      "name": "Nse Equity Holiday: Bakri Id",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-05-28T00:00:00+05:30",
+      "end": "2026-05-28T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Bakri Id holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Bakri Id"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260528",
+      "name": "Nse Equity Derivatives Holiday: Bakri Id",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-05-28T00:00:00+05:30",
+      "end": "2026-05-28T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Bakri Id holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Bakri Id"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260528",
+      "name": "Nse Interest Rate Derivatives Holiday: Bakri Id",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-05-28T00:00:00+05:30",
+      "end": "2026-05-28T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Bakri Id holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Bakri Id"
+      }
+    },
+    {
+      "id": "RBI_MPC_20260605",
+      "name": "RBI MPC Decision (Jun 2026)",
+      "category": "CENTRAL_BANK",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-06-05T09:00:00+05:30",
+      "end": "2026-06-05T15:30:00+05:30",
+      "windows": {
+        "pre_minutes": 120,
+        "post_minutes": 60
+      },
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "LONG_VOL",
+          "HEDGE_ONLY"
+        ],
+        "reason": "RBI monetary policy decision"
+      }
+    },
+    {
+      "id": "FOMC_20260617",
+      "name": "FOMC Decision (Jun 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-06-17T15:30:00+05:30",
+      "end": "2026-06-18T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260626",
+      "name": "MCX Partial Trading Day (Evening Only): Moharram",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-06-26T00:00:00+05:30",
+      "end": "2026-06-26T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Moharram",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260626",
+      "name": "Nse Corporate Bonds Holiday: Muharram",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-06-26T00:00:00+05:30",
+      "end": "2026-06-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Muharram holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Muharram"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260626",
+      "name": "Nse Commodity Derivatives Special Session: Muharram",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-06-26T00:00:00+05:30",
+      "end": "2026-06-26T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Muharram; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Muharram",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260626",
+      "name": "Nse Currency Derivatives Holiday: Muharram",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-06-26T00:00:00+05:30",
+      "end": "2026-06-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Muharram holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Muharram"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260626",
+      "name": "Nse Equity Holiday: Muharram",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-06-26T00:00:00+05:30",
+      "end": "2026-06-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Muharram holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Muharram"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260626",
+      "name": "Nse Equity Derivatives Holiday: Muharram",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-06-26T00:00:00+05:30",
+      "end": "2026-06-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Muharram holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Muharram"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260626",
+      "name": "Nse Interest Rate Derivatives Holiday: Muharram",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-06-26T00:00:00+05:30",
+      "end": "2026-06-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Muharram holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Muharram"
+      }
+    },
+    {
+      "id": "FOMC_20260729",
+      "name": "FOMC Decision (Jul 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-07-29T15:30:00+05:30",
+      "end": "2026-07-30T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "RBI_MPC_20260807",
+      "name": "RBI MPC Decision (Aug 2026)",
+      "category": "CENTRAL_BANK",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-08-07T09:00:00+05:30",
+      "end": "2026-08-07T15:30:00+05:30",
+      "windows": {
+        "pre_minutes": 120,
+        "post_minutes": 60
+      },
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "LONG_VOL",
+          "HEDGE_ONLY"
+        ],
+        "reason": "RBI monetary policy decision"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260826",
+      "name": "Nse Corporate Bonds Holiday: Id-E-Milad",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-08-26T00:00:00+05:30",
+      "end": "2026-08-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Id-E-Milad holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Id-E-Milad"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260826",
+      "name": "Nse Currency Derivatives Holiday: Id-E-Milad",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-08-26T00:00:00+05:30",
+      "end": "2026-08-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Id-E-Milad holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Id-E-Milad"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260826",
+      "name": "Nse Interest Rate Derivatives Holiday: Id-E-Milad",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-08-26T00:00:00+05:30",
+      "end": "2026-08-26T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Id-E-Milad holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Id-E-Milad"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20260914",
+      "name": "MCX Partial Trading Day (Evening Only): Ganesh Chaturthi",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-09-14T00:00:00+05:30",
+      "end": "2026-09-14T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Ganesh Chaturthi",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20260914",
+      "name": "Nse Corporate Bonds Holiday: Ganesh Chaturthi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-09-14T00:00:00+05:30",
+      "end": "2026-09-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Ganesh Chaturthi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Ganesh Chaturthi"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20260914",
+      "name": "Nse Commodity Derivatives Special Session: Ganesh Chaturthi",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-09-14T00:00:00+05:30",
+      "end": "2026-09-14T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Ganesh Chaturthi; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Ganesh Chaturthi",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20260914",
+      "name": "Nse Currency Derivatives Holiday: Ganesh Chaturthi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-09-14T00:00:00+05:30",
+      "end": "2026-09-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Ganesh Chaturthi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Ganesh Chaturthi"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20260914",
+      "name": "Nse Equity Holiday: Ganesh Chaturthi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-09-14T00:00:00+05:30",
+      "end": "2026-09-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Ganesh Chaturthi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Ganesh Chaturthi"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20260914",
+      "name": "Nse Equity Derivatives Holiday: Ganesh Chaturthi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-09-14T00:00:00+05:30",
+      "end": "2026-09-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Ganesh Chaturthi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Ganesh Chaturthi"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20260914",
+      "name": "Nse Interest Rate Derivatives Holiday: Ganesh Chaturthi",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-09-14T00:00:00+05:30",
+      "end": "2026-09-14T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Ganesh Chaturthi holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Ganesh Chaturthi"
+      }
+    },
+    {
+      "id": "FOMC_20260916",
+      "name": "FOMC Decision (Sep 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-09-16T15:30:00+05:30",
+      "end": "2026-09-17T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "MCX_HOLIDAY_20261002",
+      "name": "Mcx Holiday: Mahatma Gandhi Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-10-02T00:00:00+05:30",
+      "end": "2026-10-02T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Mahatma Gandhi Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Mahatma Gandhi Jayanti"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20261002",
+      "name": "Nse Corporate Bonds Holiday: Mahatma Gandhi Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-10-02T00:00:00+05:30",
+      "end": "2026-10-02T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Mahatma Gandhi Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Mahatma Gandhi Jayanti"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_HOLIDAY_20261002",
+      "name": "Nse Commodity Derivatives Holiday: Mahatma Gandhi Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-10-02T00:00:00+05:30",
+      "end": "2026-10-02T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Mahatma Gandhi Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Mahatma Gandhi Jayanti"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20261002",
+      "name": "Nse Currency Derivatives Holiday: Mahatma Gandhi Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-10-02T00:00:00+05:30",
+      "end": "2026-10-02T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Mahatma Gandhi Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Mahatma Gandhi Jayanti"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20261002",
+      "name": "Nse Equity Holiday: Mahatma Gandhi Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-10-02T00:00:00+05:30",
+      "end": "2026-10-02T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Mahatma Gandhi Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Mahatma Gandhi Jayanti"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20261002",
+      "name": "Nse Equity Derivatives Holiday: Mahatma Gandhi Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-10-02T00:00:00+05:30",
+      "end": "2026-10-02T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Mahatma Gandhi Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Mahatma Gandhi Jayanti"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20261002",
+      "name": "Nse Interest Rate Derivatives Holiday: Mahatma Gandhi Jayanti",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-10-02T00:00:00+05:30",
+      "end": "2026-10-02T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Mahatma Gandhi Jayanti holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Mahatma Gandhi Jayanti"
+      }
+    },
+    {
+      "id": "RBI_MPC_20261009",
+      "name": "RBI MPC Decision (Oct 2026)",
+      "category": "CENTRAL_BANK",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-10-09T09:00:00+05:30",
+      "end": "2026-10-09T15:30:00+05:30",
+      "windows": {
+        "pre_minutes": 120,
+        "post_minutes": 60
+      },
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "LONG_VOL",
+          "HEDGE_ONLY"
+        ],
+        "reason": "RBI monetary policy decision"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20261020",
+      "name": "MCX Partial Trading Day (Evening Only): Dassera",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-10-20T00:00:00+05:30",
+      "end": "2026-10-20T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Dassera",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20261020",
+      "name": "Nse Corporate Bonds Holiday: Dussehra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-10-20T00:00:00+05:30",
+      "end": "2026-10-20T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dussehra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dussehra"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20261020",
+      "name": "Nse Commodity Derivatives Special Session: Dussehra",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-10-20T00:00:00+05:30",
+      "end": "2026-10-20T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Dussehra; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dussehra",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20261020",
+      "name": "Nse Currency Derivatives Holiday: Dussehra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-10-20T00:00:00+05:30",
+      "end": "2026-10-20T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dussehra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dussehra"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20261020",
+      "name": "Nse Equity Holiday: Dussehra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-10-20T00:00:00+05:30",
+      "end": "2026-10-20T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dussehra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dussehra"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20261020",
+      "name": "Nse Equity Derivatives Holiday: Dussehra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-10-20T00:00:00+05:30",
+      "end": "2026-10-20T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dussehra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dussehra"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20261020",
+      "name": "Nse Interest Rate Derivatives Holiday: Dussehra",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-10-20T00:00:00+05:30",
+      "end": "2026-10-20T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Dussehra holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Dussehra"
+      }
+    },
+    {
+      "id": "FOMC_20261104",
+      "name": "FOMC Decision (Nov 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-11-04T15:30:00+05:30",
+      "end": "2026-11-05T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "MCX_MUHRAT_TRADING_2026",
+      "name": "MCX Muhurat Trading (Diwali)",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-11-08T17:00:00+05:30",
+      "end": "2026-11-08T21:30:00+05:30",
+      "windows": {
+        "pre_minutes": 30,
+        "post_minutes": 0
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.25,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM",
+          "INTRADAY_SCALP"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "POSITIONAL_SMALL"
+        ],
+        "reason": "Muhurat trading - special auspicious session, reduced liquidity expected"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "status": "timings_pending_exchange_circular"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20261110",
+      "name": "MCX Partial Trading Day (Evening Only): Diwali-Balipratipada",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-11-10T00:00:00+05:30",
+      "end": "2026-11-10T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Diwali-Balipratipada",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20261110",
+      "name": "Nse Corporate Bonds Holiday: Diwali-Balipratipada",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-11-10T00:00:00+05:30",
+      "end": "2026-11-10T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Diwali-Balipratipada holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Diwali-Balipratipada"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20261110",
+      "name": "Nse Commodity Derivatives Special Session: Diwali-Balipratipada",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-11-10T00:00:00+05:30",
+      "end": "2026-11-10T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Diwali-Balipratipada; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Diwali-Balipratipada",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20261110",
+      "name": "Nse Currency Derivatives Holiday: Diwali-Balipratipada",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-11-10T00:00:00+05:30",
+      "end": "2026-11-10T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Diwali-Balipratipada holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Diwali-Balipratipada"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20261110",
+      "name": "Nse Equity Holiday: Diwali-Balipratipada",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-11-10T00:00:00+05:30",
+      "end": "2026-11-10T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Diwali-Balipratipada holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Diwali-Balipratipada"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20261110",
+      "name": "Nse Equity Derivatives Holiday: Diwali-Balipratipada",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-11-10T00:00:00+05:30",
+      "end": "2026-11-10T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Diwali-Balipratipada holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Diwali-Balipratipada"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20261110",
+      "name": "Nse Interest Rate Derivatives Holiday: Diwali-Balipratipada",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-11-10T00:00:00+05:30",
+      "end": "2026-11-10T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Diwali-Balipratipada holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Diwali-Balipratipada"
+      }
+    },
+    {
+      "id": "MCX_SPECIAL_20261124",
+      "name": "MCX Partial Trading Day (Evening Only): Guru Nanak Jayanti",
+      "category": "MARKET_SCHEDULE",
+      "impact": "HIGH",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-11-24T00:00:00+05:30",
+      "end": "2026-11-24T23:59:59+05:30",
+      "policy": {
+        "action": "ALLOW",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [],
+        "allowed_strategy_tags": [],
+        "reason": "MCX evening-only session; morning closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Guru Nanak Jayanti",
+        "session_status": "evening_only"
+      },
+      "session_override": [
+        {
+          "market": "MCX",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ]
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20261124",
+      "name": "Nse Corporate Bonds Holiday: Prakash Gurpurb Sri Guru Nanak Dev",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-11-24T00:00:00+05:30",
+      "end": "2026-11-24T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Prakash Gurpurb Sri Guru Nanak Dev holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Prakash Gurpurb Sri Guru Nanak Dev"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_SPECIAL_20261124",
+      "name": "Nse Commodity Derivatives Special Session: Prakash Gurpurb Sri Guru Nanak Dev",
+      "category": "SPECIAL_TRADING_SESSION",
+      "impact": "HIGH",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-11-24T00:00:00+05:30",
+      "end": "2026-11-24T23:59:59+05:30",
+      "session_override": [
+        {
+          "market": "NSE_COMMODITY_DERIVATIVES",
+          "open": "17:00:00",
+          "close": "23:30:00"
+        }
+      ],
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.5,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "REDUCED_INTRADAY"
+        ],
+        "reason": "Morning session closed for Prakash Gurpurb Sri Guru Nanak Dev; evening commodity session only"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Prakash Gurpurb Sri Guru Nanak Dev",
+        "morning_session": "closed",
+        "evening_session": "open"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20261124",
+      "name": "Nse Currency Derivatives Holiday: Prakash Gurpurb Sri Guru Nanak Dev",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-11-24T00:00:00+05:30",
+      "end": "2026-11-24T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Prakash Gurpurb Sri Guru Nanak Dev holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Prakash Gurpurb Sri Guru Nanak Dev"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20261124",
+      "name": "Nse Equity Holiday: Prakash Gurpurb Sri Guru Nanak Dev",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-11-24T00:00:00+05:30",
+      "end": "2026-11-24T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Prakash Gurpurb Sri Guru Nanak Dev holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Prakash Gurpurb Sri Guru Nanak Dev"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20261124",
+      "name": "Nse Equity Derivatives Holiday: Prakash Gurpurb Sri Guru Nanak Dev",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-11-24T00:00:00+05:30",
+      "end": "2026-11-24T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Prakash Gurpurb Sri Guru Nanak Dev holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Prakash Gurpurb Sri Guru Nanak Dev"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20261124",
+      "name": "Nse Interest Rate Derivatives Holiday: Prakash Gurpurb Sri Guru Nanak Dev",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-11-24T00:00:00+05:30",
+      "end": "2026-11-24T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Prakash Gurpurb Sri Guru Nanak Dev holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Prakash Gurpurb Sri Guru Nanak Dev"
+      }
+    },
+    {
+      "id": "RBI_MPC_20261211",
+      "name": "RBI MPC Decision (Dec 2026)",
+      "category": "CENTRAL_BANK",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-12-11T09:00:00+05:30",
+      "end": "2026-12-11T15:30:00+05:30",
+      "windows": {
+        "pre_minutes": 120,
+        "post_minutes": 60
+      },
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA",
+          "SHORT_PREMIUM"
+        ],
+        "allowed_strategy_tags": [
+          "LONG_VOL",
+          "HEDGE_ONLY"
+        ],
+        "reason": "RBI monetary policy decision"
+      }
+    },
+    {
+      "id": "FOMC_20261216",
+      "name": "FOMC Decision (Dec 2026)",
+      "category": "CENTRAL_BANK_GLOBAL",
+      "impact": "HIGH",
+      "applies_to": [
+        "NIFTY",
+        "BANKNIFTY",
+        "SENSEX"
+      ],
+      "start": "2026-12-16T15:30:00+05:30",
+      "end": "2026-12-17T10:15:00+05:30",
+      "windows": {
+        "pre_minutes": 60,
+        "post_minutes": 30
+      },
+      "policy": {
+        "action": "ALLOW_REDUCED_SIZE",
+        "size_multiplier": 0.35,
+        "blocked_strategy_tags": [
+          "SHORT_GAMMA"
+        ],
+        "allowed_strategy_tags": [
+          "HEDGE_ONLY",
+          "VERY_SMALL_SCALP"
+        ],
+        "reason": "FOMC decision - overnight gap risk"
+      }
+    },
+    {
+      "id": "MCX_HOLIDAY_20261225",
+      "name": "Mcx Holiday: Christmas",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "MCX"
+      ],
+      "start": "2026-12-25T00:00:00+05:30",
+      "end": "2026-12-25T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Christmas holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "MCX",
+        "segment": "MCX",
+        "source": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays",
+        "holiday_name": "Christmas"
+      }
+    },
+    {
+      "id": "NSE_CBRICS_HOLIDAY_20261225",
+      "name": "Nse Corporate Bonds Holiday: Christmas",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CORPORATE_BONDS"
+      ],
+      "start": "2026-12-25T00:00:00+05:30",
+      "end": "2026-12-25T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Christmas holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CORPORATE_BONDS",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Christmas"
+      }
+    },
+    {
+      "id": "NSE_COMMODITY_HOLIDAY_20261225",
+      "name": "Nse Commodity Derivatives Holiday: Christmas",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_COMMODITY_DERIVATIVES"
+      ],
+      "start": "2026-12-25T00:00:00+05:30",
+      "end": "2026-12-25T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Christmas holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_COMMODITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Christmas"
+      }
+    },
+    {
+      "id": "NSE_CURRENCY_HOLIDAY_20261225",
+      "name": "Nse Currency Derivatives Holiday: Christmas",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_CURRENCY_DERIVATIVES"
+      ],
+      "start": "2026-12-25T00:00:00+05:30",
+      "end": "2026-12-25T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Christmas holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_CURRENCY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Christmas"
+      }
+    },
+    {
+      "id": "NSE_EQUITY_HOLIDAY_20261225",
+      "name": "Nse Equity Holiday: Christmas",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY"
+      ],
+      "start": "2026-12-25T00:00:00+05:30",
+      "end": "2026-12-25T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Christmas holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Christmas"
+      }
+    },
+    {
+      "id": "NSE_FNO_HOLIDAY_20261225",
+      "name": "Nse Equity Derivatives Holiday: Christmas",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_EQUITY_DERIVATIVES"
+      ],
+      "start": "2026-12-25T00:00:00+05:30",
+      "end": "2026-12-25T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Christmas holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_EQUITY_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Christmas"
+      }
+    },
+    {
+      "id": "NSE_IRD_HOLIDAY_20261225",
+      "name": "Nse Interest Rate Derivatives Holiday: Christmas",
+      "category": "EXCHANGE_HOLIDAY",
+      "impact": "EXTREME",
+      "applies_to": [
+        "NSE_INTEREST_RATE_DERIVATIVES"
+      ],
+      "start": "2026-12-25T00:00:00+05:30",
+      "end": "2026-12-25T23:59:59+05:30",
+      "policy": {
+        "action": "NO_NEW_TRADES",
+        "reason": "Christmas holiday - market closed"
+      },
+      "metadata": {
+        "exchange": "NSE",
+        "segment": "NSE_INTEREST_RATE_DERIVATIVES",
+        "source": "https://www.nseindia.com/resources/exchange-communication-holidays",
+        "holiday_name": "Christmas"
+      }
+    }
+  ],
+  "market_sessions": {
+    "NSE_EQUITY": [
+      {
+        "market": "NSE_EQUITY",
+        "open": "09:00:00",
+        "close": "15:30:00"
+      }
+    ],
+    "NSE_EQUITY_DERIVATIVES": [
+      {
+        "market": "NSE_EQUITY_DERIVATIVES",
+        "open": "09:15:00",
+        "close": "15:30:00"
+      }
+    ],
+    "NSE_CURRENCY_DERIVATIVES": [
+      {
+        "market": "NSE_CURRENCY_DERIVATIVES",
+        "open": "09:00:00",
+        "close": "17:00:00"
+      }
+    ],
+    "NSE_COMMODITY_DERIVATIVES": [
+      {
+        "market": "NSE_COMMODITY_DERIVATIVES",
+        "open": "09:00:00",
+        "close": "23:30:00"
+      }
+    ],
+    "NSE_INTEREST_RATE_DERIVATIVES": [
+      {
+        "market": "NSE_INTEREST_RATE_DERIVATIVES",
+        "open": "09:00:00",
+        "close": "17:00:00"
+      }
+    ],
+    "NSE_CORPORATE_BONDS": [
+      {
+        "market": "NSE_CORPORATE_BONDS",
+        "open": "09:00:00",
+        "close": "17:15:00"
+      }
+    ],
+    "MCX": [
+      {
+        "market": "MCX",
+        "open": "08:45:00",
+        "close": "08:59:00"
+      },
+      {
+        "market": "MCX",
+        "open": "09:00:00",
+        "close": "23:30:00"
+      }
+    ]
+  },
+  "market_timings": {
+    "NSE_EQUITY": {
+      "pre_open": {
+        "open": "09:00:00",
+        "close": "09:08:00",
+        "note": "Random closure in the last minute"
+      },
+      "regular": {
+        "open": "09:15:00",
+        "close": "15:30:00"
+      },
+      "closing_session": {
+        "open": "15:40:00",
+        "close": "16:00:00"
+      },
+      "block_deal_morning": {
+        "open": "08:45:00",
+        "close": "09:00:00"
+      },
+      "block_deal_afternoon": {
+        "open": "14:05:00",
+        "close": "14:20:00"
+      }
+    },
+    "NSE_EQUITY_DERIVATIVES": {
+      "regular": {
+        "open": "09:15:00",
+        "close": "15:30:00"
+      },
+      "note": "Uses the standard NSE daytime F&O window unless superseded by exchange circulars."
+    },
+    "NSE_CURRENCY_DERIVATIVES": {
+      "regular": {
+        "open": "09:00:00",
+        "close": "17:00:00"
+      },
+      "note": "Configured as a daytime session; verify against the latest exchange circulars."
+    },
+    "NSE_COMMODITY_DERIVATIVES": {
+      "morning_session": {
+        "open": "09:00:00",
+        "close": "17:00:00"
+      },
+      "evening_session": {
+        "open": "17:00:00",
+        "close": "23:30:00"
+      },
+      "late_close_note": "Internationally referenced contracts may extend to 23:55 during non-US daylight savings periods."
+    },
+    "NSE_INTEREST_RATE_DERIVATIVES": {
+      "regular": {
+        "open": "09:00:00",
+        "close": "17:00:00"
+      },
+      "note": "Aligned to underlying NDS-OM timing changes if notified by the exchange."
+    },
+    "NSE_CORPORATE_BONDS": {
+      "regular": {
+        "open": "09:00:00",
+        "close": "17:15:00"
+      },
+      "late_reporting_window": {
+        "open": "09:00:00",
+        "close": "09:15:00"
+      }
+    },
+    "MCX": {
+      "special_session": {
+        "open": "08:45:00",
+        "close": "08:59:00",
+        "note": "Order cancellation session prior to market open."
+      },
+      "morning_session": {
+        "open": "09:00:00",
+        "close": "17:00:00"
+      },
+      "evening_session": {
+        "open": "17:00:00",
+        "close": "23:30:00"
+      },
+      "late_close_note": "Evening close can extend to 23:55 for internationally linked contracts.",
+      "agri_note": "Internationally linked agricultural commodities trade 17:00-21:00 in the evening session."
+    }
+  },
+  "sources": {
+    "nse_holiday_snapshot": "https://www.nseindia.com/resources/exchange-communication-holidays",
+    "nse_circulars_rss": "https://nsearchives.nseindia.com/content/RSS/Circulars.xml",
+    "mcx_holiday_snapshot": "https://www.mcxindia.com/market-operations/trading-survelliance/trading-holidays"
+  }
+}
