@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "aion-news-to-signal"
-version = "0.1.2"
-description = "Python client for the AION News-to-Signal API for Indian markets"
+version = "1.0.2"
+description = "Python client for AION India Event Intelligence (formerly AION News-to-Signal) for Indian markets"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "AGPL-3.0-or-later" }
@@ -19,9 +19,9 @@ keywords = [
   "india",
   "nse",
   "stock-market-news-analysis",
-  "trading-signals",
+  "market-intelligence",
   "financial-news",
-  "sentiment-analysis",
+  "event-intelligence",
   "sector-analysis",
 ]
 classifiers = [
