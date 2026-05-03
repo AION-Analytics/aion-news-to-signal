@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.AION-Analytics/aion-news-to-signal",
+  "title": "AION India Event Intelligence MCP Server",
+  "description": "AION India Event Intelligence provides sector-level causal impact analysis via API. Requires API key, is quota-controlled, returns structured sector intelligence rather than trading signals, and does not execute trades or generate executable orders.",
+  "repository": {
+    "url": "https://github.com/AION-Analytics/aion-news-to-signal",
+    "source": "github",
+    "subfolder": "wheel_build"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "aion-news-to-signal",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
