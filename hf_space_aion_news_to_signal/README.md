@@ -6,7 +6,7 @@ colorTo: indigo
 sdk: gradio
 app_file: app.py
 pinned: false
-short_description: Rate-limited demo only. Production access requires an API key.
+short_description: 10-request demo. API key required for production.
 ---
 
 # AION India Event Intelligence — Rate-Limited Demo
