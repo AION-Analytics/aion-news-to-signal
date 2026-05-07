@@ -22,6 +22,8 @@ metrics:
 
 # AION India Event Intelligence
 
+Structured event intelligence for Indian financial markets.
+
 AION India Event Intelligence converts a single Indian financial headline into structured event, sector, stakeholder, and meta-factor output. It answers "what happened, which sectors are affected, and who gains or loses" — not just "is this positive or negative."
 
 Formerly `aion-news-to-signal`.
@@ -104,7 +106,7 @@ AION India Event Intelligence is an API-first system. The model weights are not 
 
 ### Licensing Note
 
-The public client/code surface for AION News-to-Signal is distributed under AGPL-3.0-or-later. Some deterministic taxonomy rule files in the main GitHub repository are governed separately under Business Source License 1.1 with a future AGPL change date. See the repository `LICENSE` and `LICENSE.BSL11` files for the exact split.
+The public client/code surface for AION India Event Intelligence is distributed under AGPL-3.0-or-later. Some deterministic taxonomy rule files in the main GitHub repository are governed separately under Business Source License 1.1 with a future AGPL change date. See the repository `LICENSE` and `LICENSE.BSL11` files for the exact split.
 
 ### Use This For
 
@@ -129,16 +131,18 @@ The public client/code surface for AION News-to-Signal is distributed under AGPL
 
 ## Cross Links
 
+- API gateway:
+  - `https://dashboard.aiondashboard.site/systems/api-gateway`
+- GitHub repository:
+  - `https://github.com/AION-Analytics/aion-news-to-signal`
+- PyPI package:
+  - `https://pypi.org/project/aion-news-to-signal/`
 - website model page:
   - `https://dashboard.aiondashboard.site/models/news-to-signal`
 - registration:
   - `https://dashboard.aiondashboard.site/access/register`
 - live demo space:
   - `https://huggingface.co/spaces/AION-Analytics/aion-news-to-signal`
-- MCP repo:
-  - `https://github.com/AION-Analytics/aion-mcp-server`
-- MCP access and docs:
-  - `https://dashboard.aiondashboard.site/models/news-to-signal`
 
 ## Citation
 
