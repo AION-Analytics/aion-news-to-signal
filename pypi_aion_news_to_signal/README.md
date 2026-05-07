@@ -1,55 +1,88 @@
-# aion-news-to-signal
+# AION News-to-Signal — Client Library
 
-Thin Python client for the public AION News-to-Signal endpoint.
+This package provides:
 
-AION converts Indian financial news into signals for Indian financial markets, NSE workflows, and news-based trading India use cases.
+- A Python client for the AION India Event Intelligence API
+- An MCP server entrypoint for ChatGPT, Claude, Cursor, and other MCP-compatible tools
+- Local data validation and output formatting utilities
 
-AION converts Indian financial news into:
-
-- event classifications
-- sector-level trading signals
-- which sectors to long or short
-- stakeholder views
-
-This first PyPI release is intentionally minimal. It does not bundle model
-weights. It calls the live hosted endpoint:
-
-- Space: `https://huggingface.co/spaces/AION-Analytics/aion-news-to-signal`
-- App: `https://aion-analytics-aion-news-to-signal.hf.space`
-
-## Install
-
-```bash
-pip install aion-news-to-signal
-```
+This package does **NOT** contain model weights. Inference requires an API key from `https://dashboard.aiondashboard.site/access/register`.
 
 ## Quick Start
 
 ```python
 from aion import analyze
 
-result = analyze("RBI hikes repo rate by 25 bps")
-print(result["event"])
-print(result["trade_direction_signals"])
+# Requires AION_API_KEY environment variable or explicit key
+result = analyze("RBI hikes repo rate by 25 bps", api_key="YOUR_KEY")
+print(result["sector_vector"])
 ```
 
-Also supported:
+## MCP Server
+
+```bash
+python -m aion_news_to_signal.mcp_server
+```
+
+The MCP server requires an API key for inference. Set `AION_API_KEY` in your environment.
+
+## API Contract
+
+Production inference flows through the hosted AION API:
+
+- `POST https://api.aiondashboard.site/v1/analyze`
+- header:
+  - `X-API-Key: <key>`
 
 ```python
-from aion_news_to_signal import analyze
+import requests
+
+headers = {"X-API-Key": "YOUR_API_KEY"}
+resp = requests.post(
+    "https://api.aiondashboard.site/v1/analyze",
+    headers=headers,
+    json={"headline": "RBI hikes repo rate by 25 bps"},
+    timeout=30,
+)
+resp.raise_for_status()
+print(resp.json()["sector_vector"])
 ```
 
-## Hosted API Notes
+## Output Contract
 
-The current public endpoint is backed by a Hugging Face Space, so the client
-uses the Gradio API flow internally.
+```json
+{
+  "headline": "string",
+  "event": "string|null",
+  "confidence": "float",
+  "vix_regime": "string",
+  "sector_vector": {},
+  "top_positive_sectors": {},
+  "top_negative_sectors": {},
+  "sector_directional_bias": {
+    "positive_bias": [],
+    "negative_bias": []
+  },
+  "stakeholder_views": {},
+  "raw_assignment": {
+    "resolved_event_id": "string|null",
+    "cause_effect_rule_id": "string|null",
+    "weather_triggered": "bool"
+  }
+}
+```
 
-Measured on `2026-04-26`:
+## Important Note
 
-- cold start proxy: `~1.68 s`
-- warm latency average: `~716.6 ms`
+⚠️ This package is a client library, not a self-contained inference engine. It requires a valid API key and internet connectivity to call the AION hosted API. For local/offline inference, contact AION Analytics about enterprise deployment options.
 
 ## Links
 
-- GitHub: `https://github.com/AION-Analytics/aion-news-to-signal`
-- Hosted API: `https://aion-analytics-aion-news-to-signal.hf.space`
+- API key registration:
+  - `https://dashboard.aiondashboard.site/access/register`
+- Documentation:
+  - `https://dashboard.aiondashboard.site/models/news-to-signal`
+- Hugging Face demo:
+  - `https://huggingface.co/spaces/AION-Analytics/aion-news-to-signal`
+- GitHub:
+  - `https://github.com/AION-Analytics/aion-news-to-signal`
