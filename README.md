@@ -115,7 +115,7 @@ Market implication: agriculture-linked exposure under pressure, logistics bottle
 
 Most open-source financial sentiment tools, including FinBERT variants, stop at polarity scoring.
 
-| Capability | AION Analytics News-to-Signal | FinBERT |
+| Capability | AION India Event Intelligence | FinBERT |
 |---|---|---|
 | Indian market event logic | Yes | No |
 | Sector-level output | Yes, 32 sectors | No |
@@ -127,15 +127,15 @@ Most open-source financial sentiment tools, including FinBERT variants, stop at 
 
 FinBERT tells you whether a headline feels positive or negative.
 
-AION Analytics News-to-Signal tells you:
+AION India Event Intelligence tells you:
 
 - what happened
-- which sectors will go up or down
+- which sectors are affected and in what direction
 - who gains and who loses
 - whether there is a flip side
-- what trade view or hedge view follows
+- what the evidence layer suggests for further human or system review
 
-## Pricing & Tiers (Current as of May 2026)
+## Pricing & Tiers (Draft — Current as of May 2026)
 
 All tiers require an API key. Sign up at
 `https://dashboard.aiondashboard.site/access/register`
