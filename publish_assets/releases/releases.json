@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-05-03T05:26:41.527928+00:00",
+  "releases": [
+    {
+      "id": "aion-news-to-signal-1.0.2",
+      "project": "AION India Event Intelligence",
+      "version": "1.0.2",
+      "published_at": "2026-05-03T22:25:00+05:30",
+      "safety": "behavior clarification, safe upgrade",
+      "summary": "Display rename to AION India Event Intelligence and public output-contract cleanup.",
+      "highlights": [
+        "Standardizes the public product identity as AION India Event Intelligence.",
+        "Standardizes the output around sector_vector and sector_directional_bias.",
+        "Removes public recommendation framing from docs, MCP metadata, and tutorial surfaces."
+      ],
+      "upgrade_command": "pip install --upgrade aion-news-to-signal",
+      "validation": [
+        "python -c \"from aion_news_to_signal import analyze; r=analyze('RBI hikes repo rate by 25 bps'); print('sector_vector' in r); print('sector_directional_bias' in r)\""
+      ],
+      "links": {
+        "pypi": "https://pypi.org/project/aion-news-to-signal/",
+        "documentation": "https://dashboard.aiondashboard.site/models/news-to-signal",
+        "api_gateway": "https://dashboard.aiondashboard.site/systems/api-gateway",
+        "registration": "https://dashboard.aiondashboard.site/access/register",
+        "github": "https://github.com/AION-Analytics/aion-news-to-signal",
+        "huggingface": "https://huggingface.co/AION-Analytics/aion-news-to-signal"
+      }
+    },
+    {
+      "id": "aion-indian-market-calendar-1.1.1",
+      "project": "aion-indian-market-calendar",
+      "version": "1.1.1",
+      "published_at": "2026-05-01T18:20:00+05:30",
+      "safety": "safe patch",
+      "summary": "Timezone fallback fix for environments without system tzdata.",
+      "highlights": [
+        "Added tzdata dependency for ZoneInfo compatibility.",
+        "Added pytz fallback for constrained runtimes such as Pyodide.",
+        "Corrected naive datetime attachment in fallback mode."
+      ],
+      "upgrade_command": "pip install --upgrade aion-indian-market-calendar",
+      "validation": [
+        "python -c \"from aion_indian_market_calendar import is_market_open; print(is_market_open('NSE'))\"",
+        "python -c \"from aion_indian_market_calendar import IndiaMarketCalendar; from datetime import datetime; import pytz; cal=IndiaMarketCalendar(); print(cal.get_session(datetime(2026,1,27,9,5,tzinfo=pytz.timezone('Asia/Kolkata')), market='NFO') is not None)\""
+      ],
+      "links": {
+        "pypi": "https://pypi.org/project/aion-indian-market-calendar/",
+        "documentation": "https://huggingface.co/datasets/AION-Analytics/aion-indian-market-calendar"
+      }
+    },
+    {
+      "id": "aion-indian-market-calendar-1.1.0",
+      "project": "aion-indian-market-calendar",
+      "version": "1.1.0",
+      "published_at": "2026-05-01T14:00:00+05:30",
+      "safety": "behavior change, controlled upgrade",
+      "summary": "Canonical market resolution fix for aliases and index inputs.",
+      "highlights": [
+        "NFO and FNO now resolve to NSE_EQUITY_DERIVATIVES.",
+        "NIFTY and BANKNIFTY now resolve to derivatives by default.",
+        "Unknown market inputs now raise ValueError instead of failing silently."
+      ],
+      "upgrade_command": "pip install --upgrade aion-indian-market-calendar",
+      "validation": [
+        "python -c \"from aion_indian_market_calendar import IndiaMarketCalendar; from datetime import datetime; import pytz; cal=IndiaMarketCalendar(); dt=datetime(2026,1,27,9,20,tzinfo=pytz.timezone('Asia/Kolkata')); print(cal.get_session(dt, market='NFO') is not None); print(cal.get_session(dt, market='NIFTY') is not None)\""
+      ],
+      "links": {
+        "pypi": "https://pypi.org/project/aion-indian-market-calendar/1.1.0/",
+        "documentation": "https://huggingface.co/datasets/AION-Analytics/aion-indian-market-calendar"
+      }
+    }
+  ]
+}
