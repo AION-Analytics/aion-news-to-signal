@@ -1,4 +1,6 @@
-# AION News-to-Signal — Client Library
+# AION India Event Intelligence — Client Library
+
+Structured event intelligence for Indian financial markets.
 
 This package provides:
 
@@ -78,11 +80,17 @@ print(resp.json()["sector_vector"])
 
 ## Links
 
+- API gateway:
+  - `https://dashboard.aiondashboard.site/systems/api-gateway`
+- Website model page:
+  - `https://dashboard.aiondashboard.site/models/news-to-signal`
 - API key registration:
   - `https://dashboard.aiondashboard.site/access/register`
-- Documentation:
-  - `https://dashboard.aiondashboard.site/models/news-to-signal`
-- Hugging Face demo:
-  - `https://huggingface.co/spaces/AION-Analytics/aion-news-to-signal`
 - GitHub:
   - `https://github.com/AION-Analytics/aion-news-to-signal`
+- Hugging Face model:
+  - `https://huggingface.co/AION-Analytics/aion-news-to-signal`
+- Hugging Face demo:
+  - `https://huggingface.co/spaces/AION-Analytics/aion-news-to-signal`
+- PyPI package:
+  - `https://pypi.org/project/aion-news-to-signal/`
