@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aion-news-to-signal"
+version = "1.0.0.post2"
+description = "Offline/self-hosted AION News-to-Signal package for Indian financial news analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch",
+  "transformers",
+  "sentencepiece",
+  "pandas",
+  "numpy",
+  "pyyaml",
+  "huggingface_hub",
+  "safetensors",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aion = [
+  "data/*.csv",
+  "models/*.md",
+  "taxonomy/*.yaml",
+]

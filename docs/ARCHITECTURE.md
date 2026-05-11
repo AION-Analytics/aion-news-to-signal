@@ -15,6 +15,8 @@
         ↓
 [ CAUSAL PROPAGATION ]
         ↓
+[ DYNAMIC MACRO FALLBACK ]
+        ↓
 [ VIX OVERLAY ]
         ↓
 [ STAKEHOLDER VIEWS ]
@@ -28,8 +30,13 @@
   - exports `analyze`
 - `aion.py`
   - public local entrypoint
+- `aion_news_to_signal_self_hosted/src/aion/pipeline.py`
+  - versioned self-hosted package runtime consumed by installed environments
+    that import `from aion import analyze, get_pipeline`
 - `sector_propagation_engine.py`
-  - taxonomy + rule + disambiguation + propagation
+  - taxonomy + rule + disambiguation + propagation + dynamic fallback gating
+- `dynamic_macro_propagator.py`
+  - template-level fallback for broad macro events not covered by specific rules
 - `stakeholder_impact_mapper.py`
   - stakeholder reshaping of the post-VIX sector vector
 
@@ -107,6 +114,37 @@ This stage activates only when:
 
 - a cause-effect rule matched
 - and `rule_match.score >= 0.5`
+
+#### `[ DYNAMIC MACRO FALLBACK ]`
+
+Implemented by:
+
+- `DynamicMacroFallbackPropagator`
+- `cause_effect_rule_classifier_v3/macro_event_templates.yaml`
+- `DependencyWeightedPropagator`
+- `VocabularyExpander`
+
+This stage activates only when:
+
+- no specific cause-effect YAML rule fired
+- and the resolved event is missing or the combined sector vector is all zero
+
+It selects a broad macro template by weighted expanded-keyword scoring, unique
+keyword-family coverage, and a minimum meaningful-token density gate. Specific
+terms such as `war`, `attack`, `crude oil`, or `repo rate` outrank generic terms
+such as `rules` or `deadline`. The selected template then applies dependency
+weights where relevant, marks the output in `raw_assignment.dynamic_fallback_*`,
+and leaves the existing VIX overlay to the public `aion.analyze(...)` layer.
+Dynamic fallback hits are telemetry, not final taxonomy authority; repeated
+template hits are fed back into the review queue for specific-rule creation.
+
+Installed self-hosted runtimes also include a package-level deterministic macro
+overlay for high-priority events that previously polluted downstream crawlers
+when the frozen classifier fallback was trusted directly. This package overlay
+currently covers geopolitical conflict, oil-supply shock, and commercial
+LPG/fuel price policy changes, and includes a narrow non-financial guard that
+returns `event: null` with an all-zero `sector_vector` for low-confidence,
+out-of-domain headlines.
 
 #### `[ VIX OVERLAY ]`
 

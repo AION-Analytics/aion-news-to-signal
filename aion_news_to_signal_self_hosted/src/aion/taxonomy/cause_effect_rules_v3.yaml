@@ -1,0 +1,824 @@
+metadata:
+  version: 3.0.0
+  last_updated: '2026-04-27'
+  description: Curated cause-effect rules for weather, trade, shipping, fiscal, insurance,
+    and competitor cascades
+  total_rules: 21
+  sources:
+  - business-standard.com
+  - bwbusinessworld.com
+  - cseindia.org
+  - economictimes.indiatimes.com
+  - groundreport.in
+  - imd.gov.in
+  - india.mongabay.com
+  - indianexpress.com
+  - indiatoday.in
+  - kuehne-nagel.com
+  - maritimegateway.com
+  - outlookindia.com
+  - policycircle.org
+  - rbi.org.in
+  - thefederal.com
+  - thehindubusinessline.com
+  - tribuneindia.com
+  - undp.org
+  - weforum.org
+  - worldports.org
+  - wto.org
+cause_effect_rules:
+- id: heatwave_wheat_damage
+  condition:
+    weather_type:
+    - heatwave
+    - extreme heat
+    - record temperature
+    crop_type:
+    - wheat
+    - rabi crop
+    month:
+    - March
+    - April
+    region:
+    - Punjab
+    - Haryana
+    - Uttar Pradesh
+    - Madhya Pradesh
+    - Rajasthan
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.75
+    lag_days: 0
+    rationale: 10-35% yield reduction; Punjab wheat yield dropped to 43 qtl/ha in
+      2022, lowest since 2000
+  - sector: FMCG
+    impact: -0.15
+    lag_days: 60
+    rationale: Input cost pressure on wheat-based products; food inflation pass-through
+  - sector: Consumer Services
+    impact: -0.2
+    lag_days: 90
+    rationale: Rural demand contraction; 90M Indians at hunger risk by 2030 per IFPRI
+  confidence: 0.95
+  source: 'Mongabay-India (Jun 2022): ''Heatwave takes a toll on north India''s wheat
+    yield''; India banned wheat export May 2022'
+  evidence: '2022 heatwave: 10-35% yield loss in Punjab/Haryana/UP; wheat export ban
+    imposed; $2.1B export revenue lost'
+- id: rain_apple_damage
+  condition:
+    weather_type:
+    - unseasonal rainfall
+    - hailstorm
+    - excess rain
+    - western disturbance
+    crop_type:
+    - apple
+    - stone fruit
+    - horticulture
+    month:
+    - March
+    - April
+    - May
+    region:
+    - Himachal Pradesh
+    - Jammu & Kashmir
+    - Uttarakhand
+  propagation:
+  - sector: Agriculture & Horticulture
+    impact: -0.8
+    lag_days: 0
+    rationale: 30-40% apple yield loss; HP contributes ~20% of global apples; ₹6,000
+      crore industry
+  - sector: Consumer Services
+    impact: -0.25
+    lag_days: 30
+    rationale: Reduced tourist footfall in hill states; orchard-linked hospitality
+      suffers
+  - sector: Transportation
+    impact: -0.3
+    lag_days: 60
+    rationale: Reduced freight movement of horticultural produce; cold chain underutilization
+  confidence: 0.92
+  source: 'Business Standard (May 2023): ''Himachal farmers paying price for bad weather'';
+    The Wire (Jul 2023): ''Is the Changing Climate Eating the Apple?'''
+  evidence: '2023: ₹104 crore loss (₹63.42 cr horticulture); apple production declined
+    30-40% across 94,000 hectares; 3.52 crore boxes → severe shortfall'
+- id: excess_rain_paddy_damage
+  condition:
+    weather_type:
+    - excess rainfall
+    - unseasonal rain
+    - heavy downpour
+    - floods
+    crop_type:
+    - paddy
+    - rice
+    - kharif crop
+    month:
+    - September
+    - October
+    - November
+    region:
+    - Punjab
+    - Haryana
+    - Uttar Pradesh
+    - West Bengal
+    - Assam
+    - Odisha
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.7
+    lag_days: 0
+    rationale: 5-20% paddy area damaged; Punjab lost 139,000 ha in Sep 2022; Haryana
+      ~20% crop area
+  - sector: FMCG
+    impact: -0.1
+    lag_days: 45
+    rationale: Rice price pressure; India is world's largest rice exporter
+  - sector: Fertilizer
+    impact: -0.15
+    lag_days: 90
+    rationale: Reduced rabi sowing demand for fertilizers after kharif loss
+  confidence: 0.9
+  source: 'Mongabay-India (Nov 2022): ''A year of extreme weather events has weighed
+    heavy on India''s agricultural sector'''
+  evidence: 'Sep 2022: 82% excess rain in Haryana (record since 1945); Punjab 30%
+    excess; 5% of total paddy area damaged in Punjab'
+- id: drought_multi_crop_failure
+  condition:
+    weather_type:
+    - drought
+    - deficient monsoon
+    - dry spell
+    - scanty rainfall
+    month:
+    - June
+    - July
+    - August
+    - September
+    region:
+    - Maharashtra
+    - Karnataka
+    - Telangana
+    - Andhra Pradesh
+    - Madhya Pradesh
+    - Rajasthan
+    - Gujarat
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.85
+    lag_days: 0
+    rationale: 35M hectares lost to drought 2015-21; crop yields drop 9% projected
+      by 2040
+  - sector: Automobile and Auto Components
+    impact: -0.35
+    lag_days: 90
+    rationale: Rural 2-wheeler and tractor sales collapse; rural incomes fall 20-25%
+  - sector: FMCG
+    impact: -0.4
+    lag_days: 60
+    rationale: Rural demand destruction; 65% of population dependent on agriculture
+  - sector: Consumer Durables
+    impact: -0.3
+    lag_days: 120
+    rationale: Discretionary spend evaporates in stressed rural markets
+  - sector: Financial Services
+    impact: -0.25
+    lag_days: 180
+    rationale: Farm loan defaults rise; crop insurance claims surge; credit tightening
+  confidence: 0.88
+  source: WEF Report via The Hindu BusinessLine (Aug 2024); NABARD (2026); Mongabay
+    drought coverage 2015-2021
+  evidence: '2015-21: 35M ha lost to drought; 33.9M ha to excess rain; $159B economic
+    loss in 2021; rural incomes projected to fall 20-25%'
+- id: cyclone_coastal_damage
+  condition:
+    weather_type:
+    - cyclone
+    - cyclonic storm
+    - severe storm
+    - landfall
+    region:
+    - Odisha
+    - Andhra Pradesh
+    - West Bengal
+    - Tamil Nadu
+    - Gujarat
+    - Kerala
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.65
+    lag_days: 0
+    rationale: 87,000 ha crops damaged in single cyclone; fish ponds destroyed
+  - sector: Construction
+    impact: 0.45
+    lag_days: 30
+    rationale: Rebuilding boom; roads, bridges, houses reconstruction; insurance claims
+      fuel activity
+  - sector: Power
+    impact: -0.4
+    lag_days: 0
+    rationale: Transmission lines and substations damaged; power outages
+  - sector: Financial Services
+    impact: -0.3
+    lag_days: 0
+    rationale: Insurance claims surge; property damage; $172M annual flood loss to
+      road assets
+  confidence: 0.9
+  source: The Hindu (Nov 2025); Economic Times (Nov 2025); CSE extreme weather database
+  evidence: 'Cyclone Fani: ₹3,000 cr agri+fisheries damage, 7 cr lost working days;
+    Cyclone Montha: ₹6,384 cr total damage, 87,000 ha crops'
+- id: heatwave_power_demand_surge
+  condition:
+    weather_type:
+    - heatwave
+    - extreme heat
+    - record temperature
+    month:
+    - March
+    - April
+    - May
+    - June
+  propagation:
+  - sector: Power
+    impact: 0.35
+    lag_days: 0
+    rationale: Peak demand surged from 136GW to 243GW; 10.4% demand spike during heatwaves
+  - sector: Energy
+    impact: 0.3
+    lag_days: 0
+    rationale: Coal generation hit record 233B kWh (2024); thermal PLFs improve
+  - sector: Consumer Durables
+    impact: 0.25
+    lag_days: 0
+    rationale: AC and cooling appliance sales surge; 30% of demand growth from ACs
+  - sector: Agriculture & Allied
+    impact: -0.4
+    lag_days: 0
+    rationale: Crop stress; wheat yield loss; livestock heat stress; milk production
+      drops
+  - sector: Financial Services
+    impact: -0.1
+    lag_days: 60
+    rationale: Higher subsidy burden (free electricity for farmers); DISCOM stress
+  confidence: 0.93
+  source: Reuters (Aug 2024); CEA data; Mongabay-India heatwave coverage
+  evidence: Coal generation 233B kWh (2024 record); peak demand 243 GW; ACs drove
+    30% of demand growth; household share 22%→25%
+- id: rain_vegetable_inflation
+  condition:
+    weather_type:
+    - unseasonal rainfall
+    - hailstorm
+    - frost
+    - cold wave
+    crop_type:
+    - tomato
+    - onion
+    - potato
+    - vegetables
+    - horticulture
+    month:
+    - October
+    - November
+    - December
+    - January
+    - February
+  propagation:
+  - sector: FMCG
+    impact: -0.05
+    lag_days: 0
+    rationale: 'Mixed: branded food companies face input cost pressure but some switch
+      to processed'
+  - sector: Consumer Services
+    impact: -0.15
+    lag_days: 30
+    rationale: Restaurant margins compress; food delivery demand shifts; household
+      budgets stressed
+  - sector: Financial Services
+    impact: -0.1
+    lag_days: 60
+    rationale: CPI inflation spikes; RBI may delay rate cuts; monetary policy tightening
+      risk
+  confidence: 0.87
+  source: RBI study (May 2025); Indian Express (Sep 2025); ET Online (Oct 2024)
+  evidence: 'Jul 2023: tomato inflation 37.3%; Oct 2024: vegetable inflation 42.1%;
+    RBI: rain adds 1.24pp to vegetable inflation, temp adds 1.30pp'
+- id: flood_infrastructure_damage
+  condition:
+    weather_type:
+    - floods
+    - flash floods
+    - landslides
+    - cloudburst
+    - heavy rainfall
+    region:
+    - Uttarakhand
+    - Himachal Pradesh
+    - Jammu & Kashmir
+    - Kerala
+    - Assam
+    - Sikkim
+  propagation:
+  - sector: Construction
+    impact: -0.5
+    lag_days: 0
+    rationale: Immediate project stoppages; equipment damage; labor displacement
+  - sector: Construction
+    impact: 0.55
+    lag_days: 90
+    rationale: 'REBUILD BOOM: reconstruction contracts surge; roads, bridges, housing
+      rebuild'
+  - sector: Cement
+    impact: 0.35
+    lag_days: 60
+    rationale: Demand surge for reconstruction materials
+  - sector: Transportation
+    impact: -0.6
+    lag_days: 0
+    rationale: Roads and bridges destroyed; $172M annual flood loss to road assets;
+      supply chains disrupted
+  - sector: Power
+    impact: -0.35
+    lag_days: 0
+    rationale: Transmission infrastructure damaged; $86M annual flood loss to power
+      assets
+  confidence: 0.89
+  source: New Indian Express (Apr 2026); The Week (Apr 2026); Economic Times (Jun
+    2025)
+  evidence: 'India lost $619B-$1.02T infrastructure to weather; flooding: $172M/yr
+    road assets, $86M/yr power assets; J&K: 12,000 km roads destroyed'
+- id: good_monsoon_rabi_boost
+  condition:
+    weather_type:
+    - normal monsoon
+    - above normal rainfall
+    - good rainfall
+    month:
+    - June
+    - July
+    - August
+    - September
+  propagation:
+  - sector: Agriculture & Allied
+    impact: 0.55
+    lag_days: 0
+    rationale: Kharif output improves; reservoir levels high for rabi sowing
+  - sector: Fertilizer
+    impact: 0.35
+    lag_days: 60
+    rationale: Rabi sowing demand increases; fertilizer offtake rises
+  - sector: FMCG
+    impact: 0.3
+    lag_days: 120
+    rationale: Rural demand recovery; higher farm incomes boost consumption
+  - sector: Automobile and Auto Components
+    impact: 0.25
+    lag_days: 150
+    rationale: Tractor and 2-wheeler demand improves with farm cash flows
+  - sector: Power
+    impact: 0.2
+    lag_days: 0
+    rationale: Hydropower generation improves; lower coal dependence
+  confidence: 0.85
+  source: Business Standard (Sep 2025); Forbes India (Apr 2026)
+  evidence: Good monsoon leaves reservoirs brimming; rabi sowing supported; rural
+    demand historically rebounds 2-3 quarters post good monsoon
+- id: winter_drought_rabi_failure
+  condition:
+    weather_type:
+    - dry winter
+    - scanty rainfall
+    - drought
+    - snow deficit
+    month:
+    - January
+    - February
+    - March
+    region:
+    - Himachal Pradesh
+    - Jammu & Kashmir
+    - Uttarakhand
+    - Punjab
+    - Haryana
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.65
+    lag_days: 0
+    rationale: 148,908 ha rabi crop destroyed in HP alone (2021); wheat target missed
+  - sector: FMCG
+    impact: -0.25
+    lag_days: 90
+    rationale: Wheat and pulses shortage drives food inflation
+  - sector: Consumer Services
+    impact: -0.2
+    lag_days: 120
+    rationale: Rural demand contraction; tourism in hill states affected by dry conditions
+  confidence: 0.88
+  source: 'Mongabay-India (Apr 2021): ''Winter drought in Himachal impacts agriculture
+    and drinking water supply'''
+  evidence: '2021: 1.48 lakh ha rabi crop destroyed in HP due to Jan-Mar scanty rainfall;
+    wheat production target missed'
+- id: crop_failure_export_ban_cascade
+  condition:
+    weather_type:
+    - heatwave
+    - drought
+    - excess rainfall
+    - unseasonal rain
+    - cyclone
+    crop_type:
+    - wheat
+    - rice
+    - sugar
+    - onion
+    - cotton
+    severity:
+    - severe
+    - extreme
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.75
+    lag_days: 0
+    rationale: Direct crop loss; wheat output dropped to 20-year low in 2022 heatwave
+  - sector: Financial Services
+    impact: -0.35
+    lag_days: 30
+    rationale: Forex reserves pressured; trade deficit widens; agri exports fell $6.19B
+      in FY24
+  - sector: FMCG
+    impact: -0.2
+    lag_days: 45
+    rationale: 'Domestic food inflation; RBI: rain adds 1.24pp to vegetable inflation'
+  - sector: Transportation
+    impact: -0.3
+    lag_days: 60
+    rationale: Reduced export cargo movement; shipping lines lose bookings to competitors
+  - sector: Consumer Services
+    impact: -0.25
+    lag_days: 90
+    rationale: Rural distress from lost export income; 7 crore lost working days from
+      single cyclone
+  confidence: 0.93
+  source: Tribune India (Jun 2024); Indian Express (Mar 2025); Commerce Ministry data
+  evidence: Wheat exports collapsed from $2.12B to $56M; total agri exports fell 8.2%;
+    $6,193M cumulative loss
+  competitor_gain:
+  - competitor_country: Pakistan
+    sector_gain: Basmati rice market share in US
+    magnitude: 0.4
+  - competitor_country: Thailand, Vietnam
+    sector_gain: Non-basmati rice global market share
+    magnitude: 0.35
+- id: port_shutdown_supply_chain
+  condition:
+    weather_type:
+    - cyclone
+    - floods
+    - torrential rain
+    - storm surge
+    region:
+    - Gujarat
+    - Maharashtra
+    - Tamil Nadu
+    - Andhra Pradesh
+    - Odisha
+    - West Bengal
+  propagation:
+  - sector: Transportation
+    impact: -0.7
+    lag_days: 0
+    rationale: Mundra port at standstill for 3+ days; vessels diverted; exports shut
+      out; imports delayed 12-24 hrs
+  - sector: Construction
+    impact: -0.3
+    lag_days: 0
+    rationale: Imported construction materials delayed; container freight stations
+      clogged
+  - sector: Consumer Durables
+    impact: -0.35
+    lag_days: 7
+    rationale: Import-dependent electronics and appliances face supply gaps
+  - sector: Chemicals
+    impact: -0.25
+    lag_days: 7
+    rationale: Import raw material delays; Nhava Sheva congestion cascades to 20-hr
+      truck turnarounds
+  - sector: Textiles
+    impact: -0.3
+    lag_days: 14
+    rationale: Export shipments missed; buyers shift orders to Bangladesh/Vietnam
+  confidence: 0.91
+  source: World Ports Organization (Jan 2026); Kuehne+Nagel (Dec 2025); Maritime Gateway
+  evidence: Mundra flooding stopped shipping 3+ days; JNPA truck turnaround hit 20
+    hrs; Colombo 13 vessels waiting
+- id: disaster_fiscal_stress
+  condition:
+    weather_type:
+    - floods
+    - cyclone
+    - cloudburst
+    - landslides
+    - drought
+    severity:
+    - severe
+    - extreme
+  propagation:
+  - sector: Financial Services
+    impact: -0.3
+    lag_days: 90
+    rationale: Fiscal deficits widen for up to 3 years; govt borrowing rises; bond
+      yields pressured
+  - sector: Construction
+    impact: 0.55
+    lag_days: 180
+    rationale: 'REBUILD BOOM: NDRF/SDRF-funded reconstruction contracts; Punjab sought
+      special aid for ₹12,905 cr damage'
+  - sector: Power
+    impact: -0.2
+    lag_days: 0
+    rationale: Infrastructure damage; $86M annual flood loss to power assets
+  - sector: IT
+    impact: -0.1
+    lag_days: 365
+    rationale: Reduced state development spending; capex diverted to relief; long-term
+      growth drag
+  confidence: 0.9
+  source: IIT Bombay study (Jan 2025); BW Businessworld (Jan 2026); The Tribune (Sep
+    2025)
+  evidence: 'Uttarakhand: ~8% revenue to disaster relief; Punjab: ₹12,905 cr flood
+    losses; states seek Finance Commission aid'
+- id: disaster_tax_revenue_collapse
+  condition:
+    weather_type:
+    - floods
+    - cyclone
+    - earthquake
+    - landslides
+    severity:
+    - severe
+    - extreme
+  propagation:
+  - sector: Financial Services
+    impact: -0.25
+    lag_days: 60
+    rationale: State GST collections decline; agriculture/trade/business disrupted
+      → tax base shrinks
+  - sector: Banks
+    impact: -0.2
+    lag_days: 90
+    rationale: State government deposits shrink; borrowing costs rise; credit rating
+      pressure
+  - sector: Consumer Services
+    impact: -0.3
+    lag_days: 180
+    rationale: 'Reduced government spending on welfare schemes; Himachal: 17% GST
+      revenue loss'
+  - sector: Realty
+    impact: -0.2
+    lag_days: 365
+    rationale: Infrastructure projects delayed; state capex diverted to disaster recovery
+  confidence: 0.88
+  source: The Federal (Oct 2025); Outlook India (Nov 2025); IIT Bombay PVAR study
+  evidence: 'Disaster-hit states lack GST compensation; HP lost ₹600 cr from GST rationalisation;
+    Kerala: ₹8,000-10,000 cr annual shortfall'
+- id: crop_insurance_claims_surge
+  condition:
+    weather_type:
+    - drought
+    - floods
+    - cyclone
+    - hailstorm
+    - unseasonal rain
+    crop_type:
+    - any
+    severity:
+    - severe
+    - extreme
+  propagation:
+  - sector: Financial Services
+    impact: -0.35
+    lag_days: 90
+    rationale: ₹14,196 cr crop insurance claims in FY25; pending claims ₹1,425 cr;
+      insurer margins compress
+  - sector: Banks
+    impact: -0.2
+    lag_days: 180
+    rationale: Farm loan defaults rise when insurance payouts delayed; AP has ₹859
+      cr pending claims
+  - sector: Agriculture & Allied
+    impact: -0.15
+    lag_days: 365
+    rationale: Premium costs rise for next season; coverage may shrink; 622.5 lakh
+      ha insured in FY25
+  confidence: 0.89
+  source: Ground Report (Feb 2026); MoA&FW Lok Sabha reply; LinkedIn/insurance sector
+  evidence: Maharashtra ₹5,774 cr claims; Karnataka ₹2,809 cr; 2.79 cr farmer applications;
+    13.12 lakh ha damaged
+- id: supply_shock_storage_opportunity
+  condition:
+    weather_type:
+    - drought
+    - floods
+    - cyclone
+    - unseasonal rain
+    crop_type:
+    - onion
+    - potato
+    - tomato
+    - pulses
+    - apple
+    - turmeric
+    severity:
+    - moderate
+    - severe
+  propagation:
+  - sector: Consumer Services
+    impact: 0.35
+    lag_days: 14
+    rationale: Cold storage operators raise prices 2%+ ahead of normal cycle; inventory
+      value surges
+  - sector: Agriculture & Allied
+    impact: -0.6
+    lag_days: 0
+    rationale: 30%+ post-harvest losses from poor storage; India's cold chain market
+      growing to $20B by 2029
+  - sector: FMCG
+    impact: 0.2
+    lag_days: 45
+    rationale: Processed food demand rises as fresh supply shrinks; frozen foods reshape
+      supply chain
+  - sector: Transportation
+    impact: -0.15
+    lag_days: 30
+    rationale: Perishable logistics disrupted; cold chain bottlenecks; 10% foodgrain
+      post-harvest loss
+  confidence: 0.86
+  source: Moneycontrol (Mar 2026); StarAgri (Feb 2026); GSN News (Aug 2025)
+  evidence: Cold storage market $12B → $20B by 2029; 30% fruit/veg lost post-harvest;
+    storage prices rose 2% early
+- id: export_ban_competitor_gain
+  condition:
+    policy_action:
+    - export ban
+    - export restriction
+    - minimum export price
+    - export duty
+    commodity:
+    - wheat
+    - rice
+    - sugar
+    - onion
+    - cotton
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.4
+    lag_days: 90
+    rationale: Farmers lose global price premium; $6,193M stakeholder loss in FY24;
+      6.36% export decline
+  - sector: Financial Services
+    impact: -0.2
+    lag_days: 180
+    rationale: Permanent market share loss; Pakistan captured US basmati share; buyers
+      diversify suppliers
+  - sector: Transportation
+    impact: -0.25
+    lag_days: 60
+    rationale: Export logistics volume drops; shipping lines reallocate capacity to
+      competitor origins
+  confidence: 0.91
+  source: India Today (Sep 2025); Drip Capital (Apr 2026); WTO Center VN
+  evidence: Pakistan basmati gains at 19% duty vs India's 50%; India lost $4.88B over
+    3 years; 10M MT global rice gap
+- id: cyclone_fisheries_destruction
+  condition:
+    weather_type:
+    - cyclone
+    - storm surge
+    region:
+    - Odisha
+    - Andhra Pradesh
+    - West Bengal
+    - Tamil Nadu
+    - Kerala
+    - Gujarat
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.7
+    lag_days: 0
+    rationale: ₹3,000 cr damage to agri/livestock/fisheries from single cyclone; boats,
+      nets, iceboxes destroyed
+  - sector: Consumer Services
+    impact: -0.3
+    lag_days: 30
+    rationale: Fish supply disruption; protein inflation; coastal restaurant and tourism
+      losses
+  - sector: FMCG
+    impact: 0.15
+    lag_days: 60
+    rationale: Processed/packaged protein substitutes gain as fresh fish supply shrinks
+  confidence: 0.88
+  source: The Hindu (Nov 2025); UNDP assessment post-Cyclone Fani
+  evidence: 7 crore lost rural working days; ₹2,700 cr lost wages; fishers replace
+    capital equipment pre-insurance
+- id: flood_logistics_inflation
+  condition:
+    weather_type:
+    - floods
+    - flash floods
+    - landslides
+    severity:
+    - severe
+  propagation:
+  - sector: Transportation
+    impact: -0.6
+    lag_days: 0
+    rationale: 12,000 km roads destroyed in J&K alone; $172M annual flood loss to
+      road assets; 6-8 hr transit delays
+  - sector: FMCG
+    impact: -0.25
+    lag_days: 14
+    rationale: Supply chain disruption drives food price spikes; perishables rot in
+      transit
+  - sector: Cement
+    impact: 0.35
+    lag_days: 90
+    rationale: Reconstruction demand surge for roads, bridges, culverts
+  - sector: Automobile and Auto Components
+    impact: -0.15
+    lag_days: 30
+    rationale: Rural vehicle movement restricted; tractor and CV sales hit in affected
+      districts
+  confidence: 0.89
+  source: Economic Times (Jun 2025); New Indian Express (Apr 2026); World Bank infrastructure
+    assessment
+  evidence: $172M/yr flood loss to road assets; J&K 12,000 km destroyed; 6-8 hr transit
+    delays Maharashtra-Gujarat
+- id: drought_foodgrain_procurement_stress
+  condition:
+    weather_type:
+    - drought
+    - deficient monsoon
+    month:
+    - June
+    - July
+    - August
+    - September
+    severity:
+    - severe
+    - extreme
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.8
+    lag_days: 0
+    rationale: 45.56 lakh ha crop damage in Karnataka alone (2023-24); multi-crop
+      failure across states
+  - sector: Financial Services
+    impact: -0.3
+    lag_days: 90
+    rationale: Govt procurement costs surge; FCI buffer stocks drawn down; food subsidy
+      bill rises
+  - sector: FMCG
+    impact: -0.3
+    lag_days: 120
+    rationale: Food inflation from grain shortage; RBI monetary policy tightening
+      risk
+  - sector: Fertilizer
+    impact: -0.2
+    lag_days: 180
+    rationale: Reduced rabi sowing demand; farmer liquidity crisis delays input purchases
+  confidence: 0.9
+  source: Ground Report (Feb 2026); NSO data; MoA&FW
+  evidence: 'Karnataka: 45.56 lakh ha drought damage; Maharashtra: 24.76 lakh ha;
+    ₹5,160 cr NDRF released'
+- id: permanent_market_share_erosion
+  condition:
+    policy_action:
+    - export ban
+    - export restriction
+    duration:
+    - '> 6 months'
+    commodity:
+    - wheat
+    - non-basmati rice
+    - sugar
+  propagation:
+  - sector: Agriculture & Allied
+    impact: -0.5
+    lag_days: 365
+    rationale: Buyers shift to reliable suppliers; India's reputation as dependable
+      exporter damaged
+  - sector: Financial Services
+    impact: -0.25
+    lag_days: 365
+    rationale: Permanent export revenue loss; trade deficit structural shift; WTO
+      disputes (US, Japan, Canada challenged India)
+  - sector: Transportation
+    impact: -0.2
+    lag_days: 365
+    rationale: Long-term shipping contract losses; competitor ports (Karachi, Bangkok,
+      Ho Chi Minh City) gain volume
+  confidence: 0.87
+  source: WTO Center VN (Apr 2026); India Today (Sep 2025); Policy Circle (Aug 2025)
+  evidence: 10M MT global rice supply gap; US, UK, Japan, Canada challenged India
+    at WTO; Pakistan gained basmati share
